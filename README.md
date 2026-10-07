@@ -56,4 +56,14 @@ Edit `recipes/catalogue.txt` and `recipes/photo-map.json`, then run `python3 too
 
 Learn includes five six-question topics and ten-question mixed rounds. Every response includes an explanation; learners can retry incorrect answers before continuing. Correct answers save immediately on this device, and repeated answers do not inflate progress. Mixed practice prioritizes unfinished questions. Completion of the original quiz credits its three original questions.
 
-With the local server on port 8005, run `node tests/learning.test.cjs`. Set `POURMIND_TEST_URL` to test another local or published HTTPS address. The browser test checks all 30 questions, topic and mixed rounds, explanations, retry behavior, persistence, legacy progress, offline access and mobile layouts. It uses the environment’s installed Playwright and Chromium.
+With the local server on port 8000, run `node tests/learning.test.cjs`. Set `POURMIND_TEST_URL` to test another local or published HTTPS address. The browser test checks all 30 questions, topic and mixed rounds, explanations, retry behavior, persistence, legacy progress, offline access and mobile layouts. It uses the environment’s installed Playwright and Chromium.
+
+## Education review
+
+The `education-review` branch adds eight short lessons, twelve guided recipes with an explanation for each preparation step, four practical exercises, a private learning journal and five learning stages. Learn includes a separate Knowledge checks tab for the existing 30 questions. Completion and resume positions persist on the device.
+
+Share supports private recipe drafts, optional photo uploads, measured-ingredient validation, teaching notes, recipe-file export/import and returned feedback merging. This is the private file-sharing version selected for review; it has no public feed or accounts. Files are exchanged by users. Imported creator names and feedback are supplied by the file, not verified identities.
+
+Run `node tests/academy.test.cjs` and `node tests/learning.test.cjs` with the local server on port 8000. The first suite exercises every lesson and guide, practice journaling, photo ownership confirmation, the full two-device file-sharing cycle, input validation, offline state and mobile layouts.
+
+See [the review walkthrough](REVIEW.md). This branch is awaiting approval before deployment to the main app.
