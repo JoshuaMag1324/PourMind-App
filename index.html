@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#111613">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="PourMind">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="description" content="Discover your next favorite cocktail, build your home bar, and learn the craft with PourMind.">
+  <title>PourMind — A little craft in every glass</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="icons/icon-192.png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="data.js" defer></script>
+  <script src="methods.js" defer></script>
+  <script src="app.js" defer></script>
+  <script src="mobile.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <button class="brand" data-view="home" aria-label="PourMind home"><span class="brand-mark" aria-hidden="true"></span><span>POURMIND<small>THE ART OF A GOOD DRINK</small></span></button>
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <button data-view="home" aria-current="page">Discover</button><button data-view="recipes">Recipes</button><button data-view="bar">My bar</button><button data-view="learn">Learn</button>
+      </nav>
+      <button class="saved-button" data-view="saved" aria-label="Saved recipes"><span data-icon="bookmark"></span><span class="saved-label">Saved</span><span id="saved-count">0</span></button>
+    </div>
+  </header>
+  <main id="main" tabindex="-1"></main>
+  <footer class="site-footer"><span>POURMIND</span><p>Good ingredients. A little curiosity. Your next favorite drink.</p><button class="text-button" id="install-help">Install on your phone</button><small>Enjoy the craft. Drink responsibly.</small></footer>
+  <nav class="mobile-nav" aria-label="Mobile navigation">
+    <button data-view="home" aria-current="page"><span data-icon="home"></span>Discover</button><button data-view="recipes"><span data-icon="search"></span>Recipes</button><button data-view="bar"><span data-icon="bottle"></span>My bar</button><button data-view="learn"><span data-icon="book"></span>Learn</button>
+  </nav>
+  <dialog id="dialog" aria-labelledby="dialog-title"><button class="dialog-close icon-button" aria-label="Close dialog" data-action="close"><span data-icon="close"></span></button><div id="dialog-content"></div></dialog>
+  <div class="toast" role="status" aria-live="polite" id="toast"></div>
+  <noscript><p class="no-script">Enable JavaScript to browse recipes and use your bar.</p></noscript>
+</body>
+</html>
