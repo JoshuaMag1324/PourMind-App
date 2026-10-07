@@ -3,6 +3,9 @@ from pathlib import Path
 import argparse
 import re
 import zipfile
+import base64
+import json
+import mimetypes
 
 root = Path(__file__).resolve().parents[1]
 parser = argparse.ArgumentParser()
@@ -16,6 +19,11 @@ html = html.replace('<link rel="stylesheet" href="styles.css">', '<style>' + (ro
 html = re.sub(r'\s*<link[^>]+(?:rel="manifest"|rel="apple-touch-icon"|rel="icon")[^>]*>', '', html)
 for filename in ['data.js', 'methods.js', 'app.js', 'mobile.js']:
     script = (root / filename).read_text().replace('</script', '<\\/script')
+    if filename == 'data.js':
+        for photo in json.loads((root / 'photo-files.json').read_text()):
+            mime = mimetypes.guess_type(photo)[0] or 'application/octet-stream'
+            uri = 'data:' + mime + ';base64,' + base64.b64encode((root / photo).read_bytes()).decode()
+            script = script.replace(json.dumps(photo), json.dumps(uri))
     html = html.replace(f'<script src="{filename}" defer></script>', '<script defer>\n' + script + '\n</script>')
 # Inline scripts run after the document exists; defer only applies to external scripts.
 scripts = re.findall(r'<script defer>[\s\S]*?</script>', html)
@@ -25,6 +33,8 @@ html = html.replace('</body>', '\n' + '\n'.join(scripts) + '\n</body>')
 
 files = ['index.html', 'styles.css', 'data.js', 'methods.js', 'app.js', 'mobile.js', 'sw.js', 'manifest.webmanifest']
 files += ['icons/' + name for name in ['apple-touch-icon.png', 'icon-192.png', 'icon-512.png', 'icon-maskable-512.png']]
+files += ['photo-files.json'] + json.loads((root / 'photo-files.json').read_text())
+files += ['recipes/photo-map.json', 'recipes/bar-assistant-LICENSE.txt', 'recipes/opendrinks-LICENSE.txt', 'THIRD_PARTY_NOTICES.md']
 with zipfile.ZipFile(args.output / 'PourMind-iPhone-Test.zip', 'w', zipfile.ZIP_DEFLATED, compresslevel=9) as archive:
     for filename in files:
         archive.write(root / filename, 'PourMind-iPhone-Test/web/' + filename)

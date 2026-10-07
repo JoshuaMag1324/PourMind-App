@@ -1,6 +1,6 @@
 # PourMind
 
-A responsive cocktail prototype with 86 recipes and locally embedded artwork. The redesigned app starts at `index.html`; the original upload remains unchanged in `PourMind_v6_Audited_Test.html`.
+A responsive cocktail prototype with 86 recipes and local cocktail artwork. The redesigned app starts at `index.html`; the original upload remains unchanged in `PourMind_v6_Audited_Test.html`.
 
 ## Develop
 
@@ -17,8 +17,8 @@ The server process needs to be started again in each new task. The files are ret
 - `index.html`: page shell
 - `styles.css`: responsive visual design
 - `app.js`: navigation, search, favorites, inventory, dialogs, and quiz
-- `data.js`: original recipes and embedded photos
-- `methods.js`: original recipe methods and variations
+- `data.js`: generated catalogue of measured recipes and named local images
+- `methods.js`: cocktail-specific methods and related recipe families
 
 Saved recipes, ingredients, and training progress are stored in this browser's local storage. There is no backend or account sync. The scan flow adds sample inventory, and the inspiration flow searches existing recipes; camera recognition and AI generation are not connected.
 
@@ -46,3 +46,7 @@ python3 tools/build_mobile.py
 ```
 
 See [phone testing instructions](tools/PHONE_TESTING.md) for Safari installation and testing on the same Wi-Fi. Packaging uses Python's standard library; no install or build dependency is required. The supplied app icons are retained source assets.
+
+## Editing recipes and photos
+
+Edit `recipes/catalogue.txt` and `recipes/photo-map.json`, then run `python3 tools/build_catalogue.py` and `node tests/catalogue.test.cjs`. Each of the 86 drinks has measured ingredients, explicit steps, serving notes and a named image. The compiler checks missing/duplicate pairs and image checksums, and writes `data.js` plus the offline photo manifest. See `THIRD_PARTY_NOTICES.md` for source credits. Rebuild the mobile package after changes. Increment the service worker cache revision when publishing a new catalogue.

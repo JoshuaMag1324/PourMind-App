@@ -1,6 +1,6 @@
 'use strict';
 (() => {
-const { drinks, photos } = POURMIND_DATA;
+const { drinks, photos, recipeDetails } = POURMIND_DATA;
 const icons = {
   home: '<path d="m3 10 9-7 9 7v10H3Z"/><path d="M9 20v-7h6v7"/>',
   search: '<circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/>',
@@ -65,7 +65,7 @@ function renderLibrary() {
 }
 function renderResults() {
   const q = query.trim().toLowerCase();
-  const results = drinks.filter(d => (view !== 'saved' || saved.has(d[0])) && (category === 'All' || category === d[1]) && `${d[0]} ${d[1]} ${d[2]}`.toLowerCase().includes(q));
+  const results = drinks.filter(d => (view !== 'saved' || saved.has(d[0])) && (category === 'All' || recipeDetails[d[0]].spirits.includes(category)) && `${d[0]} ${recipeDetails[d[0]].spirits.join(' ')} ${d[2]}`.toLowerCase().includes(q));
   document.querySelector('#result-count').textContent = `${results.length} ${results.length === 1 ? 'recipe' : 'recipes'}${category !== 'All' ? ` · ${category}` : ''}`;
   const hasSaved = view === 'saved' && saved.size === 0;
   document.querySelector('#recipe-results').innerHTML = results.length ? results.map(recipeCard).join('') : `<div class="empty-state">${icon(hasSaved ? 'bookmark' : 'search')}<h2>${hasSaved ? 'Make a little collection.' : 'No matches this time.'}</h2><p>${hasSaved ? 'Tap the bookmark on any cocktail to keep your favorites here.' : 'Try another ingredient, or clear the filters to see every recipe.'}</p><button class="button" ${hasSaved ? 'data-view="recipes"' : 'data-action="reset-search"'}>${hasSaved ? 'Explore recipes' : 'Clear all filters'}</button></div>`;
@@ -116,8 +116,10 @@ function openDialog(content) {
 function openRecipe(name) {
   const d = drinks.find(d => d[0] === name);
   if (!d) return;
-  const related = (variations[d[1]] || []).filter(n => n !== name);
-  openDialog(`<img class="dialog-photo" src="${photos[name]}" alt="${escapeHTML(name)} cocktail"><div class="dialog-body"><div class="eyebrow">${escapeHTML(d[1])} · The cocktail library</div><h2 id="dialog-title">${escapeHTML(name)}</h2><div class="actions"><button class="button secondary" data-action="favorite" data-name="${escapeHTML(name)}" aria-pressed="${saved.has(name)}">${icon('bookmark')}${saved.has(name) ? 'Saved to favorites' : 'Save recipe'}</button></div><h3>What you’ll need</h3><ul>${d[2].split(' • ').map(x => `<li>${escapeHTML(x)}</li>`).join('')}</ul><h3>How to make it</h3><ol>${detailedMethod(d).map(x => `<li>${escapeHTML(x)}</li>`).join('')}</ol><div class="recipe-details"><strong>Glass:</strong> ${escapeHTML(d[5] || 'Appropriate chilled glass')}<br><strong>Garnish:</strong> ${escapeHTML(d[6] || 'Classic garnish')}</div><h3>A different take</h3><div class="filter-row">${related.map(n => `<button class="filter" data-action="recipe" data-name="${escapeHTML(n)}">${escapeHTML(n)}</button>`).join('')}</div></div>`);
+  const related = relatedRecipes(name);
+  const detail = recipeDetails[name];
+  const credit = `${detail.imageKind} · ${detail.imageCredit}`;
+  openDialog(`<img class="dialog-photo" src="${photos[name]}" alt="${escapeHTML(name)} cocktail"><div class="dialog-body"><p class="photo-credit">${escapeHTML(credit)}</p><div class="eyebrow">${escapeHTML(detail.spirits.join(' + '))} · The cocktail library</div><h2 id="dialog-title">${escapeHTML(name)}</h2><div class="actions"><button class="button secondary" data-action="favorite" data-name="${escapeHTML(name)}" aria-pressed="${saved.has(name)}">${icon('bookmark')}${saved.has(name) ? 'Saved to favorites' : 'Save recipe'}</button></div><p class="serving-note">${escapeHTML(detail.note)}</p><h3>What you’ll need</h3><ul>${d[2].split(' • ').map(x => `<li>${escapeHTML(x)}</li>`).join('')}</ul><h3>How to make it</h3><ol>${detailedMethod(d).map(x => `<li>${escapeHTML(x)}</li>`).join('')}</ol><div class="recipe-details"><strong>Glass:</strong> ${escapeHTML(d[5] || 'Appropriate chilled glass')}<br><strong>Garnish:</strong> ${escapeHTML(d[6] || 'Classic garnish')}</div>${detail.reference ? `<p class="recipe-reference"><a href="${escapeHTML(detail.reference)}" target="_blank" rel="noopener noreferrer">Recipe reference</a></p>` : ''}${related.length ? '<h3>Related recipes</h3>' : ''}<div class="filter-row">${related.map(n => `<button class="filter" data-action="recipe" data-name="${escapeHTML(n)}">${escapeHTML(n)}</button>`).join('')}</div></div>`);
 }
 function openInspiration() {
   openDialog(`<div class="dialog-body"><span class="demo-label">Recipe inspiration · Local demo</span><h2 id="dialog-title">What are you in the mood for?</h2><p>Find a match from the cocktail library. Try a spirit, ingredient, or cocktail name.</p><form id="inspiration-form"><label class="input-label" for="inspiration">Your inspiration</label><input class="input" id="inspiration" placeholder="e.g. tequila, mint, or a sour" required maxlength="120"><div class="actions"><button class="button" type="submit">Find a recipe ${icon('arrow')}</button></div></form><p class="storage-note">This demo searches existing recipes. It doesn’t call an AI service.</p><div id="inspiration-results"></div></div>`);
@@ -204,7 +206,7 @@ document.addEventListener('submit', event => {
     event.preventDefault();
     const value = document.querySelector('#inspiration').value.trim().toLowerCase();
     const words = value.split(/\s+/).filter(x => !['a','an','the','with','and','or','drink','cocktail','please','refreshing','something'].includes(x));
-    const matches = value && words.length ? drinks.map(d => ({d,score:words.filter(w => `${d[0]} ${d[1]} ${d[2]}`.toLowerCase().includes(w)).length})).filter(x => x.score > 0).sort((a,b) => b.score - a.score).slice(0,4).map(x => x.d) : [];
+    const matches = value && words.length ? drinks.map(d => ({d,score:words.filter(w => `${d[0]} ${recipeDetails[d[0]].spirits.join(' ')} ${d[2]}`.toLowerCase().includes(w)).length})).filter(x => x.score > 0).sort((a,b) => b.score - a.score).slice(0,4).map(x => x.d) : [];
     document.querySelector('#inspiration-results').innerHTML = matches.length ? `<h3 id="inspiration-heading" tabindex="-1">A few pours to try</h3><div class="recipe-grid">${matches.map(recipeCard).join('')}</div>` : '<p id="inspiration-heading" tabindex="-1" class="quiz-feedback" style="margin-top:24px">No match yet. Try a specific spirit or ingredient, such as gin or lime.</p>';
     document.querySelector('#inspiration-heading').focus();
   }

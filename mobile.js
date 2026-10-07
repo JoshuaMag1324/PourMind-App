@@ -9,7 +9,7 @@
   const standaloneFile = Boolean(document.querySelector('meta[name="pourmind-standalone"]'));
   let offlineReady = standaloneFile;
   function updateStatus() {
-    status.textContent = navigator.onLine ? (offlineReady ? 'Ready for offline use' : 'Mobile test build · v1.0') : (offlineReady ? 'Offline · Your recipes and bar are available' : 'Offline · Reconnect once to prepare offline access');
+    status.textContent = navigator.onLine ? (offlineReady ? 'Ready for offline use' : 'Mobile test build · v1.1') : (offlineReady ? 'Offline · Your recipes and bar are available' : 'Offline · Reconnect once to prepare offline access');
   }
   updateStatus();
   window.addEventListener('online', updateStatus);

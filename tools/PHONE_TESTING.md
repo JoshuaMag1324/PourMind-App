@@ -4,13 +4,15 @@ This is an installable mobile web app, not an App Store or TestFlight build.
 
 ## Install on your Home Screen
 
+The hosted app is https://joshuamag1324.github.io/PourMind-App/. Open it directly in Safari. To host a separate test copy:
+
 1. Extract `PourMind-iPhone-Test.zip` on a computer.
 2. Publish the included `web` folder using your static HTTPS hosting service. A simple option is Netlify Drop at https://app.netlify.com/drop; sign in if prompted and drop the `web` folder into its upload area. Use the generated HTTPS site address, not the ZIP download address.
 3. Open that HTTPS address in Safari on your iPhone.
 4. Tap Share, then Add to Home Screen. If Safari shows an Open as Web App switch, turn it on. Tap Add.
 5. Open PourMind from its new icon. Keep it open until the footer says **Ready for offline use**. You can then switch to airplane mode and reopen it.
 
-The app has not been uploaded or published on your behalf. Hosting the `web` folder serves the application files; private bar entries and saved recipes stay in the phone's browser storage.
+Hosting the `web` folder serves the application files; private bar entries and saved recipes stay in the phone's browser storage. After a catalogue update, reopen the app while online, allow the update to download, and refresh once more. Do not clear website data if you want to retain saved favorites.
 
 ## Test in Safari without deploying
 
