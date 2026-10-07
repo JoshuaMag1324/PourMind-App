@@ -10,3 +10,9 @@ Published recipe/photo records were checked against the following pinned reposit
 Their software/data license notices are retained in `recipes/bar-assistant-LICENSE.txt` and `recipes/opendrinks-LICENSE.txt`. Photographs retain the original photographer/publisher credits recorded by those datasets. These credits are displayed with each recipe and retained in `recipes/photo-map.json`; a dataset software license should not be read as a claim that PourMind owns third-party photographs.
 
 The photo map records the source recipe, repository revision, image path and SHA-256 for each asset. Explicitly labelled recipe-family photographs are shared for visually equivalent variants; this does not imply the photographed drink used the alternative base spirit or exact ratio. Generated and original PourMind artwork is labelled as an illustration.
+
+## Private label reading
+
+Bottle-label OCR uses Tesseract.js 5.1.1 and tesseract.js-core 5.1.1 (Apache License 2.0), with the English LSTM model distributed by @tesseract.js-data/eng 1.0.0 (MIT distribution notice). The compiled main and worker distributions include their dependency notices. Exact source URLs and SHA-256 hashes are retained in `vendor/ocr/sources.json`; licenses and notices are beside those files. The English traineddata derives from Tesseract’s Apache-licensed tessdata; see https://github.com/tesseract-ocr/tessdata and https://github.com/tesseract-ocr/tessdata/blob/main/LICENSE.
+
+Runtime code and model files are bundled with the app. Photos and extracted label text are processed on the device and are not uploaded or stored. Only user-confirmed names enter the private inventory.

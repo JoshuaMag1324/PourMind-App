@@ -7,12 +7,12 @@
   status.setAttribute('aria-live', 'polite');
   footer.append(status);
   const refreshLink = document.createElement('a');
-  refreshLink.className = 'text-button';refreshLink.href = './wines.html';refreshLink.textContent = 'Open latest wine library';
+  refreshLink.className = 'text-button';refreshLink.href = './wines.html?open=library';refreshLink.textContent = 'Open latest Library';
   if (!document.querySelector('meta[name="pourmind-standalone"]')) footer.append(refreshLink);
   const standaloneFile = Boolean(document.querySelector('meta[name="pourmind-standalone"]'));
   let offlineReady = standaloneFile;
   function updateStatus() {
-    status.textContent = navigator.onLine ? (offlineReady ? 'Ready for offline use' : 'Mobile test build · v2.2') : (offlineReady ? 'Offline · Your recipes and bar are available' : 'Offline · Reconnect once to prepare offline access');
+    status.textContent = navigator.onLine ? (offlineReady ? 'Ready for offline use' : 'Mobile test build · v2.3') : (offlineReady ? 'Offline · Your recipes and bar are available' : 'Offline · Reconnect once to prepare offline access');
   }
   updateStatus();
   window.addEventListener('online', updateStatus);

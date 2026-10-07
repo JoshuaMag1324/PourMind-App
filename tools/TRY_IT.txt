@@ -13,7 +13,9 @@ Recipe and journal downloads can retain work for later use.
 
 TRY THESE FEATURES
 
-- Wine library: search Riesling or Chardonnay and read its tasting profile.
+- Library: explore Cocktails, Spirits and Wines; search Riesling or Chardonnay.
+- My bar: add your own ingredients or Scan My Bar using a clear label photo.
+  Review suggestions before saving. The photo stays on your device.
 - Recipes: open Daiquiri, follow its method and save it as a favorite.
 - Learn: start a lesson, try a guided recipe or explore cocktail families.
 - Food pairings: choose a food, then compare wine and cocktail suggestions.

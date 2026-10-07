@@ -26,13 +26,13 @@ This HTTP mode supports browsing and device-local saving. Installation and servi
 
 ## Things to try
 
-- **Recipes:** search for `lime`, filter by Gin, and open a recipe.
+- **Library → Cocktails:** search for `lime`, filter by Gin, and open a recipe.
 - **Favorites:** save Negroni, open Saved, then close and reopen the app.
-- **My bar:** add `Gin`, add sample ingredients, remove an ingredient, and reopen the app.
+- **My bar:** add `Gin` manually, then choose Scan My Bar and a clear photo of bottle labels. Review and edit the suggestions before confirming. Remove an ingredient and reopen the app. Scanning also works offline after the hosted app reports ready.
 - **Learn:** choose one of five topics (six questions each), or try a ten-question mixed practice. Try an incorrect answer to read the explanation, then answer correctly. Close and reopen to check your progress is retained.
 - **Inspiration:** search for `tequila` and open one of the suggested recipes.
 - **Offline:** after the HTTPS app reports ready, enable airplane mode and reload. Browse recipes and add a favorite.
 
-Your data is saved per site and browser. A different address, private browsing session, clearing website data, or uninstalling may result in a separate or empty collection. This build has no account or cloud sync. Camera recognition and AI generation remain demos; the app does not request camera access or call an AI service.
+Your data is saved per site and browser. A different address, private browsing session, clearing website data, or uninstalling may result in a separate or empty collection. This build has no account or cloud sync. The label reader processes photos on-device and requires user review; it does not send photos to an AI service. It reads printed names and cannot recognize unlabeled objects by appearance.
 
 The separate `PourMind-Mobile.html` download is a self-contained browser test file. It works in browsers that allow local HTML execution. iPhone Files may show only a document preview, so use Safari with the hosted or local-network app for reliable iPhone testing.

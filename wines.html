@@ -10,9 +10,14 @@
 <body><main><p>POURMIND</p><h1>Your wine library.</h1><p id="status" role="status">Opening the latest wine and spirit library…</p><p>Your saved recipes, bar and learning progress stay on this device.</p><button id="retry" hidden>Try again</button><noscript><p>Enable JavaScript, then reopen this page.</p></noscript></main>
 <script>
 'use strict';
+const requested=new URLSearchParams(location.search).get('open');
+const destination=['bar','library','wines','spirits'].includes(requested)?requested:'wines';
+const opening=destination==='bar'?'Opening the latest My Bar…':destination==='library'?'Opening the latest Library…':'Opening the latest wine and spirit library…';
+if(destination==='bar')document.querySelector('h1').textContent='Your personal bar.';
+if(destination==='library')document.querySelector('h1').textContent='Your drink library.';
 async function openLatest() {
   const retry=document.querySelector('#retry');retry.hidden=true;
-  document.querySelector('#status').textContent='Opening the latest wine and spirit library…';
+  document.querySelector('#status').textContent=opening;
   try {
     // Require an online response before replacing downloaded application files.
     // This page has no cached JS dependencies, so it can recover an older installed app.
@@ -22,9 +27,9 @@ async function openLatest() {
     const scope=new URL('./',location.href).href;
     if('serviceWorker' in navigator){const registrations=await navigator.serviceWorker.getRegistrations();await Promise.all(registrations.filter(r=>r.scope===scope).map(r=>r.unregister()));}
     if('caches' in window){const keys=await caches.keys();await Promise.all(keys.filter(k=>k.startsWith('pourmind-mobile-')).map(k=>caches.delete(k)));}
-    location.replace('./?release='+encodeURIComponent(release.version)+'&fresh='+Date.now()+'#wines');
+    location.replace('./?release='+encodeURIComponent(release.version)+'&fresh='+Date.now()+'#'+destination);
   } catch {
-    document.querySelector('#status').textContent='Connect to the internet to open the latest wine library, then try again.';
+    document.querySelector('#status').textContent='Connect to the internet to open the latest PourMind, then try again.';
     retry.hidden=false;
   }
 }

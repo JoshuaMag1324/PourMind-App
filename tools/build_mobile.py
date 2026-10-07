@@ -17,7 +17,7 @@ html = (root / 'index.html').read_text()
 html = html.replace('<head>', '<head>\n<meta name="pourmind-standalone" content="true">')
 html = html.replace('<link rel="stylesheet" href="styles.css">', '<style>' + (root / 'styles.css').read_text() + '</style>')
 html = re.sub(r'\s*<link[^>]+(?:rel="manifest"|rel="apple-touch-icon"|rel="icon")[^>]*>', '', html)
-for filename in ['data.js', 'methods.js', 'learning.js', 'academy-data.js', 'academy.js', 'discovery-data.js', 'discovery.js', 'app.js', 'mobile.js']:
+for filename in ['data.js', 'methods.js', 'learning.js', 'academy-data.js', 'academy.js', 'discovery-data.js', 'discovery.js', 'vendor/ocr/tesseract.min.js', 'scanner.js', 'app.js', 'mobile.js']:
     script = (root / filename).read_text().replace('</script', '<\\/script')
     if filename == 'data.js':
         for photo in json.loads((root / 'photo-files.json').read_text()):
@@ -25,14 +25,22 @@ for filename in ['data.js', 'methods.js', 'learning.js', 'academy-data.js', 'aca
             uri = 'data:' + mime + ';base64,' + base64.b64encode((root / photo).read_bytes()).decode()
             script = script.replace(json.dumps(photo), json.dumps(uri))
     html = html.replace(f'<script src="{filename}" defer></script>', '<script defer>\n' + script + '\n</script>')
+ocr = {
+    'worker': (root / 'vendor/ocr/worker.min.js').read_text(),
+    'core': (root / 'vendor/ocr/tesseract-core-lstm.wasm.js').read_text(),
+    'language': base64.b64encode((root / 'vendor/ocr/eng.traineddata.gz').read_bytes()).decode(),
+}
+asset_script = '<script defer>globalThis.POURMIND_OCR_ASSETS = ' + json.dumps(ocr, ensure_ascii=True).replace('</script', '<\\/script') + ';</script>'
+html = html.replace('<script defer>\n' + (root / 'scanner.js').read_text().replace('</script', '<\\/script'), asset_script + '<script defer>\n' + (root / 'scanner.js').read_text().replace('</script', '<\\/script'))
 # Inline scripts run after the document exists; defer only applies to external scripts.
 scripts = re.findall(r'<script defer>[\s\S]*?</script>', html)
 html = re.sub(r'\s*<script defer>[\s\S]*?</script>', '', html)
 html = html.replace('</body>', '\n' + '\n'.join(scripts) + '\n</body>')
 (args.output / 'PourMind-Mobile.html').write_text(html)
 
-files = ['index.html', 'styles.css', 'data.js', 'methods.js', 'learning.js', 'academy-data.js', 'academy.js', 'discovery-data.js', 'discovery.js', 'app.js', 'mobile.js', 'sw.js', 'wines.html', 'release.json', 'manifest.webmanifest']
+files = ['index.html', 'styles.css', 'data.js', 'methods.js', 'learning.js', 'academy-data.js', 'academy.js', 'discovery-data.js', 'discovery.js', 'vendor/ocr/tesseract.min.js', 'scanner.js', 'app.js', 'mobile.js', 'sw.js', 'wines.html', 'release.json', 'manifest.webmanifest']
 files += ['icons/' + name for name in ['apple-touch-icon.png', 'icon-192.png', 'icon-512.png', 'icon-maskable-512.png']]
+files += [str(path.relative_to(root)) for path in sorted((root / 'vendor/ocr').iterdir()) if path.is_file() and str(path.relative_to(root)) not in files]
 files += ['photo-files.json'] + json.loads((root / 'photo-files.json').read_text())
 files += ['recipes/photo-map.json', 'recipes/bar-assistant-LICENSE.txt', 'recipes/opendrinks-LICENSE.txt', 'THIRD_PARTY_NOTICES.md']
 with zipfile.ZipFile(args.output / 'PourMind-iPhone-Test.zip', 'w', zipfile.ZIP_DEFLATED, compresslevel=9) as archive:
@@ -46,7 +54,7 @@ with zipfile.ZipFile(args.output / 'PourMind-iPhone-Test.zip', 'w', zipfile.ZIP_
 with zipfile.ZipFile(args.output / 'PourMind-Try-It.zip', 'w', zipfile.ZIP_DEFLATED, compresslevel=9) as archive:
     archive.writestr('PourMind-Try-It/PourMind.html', html)
     archive.write(root / 'tools/TRY_IT.txt', 'PourMind-Try-It/START_HERE.txt')
-    for filename in ['THIRD_PARTY_NOTICES.md', 'recipes/photo-map.json', 'recipes/bar-assistant-LICENSE.txt', 'recipes/opendrinks-LICENSE.txt']:
+    for filename in [str(path.relative_to(root)) for path in sorted((root / 'vendor/ocr').iterdir()) if path.name.endswith(('.txt', '.json'))] + ['THIRD_PARTY_NOTICES.md', 'recipes/photo-map.json', 'recipes/bar-assistant-LICENSE.txt', 'recipes/opendrinks-LICENSE.txt']:
         archive.write(root / filename, 'PourMind-Try-It/' + filename)
 print('Created:', args.output / 'PourMind-Try-It.zip')
 print('Created:', args.output / 'PourMind-iPhone-Test.zip')

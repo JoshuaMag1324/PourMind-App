@@ -21,6 +21,8 @@
   <script src="academy.js" defer></script>
   <script src="discovery-data.js" defer></script>
   <script src="discovery.js" defer></script>
+  <script src="vendor/ocr/tesseract.min.js" defer></script>
+  <script src="scanner.js" defer></script>
   <script src="app.js" defer></script>
   <script src="mobile.js" defer></script>
 </head>
@@ -30,7 +32,7 @@
     <div class="header-inner">
       <button class="brand" data-view="home" aria-label="PourMind home"><span class="brand-mark" aria-hidden="true"></span><span>POURMIND<small>THE ART OF A GOOD DRINK</small></span></button>
       <nav class="desktop-nav" aria-label="Main navigation">
-        <button data-view="home" aria-current="page">Discover</button><button data-view="recipes">Recipes</button><button data-view="bar">My bar</button><button data-view="learn">Learn</button><button data-view="community">Share</button>
+        <button data-view="home" aria-current="page">Discover</button><button data-view="recipes">Library</button><button data-view="bar">My bar</button><button data-view="learn">Learn</button><button data-view="community">Share</button>
       </nav>
       <button class="saved-button" data-view="saved" aria-label="Saved recipes"><span data-icon="bookmark"></span><span class="saved-label">Saved</span><span id="saved-count">0</span></button>
     </div>
@@ -38,7 +40,7 @@
   <main id="main" tabindex="-1"></main>
   <footer class="site-footer"><span>POURMIND</span><p>Good ingredients. A little curiosity. Your next favorite drink.</p><button class="text-button" id="install-help">Install on your phone</button><small>Enjoy the craft. Drink responsibly.</small></footer>
   <nav class="mobile-nav" aria-label="Mobile navigation">
-    <button data-view="home" aria-current="page"><span data-icon="home"></span>Discover</button><button data-view="recipes"><span data-icon="search"></span>Recipes</button><button data-view="bar"><span data-icon="bottle"></span>My bar</button><button data-view="learn"><span data-icon="book"></span>Learn</button><button data-view="community"><span data-icon="spark"></span>Share</button>
+    <button data-view="home" aria-current="page"><span data-icon="home"></span>Discover</button><button data-view="recipes"><span data-icon="search"></span>Library</button><button data-view="bar"><span data-icon="bottle"></span>My bar</button><button data-view="learn"><span data-icon="book"></span>Learn</button><button data-view="community"><span data-icon="spark"></span>Share</button>
   </nav>
   <dialog id="dialog" aria-labelledby="dialog-title"><button class="dialog-close icon-button" aria-label="Close dialog" data-action="close"><span data-icon="close"></span></button><div id="dialog-content"></div></dialog>
   <div class="toast" role="status" aria-live="polite" id="toast"></div>

@@ -23,7 +23,7 @@ The server process needs to be started again in each new task. The files are ret
 - `academy-data.js` and `academy.js`: lessons, guided recipes, journal and private recipe-file sharing
 - `discovery-data.js` and `discovery.js`: wine/spirits reference, cocktail families and food pairings
 
-Saved recipes, ingredients, and training progress are stored in this browser's local storage. There is no backend or account sync. The scan flow adds sample inventory, and the inspiration flow searches existing recipes; camera recognition and AI generation are not connected.
+Saved recipes, ingredients, and training progress are stored in this browser's local storage. There is no backend or account sync. Scan My Bar reads text from bottle-label photos on-device and requires review before adding items. It does not identify unlabeled objects by appearance. The inspiration flow searches existing recipes.
 
 ## Validation in the cloud environment
 
@@ -75,7 +75,7 @@ See [the app walkthrough](REVIEW.md). The education update was approved and publ
 
 ## Wine, spirits, families and food pairings
 
-Learn links to Cocktail families and Food pairings. My bar links to Spirits & wines. The reference includes 118 white, 110 red, four rosé, five sparkling and seven fortified entries (grape varieties and named regional styles, not individual producers). Each has tasting notes, body, acidity, sweetness, tannin, serving temperature and food ideas. Six distilled-spirit categories include named styles and linked cocktail examples.
+The Library tab groups Cocktails, Spirits, Wines, Cocktail families and Food pairings. My Bar contains only the user’s entered or confirmed inventory. The reference includes 118 white, 110 red, four rosé, five sparkling and seven fortified entries (grape varieties and named regional styles, not individual producers). Each has tasting notes, body, acidity, sweetness, tannin, serving temperature and food ideas. Six distilled-spirit categories include named styles and linked cocktail examples.
 
 Wine search covers names, aliases, regions and flavors, including accent-insensitive matching and the common Riesling misspelling “resling.” Results are paginated. Wine and spirit detail panels can add bottles to the existing private inventory without duplicates.
 
@@ -89,7 +89,7 @@ After building the mobile package, run `node tests/discovery-standalone.test.cjs
 
 ## Opening the latest wine library
 
-The home screen includes Wine library, and My bar includes Explore wines. `#wines` opens the reference with all wines selected. For an older installed app that still serves cached screens, open https://joshuamag1324.github.io/PourMind-App/wines.html. This online entry checks `release.json`, replaces only downloaded PourMind application files and registrations, then opens the latest wine screen. Favorites, inventory, quiz progress, academy progress and private drafts stay in local storage. A failed online release check leaves the existing offline files intact.
+The home screen includes Wine library, and Library → Wines groups the wine reference alongside Cocktails and Spirits. `#wines` opens the reference with all wines selected. For an older installed app that still serves cached screens, open https://joshuamag1324.github.io/PourMind-App/wines.html. This online entry checks `release.json`, replaces only downloaded PourMind application files and registrations, then opens the latest wine screen. Favorites, inventory, quiz progress, academy progress and private drafts stay in local storage. A failed online release check leaves the existing offline files intact.
 
 Run `node tests/wine-access.test.cjs` to reproduce the previously published education build’s stale-cache behavior and verify recovery and data retention. This test serves an isolated local fixture and uses the approved education commit from repository history.
 
@@ -100,3 +100,13 @@ Share https://joshuamag1324.github.io/PourMind-App/try.html. It offers the live 
 `python3 tools/build_mobile.py` produces the portable ZIP as well as the mobile hosting package and standalone HTML. The file and live site use separate browser storage. Sharing the package shares the app content; it does not include the sender’s private drafts, inventory or progress.
 
 Run `node tests/portable.test.cjs` after packaging. It extracts the actual ZIP and checks its embedded document, wines, images, lessons and recipe-file export without network requests. It attempts a local-file launch first; when cloud browser policy blocks file URLs, it reports that restriction and tests the document in the inline renderer instead. Local-file persistence is checked when the browser permits that mode.
+
+## My Bar and private label scanning
+
+My Bar contains only private inventory, manual entry and Scan My Bar. It has no sample-bottle button, wine promotion or catalogue sections. Existing stored inventory remains intact. The Library primary tab owns Cocktails, Spirits, Wines, Families and Pairings; all those sections highlight Library in the main navigation.
+
+Choose a photo or capture one on a phone. The scanner limits photos to 20 MB, accepts JPEG/PNG/WebP, scales large images and reads label text using the bundled Tesseract worker and English LSTM model. It matches familiar spirit/ingredient names and wine varieties, then shows editable, selectable suggestions. Nothing is saved until the user confirms. Duplicate inventory names are skipped. Unknown items can be typed into the review. Photos and OCR text are not uploaded or persisted. Closing the dialog cancels the result and terminates its worker.
+
+The hosted app precaches all OCR resources for offline use. The portable build embeds the worker, core and compressed model and exposes them as temporary Blob URLs, so scanning requires no external requests even in the self-contained document. The English reader works best with clear printed labels. Dark, curved, small, obstructed or non-English text can need correction; it does not recognize unlabelled objects by appearance.
+
+Run `node tests/scanner.test.cjs` (set `POURMIND_TEST_URL` for the local server) to check real OCR, unchanged inventory before confirmation, exclusions, editing, duplicates, persistence, cancellation, invalid files and layouts. Run `node tests/scanner-standalone.test.cjs` after packaging for actual OCR with embedded assets and zero external requests. The test image is an original controlled-label fixture; it does not establish accuracy for every real bar photo.

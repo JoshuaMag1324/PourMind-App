@@ -71,20 +71,33 @@ Approve this version to replace the live app, or request changes to the content 
 
 ## Cocktail families
 
-Open Learn → Cocktail families. Search by family or drink name, then explore structure, mixing method, variations and the measured recipes. Fifteen groups cover all 86 library recipes.
+Open Library → Cocktail families. Search by family or drink name, then explore structure, mixing method, variations and the measured recipes. Fifteen groups cover all 86 library recipes.
 
 ![Cocktail families on iPhone](review/10-cocktail-families.png)
 ![Family detail on iPhone](review/11-family-detail.png)
 
 ## Wines and spirits
 
-Open Wine library on the home screen, or My bar → Explore wines. [Open the latest wine library directly](https://joshuamag1324.github.io/PourMind-App/wines.html) if an older installed app is still showing cached screens. Search or filter 244 entries: 118 whites, 110 reds, four rosés, five sparkling and seven fortified styles. Every entry includes its typical taste, body, acidity, sweetness, tannin, serving range and food ideas. Expand the tasting guide for definitions, or add a wine to your private bar. Choose Spirits for six distilled-spirit categories and their named styles.
+Open Wine library on the home screen, or Library → Wines. [Open the latest wine library directly](https://joshuamag1324.github.io/PourMind-App/wines.html) if an older installed app is still showing cached screens. Search or filter 244 entries: 118 whites, 110 reds, four rosés, five sparkling and seven fortified styles. Every entry includes its typical taste, body, acidity, sweetness, tannin, serving range and food ideas. Expand the tasting guide for definitions, or add a wine to your private bar. Choose Spirits for six distilled-spirit categories and their named styles.
 
 ![Wine library on iPhone](review/12-wine-library.png)
 ![Riesling taste profile on iPhone](review/13-wine-detail.png)
 
 ## Food pairings
 
-Open Learn → Food pairings, choose a food group and switch between Wines and Cocktails. Every suggestion explains the match and opens the corresponding wine profile or measured cocktail recipe. Expand the pairing principles for guidance on acidity, tannin, sweetness and preparation.
+Open Library → Food pairings, choose a food group and switch between Wines and Cocktails. Every suggestion explains the match and opens the corresponding wine profile or measured cocktail recipe. Expand the pairing principles for guidance on acidity, tannin, sweetness and preparation.
 
 ![Food pairings on iPhone](review/14-food-pairings.png)
+
+## Personal My Bar and working photo label reader
+
+My Bar now shows only the items a user has entered or confirmed. Scan My Bar accepts a photo or phone-camera capture, processes printed label text privately on-device and opens an editable review. Only selected names are saved, with duplicates skipped. The photo and OCR text are discarded. Clear labels are required; the reader does not identify unlabeled objects by appearance.
+
+Library is a separate primary tab containing Cocktails, Spirits, Wines, Families and Pairings. The scanner is included in both downloadable builds and works offline after the hosted app finishes its initial download.
+
+These current screens show the new navigation and private scanner. The scan review uses the original controlled-label test image; its bottles are demonstration graphics, not a real user’s bar.
+
+![Personal inventory only](review/15-personal-my-bar.png)
+![Private photo label reader](review/16-private-scanner.png)
+![Actual OCR review with a controlled test image](review/17-scan-review.png)
+![Unified drink Library](review/18-unified-library.png)

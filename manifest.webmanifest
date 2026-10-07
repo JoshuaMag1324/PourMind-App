@@ -2,7 +2,7 @@
   "id": "./",
   "name": "PourMind — Your Home Bar",
   "short_name": "PourMind",
-  "description": "86 cocktail recipes, your bar inventory, saved favorites, and bartender training.",
+  "description": "Your private bar and bottle-label scanner, with cocktails, spirits, wines and guided learning.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
