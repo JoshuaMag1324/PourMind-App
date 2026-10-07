@@ -92,3 +92,11 @@ After building the mobile package, run `node tests/discovery-standalone.test.cjs
 The home screen includes Wine library, and My bar includes Explore wines. `#wines` opens the reference with all wines selected. For an older installed app that still serves cached screens, open https://joshuamag1324.github.io/PourMind-App/wines.html. This online entry checks `release.json`, replaces only downloaded PourMind application files and registrations, then opens the latest wine screen. Favorites, inventory, quiz progress, academy progress and private drafts stay in local storage. A failed online release check leaves the existing offline files intact.
 
 Run `node tests/wine-access.test.cjs` to reproduce the previously published education build’s stale-cache behavior and verify recovery and data retention. This test serves an isolated local fixture and uses the approved education commit from repository history.
+
+## Share the app for testing
+
+Share https://joshuamag1324.github.io/PourMind-App/try.html. It offers the live app for computers and phones, and a portable PC/Mac download at `downloads/PourMind-Try-It.zip`. Extract the ZIP, then open `PourMind.html` in Edge or Chrome. This self-contained file includes all scripts, styling and recipe photographs; it requires no server, Python installation or internet connection. It includes instructions and third-party credits.
+
+`python3 tools/build_mobile.py` produces the portable ZIP as well as the mobile hosting package and standalone HTML. The file and live site use separate browser storage. Sharing the package shares the app content; it does not include the sender’s private drafts, inventory or progress.
+
+Run `node tests/portable.test.cjs` after packaging. It extracts the actual ZIP and checks its embedded document, wines, images, lessons and recipe-file export without network requests. It attempts a local-file launch first; when cloud browser policy blocks file URLs, it reports that restriction and tests the document in the inline renderer instead. Local-file persistence is checked when the browser permits that mode.

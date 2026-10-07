@@ -1,0 +1,38 @@
+POURMIND — TRY IT ON YOUR COMPUTER
+
+1. Extract / unzip this entire package.
+2. Double-click PourMind.html in the extracted folder.
+3. If asked which app to use, choose Microsoft Edge or Google Chrome.
+
+No installation, account or server is required. Recipes, pictures, lessons,
+wines and food pairings are included and can be explored without internet.
+To retain your favorites, bar and learning progress, keep using the same
+file location and browser. Avoid private / incognito mode. If browser
+storage is unavailable, the app explains that entries last for this visit.
+Recipe and journal downloads can retain work for later use.
+
+TRY THESE FEATURES
+
+- Wine library: search Riesling or Chardonnay and read its tasting profile.
+- Recipes: open Daiquiri, follow its method and save it as a favorite.
+- Learn: start a lesson, try a guided recipe or explore cocktail families.
+- Food pairings: choose a food, then compare wine and cocktail suggestions.
+- Share: create a private recipe and download its recipe file to exchange.
+
+SEND TO FRIENDS
+
+Send the complete PourMind-Try-It.zip file, or share this page:
+https://joshuamag1324.github.io/PourMind-App/try.html
+
+ON IPHONE OR OTHER PHONES
+
+Use the live browser app, rather than opening the downloaded HTML in Files:
+https://joshuamag1324.github.io/PourMind-App/
+
+On iPhone, open in Safari, tap Share, then Add to Home Screen.
+Your saved data stays on the device and browser where you create it.
+The PC file and live website have separate saved collections. This test
+app has no accounts, public feed or automatic cloud sync.
+
+This package is a browser app. It is not an App Store or TestFlight build.
+Source and image credits are included in THIRD_PARTY_NOTICES.md and recipes/.

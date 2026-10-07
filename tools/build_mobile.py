@@ -42,5 +42,12 @@ with zipfile.ZipFile(args.output / 'PourMind-iPhone-Test.zip', 'w', zipfile.ZIP_
     archive.write(root / 'tools' / 'start_testing.py', 'PourMind-iPhone-Test/start_testing.py')
     archive.writestr('PourMind-iPhone-Test/Start-Windows.bat', '@echo off\r\ncd /d "%~dp0"\r\npy -3 start_testing.py\r\npause\r\n')
     archive.writestr('PourMind-iPhone-Test/Start-Mac.command', '#!/bin/sh\ncd "$(dirname "$0")"\npython3 start_testing.py\n')
+# A portable PC/Mac package opens directly, without the local Python server.
+with zipfile.ZipFile(args.output / 'PourMind-Try-It.zip', 'w', zipfile.ZIP_DEFLATED, compresslevel=9) as archive:
+    archive.writestr('PourMind-Try-It/PourMind.html', html)
+    archive.write(root / 'tools/TRY_IT.txt', 'PourMind-Try-It/START_HERE.txt')
+    for filename in ['THIRD_PARTY_NOTICES.md', 'recipes/photo-map.json', 'recipes/bar-assistant-LICENSE.txt', 'recipes/opendrinks-LICENSE.txt']:
+        archive.write(root / filename, 'PourMind-Try-It/' + filename)
+print('Created:', args.output / 'PourMind-Try-It.zip')
 print('Created:', args.output / 'PourMind-iPhone-Test.zip')
 print('Created:', args.output / 'PourMind-Mobile.html')
