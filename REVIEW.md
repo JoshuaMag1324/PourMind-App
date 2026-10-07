@@ -78,7 +78,7 @@ Open Learn → Cocktail families. Search by family or drink name, then explore s
 
 ## Wines and spirits
 
-Open My bar → Spirits & wines. Search or filter 244 entries: 118 whites, 110 reds, four rosés, five sparkling and seven fortified styles. Every entry includes its typical taste, body, acidity, sweetness, tannin, serving range and food ideas. Expand the tasting guide for definitions, or add a wine to your private bar. Choose Spirits for six distilled-spirit categories and their named styles.
+Open Wine library on the home screen, or My bar → Explore wines. [Open the latest wine library directly](https://joshuamag1324.github.io/PourMind-App/wines.html) if an older installed app is still showing cached screens. Search or filter 244 entries: 118 whites, 110 reds, four rosés, five sparkling and seven fortified styles. Every entry includes its typical taste, body, acidity, sweetness, tannin, serving range and food ideas. Expand the tasting guide for definitions, or add a wine to your private bar. Choose Spirits for six distilled-spirit categories and their named styles.
 
 ![Wine library on iPhone](review/12-wine-library.png)
 ![Riesling taste profile on iPhone](review/13-wine-detail.png)

@@ -86,3 +86,9 @@ Tasting descriptions are original educational summaries of typical styles, not b
 Edit `reference/white-wines.txt`, `reference/red-wines.txt`, `reference/wine-styles.txt` or `reference/knowledge.json`, then run `python3 tools/build_reference.py`. The compiler checks IDs, references, profile overrides and exact family coverage before generating `discovery-data.js`. Rebuild the mobile package and increment the service-worker cache revision when publishing.
 
 After building the mobile package, run `node tests/discovery-standalone.test.cjs` to check the self-contained HTML build, embedded recipe images, offline reference and storage fallback without any external requests.
+
+## Opening the latest wine library
+
+The home screen includes Wine library, and My bar includes Explore wines. `#wines` opens the reference with all wines selected. For an older installed app that still serves cached screens, open https://joshuamag1324.github.io/PourMind-App/wines.html. This online entry checks `release.json`, replaces only downloaded PourMind application files and registrations, then opens the latest wine screen. Favorites, inventory, quiz progress, academy progress and private drafts stay in local storage. A failed online release check leaves the existing offline files intact.
+
+Run `node tests/wine-access.test.cjs` to reproduce the previously published education build’s stale-cache behavior and verify recovery and data retention. This test serves an isolated local fixture and uses the approved education commit from repository history.

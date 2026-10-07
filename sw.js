@@ -1,5 +1,5 @@
 'use strict';
-const CACHE = 'pourmind-mobile-v5';
+const CACHE = 'pourmind-mobile-v6';
 const FILES = [
   './', './index.html', './styles.css', './data.js', './methods.js', './learning.js', './academy-data.js', './academy.js', './app.js', './discovery-data.js', './discovery.js',
   './mobile.js', './manifest.webmanifest', './photo-files.json', './icons/apple-touch-icon.png',
@@ -11,7 +11,7 @@ self.addEventListener('install', event => {
     if (!response.ok) throw new Error('Photo catalogue unavailable');
     const photos = await response.json();
     const cache = await caches.open(CACHE);
-    await cache.addAll([...FILES, ...photos.map(path => './' + path)]);
+    await cache.addAll([...FILES, ...photos.map(path => './' + path)].map(path => new Request(path, {cache:'reload'})));
     await self.skipWaiting();
   })());
 });
@@ -20,6 +20,10 @@ self.addEventListener('activate', event => {
 });
 self.addEventListener('fetch', event => {
   if (event.request.method !== 'GET' || new URL(event.request.url).origin !== self.location.origin) return;
+  if (['wines.html','release.json'].includes(new URL(event.request.url).pathname.split('/').pop())) {
+    event.respondWith(fetch(event.request, {cache:'no-store'}));
+    return;
+  }
   if (event.request.mode === 'navigate') {
     event.respondWith(fetch(event.request).catch(() => caches.open(CACHE).then(cache => cache.match('./index.html'))));
     return;

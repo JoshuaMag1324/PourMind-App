@@ -83,3 +83,9 @@ select:focus-visible,summary:focus-visible {outline:2px solid var(--gold);outlin
 .discovery-links {display:flex;gap:12px;flex-wrap:wrap;margin:-15px 0 24px}
 .discovery-intro summary,.pairing-principles summary {cursor:pointer;font-weight:600;min-height:26px}
 .pairing-principles {margin-top:22px}
+
+.wine-entry {display:flex;gap:24px;align-items:center;justify-content:space-between;margin-bottom:24px}
+.wine-entry .eyebrow {margin-bottom:10px}
+.wine-entry p {margin-top:12px;max-width:570px}
+.wine-entry .button {flex:none}
+@media(max-width:640px){.wine-entry {align-items:flex-start;flex-direction:column;gap:18px}.wine-entry h2 {font-size:28px}}

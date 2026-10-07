@@ -27,6 +27,7 @@ globalThis.POURMIND_DISCOVERY_UI = (() => {
   function renderReference() {
     a.main.innerHTML = a.heading('Know what’s in your glass', 'Spirits & wines.', `${data.wines.length} grape varieties and named wine styles, plus distilled spirit categories. Find a flavor, learn the terms and discover what to serve alongside it.`) + barNav('reference') + `<section class="reference-tools"><label class="input-label" for="reference-search">Search wines and spirits</label><input class="input" id="reference-search" type="search" value="${e(query)}" placeholder="Try Riesling, Chardonnay or cherry" autocomplete="off"><div class="academy-tabs" role="group" aria-label="Wine and spirit categories">${['All wines','White','Red','Rosé','Sparkling','Fortified','Spirits'].map(c=>`<button class="filter" data-discovery="category" data-id="${c}" aria-pressed="${category===c}">${c}</button>`).join('')}</div></section><details class="surface tasting-glossary"><summary>How to read a tasting note</summary><dl><dt>Dry or sweet</dt><dd>Describes residual sugar. Fruity aromas can occur in a completely dry wine. Check the bottle’s style rather than guessing from the grape.</dd><dt>Body</dt><dd>The weight or texture of the wine in your mouth, from light to full.</dd><dt>Acidity</dt><dd>A mouthwatering, tart sensation. Higher acidity can refresh the palate alongside rich food.</dd><dt>Tannin</dt><dd>A grippy or mouth-drying sensation, especially in reds. It is different from “dry” meaning low sugar.</dd><dt>Oak and buttery notes</dt><dd>Oak can contribute vanilla and toast; buttery aromas often come from malolactic fermentation. They are separate influences.</dd><dt>Serving temperature</dt><dd>A starting range. Serving reds slightly cool can reveal more detail; very cold whites can hide aromas.</dd></dl><p>These are typical profiles, not a promise about every bottle. Region, vintage, ripeness, oak, skin contact and winemaking change the result. This library covers widely encountered and regional varieties and styles; it is not a list of every grape or producer in the world.</p></details><section id="reference-results" aria-label="Wine and spirit reference results">${referenceResults()}</section>`;
   }
+  function renderWines() { category='All wines';query='';limit=12;renderReference(); }
   function openWine(id) {
     const w = data.wines.find(x=>x.id===id); if (!w) return;
     const metrics = [['Body',w.body],['Acidity',w.acidity],['Sweetness',w.sweetness],['Tannin',w.tannin],['Serve',w.serve]];
@@ -86,5 +87,5 @@ globalThis.POURMIND_DISCOVERY_UI = (() => {
     });
     a.main.addEventListener('change',event=>{if(event.target.id==='pairing-food'){food=event.target.value;pairingLimit=9;renderPairings();document.querySelector('#pairing-food').focus();}});
   }
-  return {init,barNav,renderReference,renderFamilies,renderPairings};
+  return {init,barNav,renderWines,renderReference,renderFamilies,renderPairings};
 })();

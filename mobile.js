@@ -6,16 +6,19 @@
   status.setAttribute('role', 'status');
   status.setAttribute('aria-live', 'polite');
   footer.append(status);
+  const refreshLink = document.createElement('a');
+  refreshLink.className = 'text-button';refreshLink.href = './wines.html';refreshLink.textContent = 'Open latest wine library';
+  if (!document.querySelector('meta[name="pourmind-standalone"]')) footer.append(refreshLink);
   const standaloneFile = Boolean(document.querySelector('meta[name="pourmind-standalone"]'));
   let offlineReady = standaloneFile;
   function updateStatus() {
-    status.textContent = navigator.onLine ? (offlineReady ? 'Ready for offline use' : 'Mobile test build · v2.1') : (offlineReady ? 'Offline · Your recipes and bar are available' : 'Offline · Reconnect once to prepare offline access');
+    status.textContent = navigator.onLine ? (offlineReady ? 'Ready for offline use' : 'Mobile test build · v2.2') : (offlineReady ? 'Offline · Your recipes and bar are available' : 'Offline · Reconnect once to prepare offline access');
   }
   updateStatus();
   window.addEventListener('online', updateStatus);
   window.addEventListener('offline', updateStatus);
   if (!standaloneFile && 'serviceWorker' in navigator && window.isSecureContext && location.protocol !== 'file:') {
-    navigator.serviceWorker.register('./sw.js').then(() => navigator.serviceWorker.ready).then(() => {
+    navigator.serviceWorker.register('./sw.js', {updateViaCache:'none'}).then(() => navigator.serviceWorker.ready).then(() => {
       offlineReady = true;
       updateStatus();
     }).catch(() => {
