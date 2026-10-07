@@ -32,7 +32,10 @@ const storedSaved = readStore('saved', []);
 const saved = new Set(Array.isArray(storedSaved) ? storedSaved.filter(name => drinks.some(d => d[0] === name)) : []);
 const storedInventory = readStore('inventory', []);
 let inventory = Array.isArray(storedInventory) ? storedInventory.filter(x => typeof x === 'string' && x.length < 81) : [];
-let completedQuiz = readStore('training', false) === true;
+const { topics: learningTopics, questions: learningQuestions } = POURMIND_LEARNING;
+const legacyLearned = readStore('training', false) === true ? ['stir-old-fashioned', 'shake-daiquiri', 'express-orange'] : [];
+const storedLearned = readStore('learned-questions', legacyLearned);
+const learned = new Set(Array.isArray(storedLearned) ? storedLearned.filter(id => learningQuestions.some(q => q.id === id)) : []);
 let view = 'home', category = 'All', query = '', toastTimer;
 function toast(message) {
   const el = document.querySelector('#toast');
@@ -76,7 +79,11 @@ function renderBar() {
   main.innerHTML = heading('Make the most of what you have', 'Welcome to your bar.', 'A bottle of this. A squeeze of that. Keep your ingredients together and let the possibilities grow.') + `<div class="bar-layout"><section class="surface"><h2>Your ingredients <small>(${inventory.length})</small></h2><p>Add bottles, mixers, citrus, and the little extras.</p><form id="ingredient-form"><label class="input-label" for="ingredient">Ingredient name</label><div class="add-form"><input class="input" id="ingredient" placeholder="e.g. Gin or fresh limes" required maxlength="80" autocomplete="off"><button class="button" type="submit">Add ${icon('arrow')}</button></div></form><div id="inventory-list">${inventory.length ? inventory.map((name, i) => `<div class="inventory-item">${icon('bottle')}<span>${escapeHTML(name)}</span><button class="icon-button" data-action="remove-ingredient" data-index="${i}" aria-label="Remove ${escapeHTML(name)}">${icon('trash')}</button></div>`).join('') : '<div class="empty-state"><h3>A fresh start.</h3><p>Add your first ingredient above. There’s no perfect bar — just yours.</p></div>'}</div><p class="storage-note">${storageAvailable ? 'Your bar is saved on this device.' : 'Your bar is kept for this visit; browser storage is unavailable.'}</p></section><aside class="surface"><span class="demo-label">Scan demo</span><h2>Picture the possibilities.</h2><p>Try a sample bar to see how inventory works. Camera recognition is a future feature.</p><button class="button secondary" data-action="sample-bar">${icon('bottle')}Add sample ingredients</button><p class="storage-note">Adds sample bottles and mixers alongside your ingredients.</p></aside></div>`;
 }
 function renderLearn() {
-  main.innerHTML = heading('Confidence, one pour at a time', 'Learn the craft.', 'Build good habits with the techniques behind the classics. No fancy equipment required.') + `<section class="surface learn-card"><div><div class="eyebrow">The foundations</div><h2>A good drink begins with good technique.</h2><p style="margin-top:18px">Know when to stir, when to shake, and how to finish a cocktail well.</p><ul class="lesson-points"><li>${icon('check')}Stirring spirit-forward cocktails</li><li>${icon('check')}Shaking citrus and mixed ingredients</li><li>${icon('check')}Serving with the right finishing touch</li></ul></div><div class="training-summary"><span class="demo-label">Quick knowledge check</span><div><strong>${completedQuiz ? '3 / 3' : '3'}</strong></div><p>${completedQuiz ? 'Foundations completed. Keep your skills fresh with another round.' : 'Questions to build your bar confidence. Take it at your own pace.'}</p><div class="progress" aria-label="Foundations completed" role="progressbar" aria-valuemin="0" aria-valuemax="3" aria-valuenow="${completedQuiz ? 3 : 0}"><div style="width:${completedQuiz ? 100 : 0}%"></div></div><button class="button" data-action="quiz">${completedQuiz ? 'Practice again' : 'Try the quick quiz'} ${icon('arrow')}</button></div></section>`;
+  main.innerHTML = heading('Confidence, one pour at a time', 'Learn the craft.', 'Explore techniques, ingredients and cocktail families. Choose a topic or try a short mixed practice.') + `<section class="surface learn-card"><div><div class="eyebrow">Build your bar knowledge</div><h2>A little practice. A more confident pour.</h2><p style="margin-top:18px">${learningQuestions.length} questions across ${learningTopics.length} topics, with an explanation for every answer. Learn at your own pace and revisit anything you want to practice.</p><ul class="lesson-points"><li>${icon('check')}Six questions in each topic</li><li>${icon('check')}Ten questions in mixed practice</li><li>${icon('check')}${storageAvailable ? 'Your progress saved on this device' : 'Your progress kept for this visit'}</li></ul></div><div class="training-summary"><span class="demo-label">Your learning progress</span><div><strong>${learned.size} / ${learningQuestions.length}</strong></div><p>${learned.size === learningQuestions.length ? 'You’ve answered every question correctly. Keep your knowledge fresh with another practice.' : 'Questions answered correctly. Mixed practice starts with questions you haven’t completed yet.'}</p><div class="progress" aria-label="Questions answered correctly" role="progressbar" aria-valuemin="0" aria-valuemax="${learningQuestions.length}" aria-valuenow="${learned.size}"><div style="width:${100 * learned.size / learningQuestions.length}%"></div></div><button class="button" data-action="quiz">Try mixed practice ${icon('arrow')}</button></div></section><section class="learning-topics" aria-labelledby="topics-heading"><div class="section-head"><div><div class="eyebrow">One topic at a time</div><h2 id="topics-heading">Choose what to learn.</h2></div></div><div class="learning-grid">${learningTopics.map(topic => {
+    const questions = learningQuestions.filter(q => q.topic === topic.id);
+    const done = questions.filter(q => learned.has(q.id)).length;
+    return `<article class="surface learning-topic"><h3>${escapeHTML(topic.title)}</h3><p>${escapeHTML(topic.description)}</p><p class="topic-progress">${done} of ${questions.length} answered correctly</p><button class="button secondary" data-action="quiz" data-topic="${topic.id}" aria-label="${done === questions.length ? 'Practice' : 'Start'} ${escapeHTML(topic.title)}">${done === questions.length ? 'Practice again' : 'Start topic'} ${icon('arrow')}</button></article>`;
+  }).join('')}</div></section>`;
 }
 function renderView(next, focus = true) {
   view = next;
@@ -125,23 +132,42 @@ function openInspiration() {
   openDialog(`<div class="dialog-body"><span class="demo-label">Recipe inspiration · Local demo</span><h2 id="dialog-title">What are you in the mood for?</h2><p>Find a match from the cocktail library. Try a spirit, ingredient, or cocktail name.</p><form id="inspiration-form"><label class="input-label" for="inspiration">Your inspiration</label><input class="input" id="inspiration" placeholder="e.g. tequila, mint, or a sour" required maxlength="120"><div class="actions"><button class="button" type="submit">Find a recipe ${icon('arrow')}</button></div></form><p class="storage-note">This demo searches existing recipes. It doesn’t call an AI service.</p><div id="inspiration-results"></div></div>`);
   document.querySelector('#inspiration').focus();
 }
-const quiz = [
-  {question:'How do you mix a classic Old Fashioned?',options:['Shake it with ice','Stir it with ice','Blend it with crushed ice'],correct:1,explanation:'Stirring chills and dilutes spirit-forward drinks without adding the air and cloudiness of shaking.'},
-  {question:'Why do you shake a classic Daiquiri?',options:['To combine rum, lime, and syrup','To keep the ingredients separate','To warm the rum'],correct:0,explanation:'Shaking combines citrus and syrup with the spirit, while chilling, diluting, and lightly aerating the drink.'},
-  {question:'How do you add an orange peel to an Old Fashioned?',options:['Blend it into the drink','Express its oils over the surface','Leave it in the mixing tin'],correct:1,explanation:'Expressing the peel releases aromatic oils over the drink. Place it in the glass to finish.'}
-];
-let quizIndex = 0, quizAnswered = false;
+let quiz = [], quizIndex = 0, quizAnswered = false, quizTitle = '';
+function shuffled(items) {
+  const result = [...items];
+  for (let i = result.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [result[i], result[j]] = [result[j], result[i]];
+  }
+  return result;
+}
+function startQuiz(topicId) {
+  const topic = learningTopics.find(topic => topic.id === topicId);
+  const pool = topic ? learningQuestions.filter(q => q.topic === topic.id) : learningQuestions;
+  quiz = [...shuffled(pool.filter(q => !learned.has(q.id))), ...shuffled(pool.filter(q => learned.has(q.id)))].slice(0, topic ? pool.length : 10);
+  quizTitle = topic ? topic.title : 'Mixed practice';
+  quizIndex = 0;
+  showQuiz();
+}
 function showQuiz() {
   const q = quiz[quizIndex];
+  const topic = learningTopics.find(topic => topic.id === q.topic);
   quizAnswered = false;
-  openDialog(`<div class="dialog-body"><div class="eyebrow">The foundations · ${quizIndex + 1} of ${quiz.length}</div><h2 id="dialog-title">${q.question}</h2><div class="quiz-options">${q.options.map((answer, i) => `<button class="quiz-option" data-action="answer" data-answer="${i}" aria-pressed="false">${answer}</button>`).join('')}</div><div id="quiz-feedback" class="quiz-feedback" role="status" aria-live="polite"></div><button class="button" id="quiz-next" data-action="quiz-next" disabled>${quizIndex === quiz.length - 1 ? 'Finish practice' : 'Next question'} ${icon('arrow')}</button></div>`);
+  openDialog(`<div class="dialog-body"><div class="eyebrow">${escapeHTML(quizTitle)} · ${quizIndex + 1} of ${quiz.length}</div><p class="question-topic">${escapeHTML(topic.title)}</p><h2 id="dialog-title">${escapeHTML(q.question)}</h2><div class="quiz-options">${q.options.map((answer, i) => `<button class="quiz-option" data-action="answer" data-answer="${i}" aria-pressed="false">${escapeHTML(answer)}</button>`).join('')}</div><div id="quiz-feedback" class="quiz-feedback" role="status" aria-live="polite"></div><button class="button" id="quiz-next" data-action="quiz-next" disabled>${quizIndex === quiz.length - 1 ? 'Finish practice' : 'Next question'} ${icon('arrow')}</button></div>`);
 }
 function answerQuiz(answer, button) {
   if (quizAnswered) return;
+  const q = quiz[quizIndex];
   document.querySelectorAll('.quiz-option').forEach(el => el.setAttribute('aria-pressed', String(el === button)));
-  const correct = answer === quiz[quizIndex].correct;
-  document.querySelector('#quiz-feedback').textContent = correct ? `That’s right. ${quiz[quizIndex].explanation}` : 'Not quite. Give it another try — you’ve got this.';
-  if (correct) { quizAnswered = true; document.querySelector('#quiz-next').disabled = false; }
+  const correct = answer === q.correct;
+  document.querySelector('#quiz-feedback').textContent = correct ? `That’s right. ${q.explanation}` : `Not quite. ${q.explanation} Choose another answer to continue.`;
+  if (correct) {
+    quizAnswered = true;
+    learned.add(q.id);
+    writeStore('learned-questions', [...learned]);
+    if (view === 'learn') renderLearn();
+    document.querySelector('#quiz-next').disabled = false;
+  }
 }
 document.addEventListener('click', event => {
   const button = event.target.closest('button');
@@ -176,14 +202,14 @@ document.addEventListener('click', event => {
       if (persisted) toast('Sample ingredients added to your bar.');
       break;
     }
-    case 'quiz': quizIndex = 0; showQuiz(); break;
+    case 'quiz': startQuiz(button.dataset.topic); break;
     case 'answer': answerQuiz(Number(button.dataset.answer), button); break;
     case 'quiz-next':
       if (!quizAnswered) return;
       if (++quizIndex < quiz.length) showQuiz();
       else {
-        completedQuiz = true; writeStore('training', true); renderLearn();
-        openDialog(`<div class="dialog-body"><div class="eyebrow">A little more confident</div><h2 id="dialog-title">You’ve got the foundations.</h2><p>Stir for clarity. Shake to combine. Finish with aroma. Three good habits for your next great cocktail.</p><div class="actions"><button class="button" data-view="recipes">Put it into practice ${icon('arrow')}</button></div></div>`);
+        renderLearn();
+        openDialog(`<div class="dialog-body"><div class="eyebrow">A little more confident</div><h2 id="dialog-title">Practice complete.</h2><p>You answered all ${quiz.length} questions in this round correctly. Your total progress is ${learned.size} of ${learningQuestions.length}. Choose another topic or repeat a mixed practice to keep learning.</p><div class="actions"><button class="button secondary" data-view="learn">Choose another topic</button><button class="button secondary" data-action="quiz">Try mixed practice</button><button class="button" data-view="recipes">Put it into practice ${icon('arrow')}</button></div></div>`);
       }
       break;
   }

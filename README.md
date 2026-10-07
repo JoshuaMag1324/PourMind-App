@@ -19,6 +19,7 @@ The server process needs to be started again in each new task. The files are ret
 - `app.js`: navigation, search, favorites, inventory, dialogs, and quiz
 - `data.js`: generated catalogue of measured recipes and named local images
 - `methods.js`: cocktail-specific methods and related recipe families
+- `learning.js`: 30 educational questions across five topics
 
 Saved recipes, ingredients, and training progress are stored in this browser's local storage. There is no backend or account sync. The scan flow adds sample inventory, and the inspiration flow searches existing recipes; camera recognition and AI generation are not connected.
 
@@ -50,3 +51,9 @@ See [phone testing instructions](tools/PHONE_TESTING.md) for Safari installation
 ## Editing recipes and photos
 
 Edit `recipes/catalogue.txt` and `recipes/photo-map.json`, then run `python3 tools/build_catalogue.py` and `node tests/catalogue.test.cjs`. Each of the 86 drinks has measured ingredients, explicit steps, serving notes and a named image. The compiler checks missing/duplicate pairs and image checksums, and writes `data.js` plus the offline photo manifest. See `THIRD_PARTY_NOTICES.md` for source credits. Rebuild the mobile package after changes. Increment the service worker cache revision when publishing a new catalogue.
+
+## Learning practice
+
+Learn includes five six-question topics and ten-question mixed rounds. Every response includes an explanation; learners can retry incorrect answers before continuing. Correct answers save immediately on this device, and repeated answers do not inflate progress. Mixed practice prioritizes unfinished questions. Completion of the original quiz credits its three original questions.
+
+With the local server on port 8005, run `node tests/learning.test.cjs`. Set `POURMIND_TEST_URL` to test another local or published HTTPS address. The browser test checks all 30 questions, topic and mixed rounds, explanations, retry behavior, persistence, legacy progress, offline access and mobile layouts. It uses the environment’s installed Playwright and Chromium.

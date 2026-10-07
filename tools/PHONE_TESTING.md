@@ -29,7 +29,7 @@ This HTTP mode supports browsing and device-local saving. Installation and servi
 - **Recipes:** search for `lime`, filter by Gin, and open a recipe.
 - **Favorites:** save Negroni, open Saved, then close and reopen the app.
 - **My bar:** add `Gin`, add sample ingredients, remove an ingredient, and reopen the app.
-- **Learn:** finish all three quiz questions. Try an incorrect answer first.
+- **Learn:** choose one of five topics (six questions each), or try a ten-question mixed practice. Try an incorrect answer to read the explanation, then answer correctly. Close and reopen to check your progress is retained.
 - **Inspiration:** search for `tequila` and open one of the suggested recipes.
 - **Offline:** after the HTTPS app reports ready, enable airplane mode and reload. Browse recipes and add a favorite.
 

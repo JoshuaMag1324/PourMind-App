@@ -18,3 +18,5 @@ body{min-height:100dvh;-webkit-tap-highlight-color:transparent}
 @media(max-width:640px){input{font-size:16px!important}}
 
 .photo-credit{font-size:10px!important;margin-bottom:20px;overflow-wrap:anywhere}.serving-note{margin-top:20px}.recipe-reference{margin-top:18px}.recipe-reference a{color:var(--gold)}
+
+.learning-topics{margin-top:36px}.learning-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.learning-topic{display:flex;flex-direction:column;align-items:flex-start}.learning-topic h3{font-size:26px}.learning-topic>p{margin:12px 0}.learning-topic .topic-progress{font-size:12px;color:var(--gold);margin-top:auto;padding-top:16px}.learning-topic .button{margin-top:4px}.question-topic{margin-bottom:14px!important;font-size:11px!important;color:var(--gold)}@media(max-width:640px){.learning-grid{grid-template-columns:1fr}.learning-topic h3{font-size:24px}}
