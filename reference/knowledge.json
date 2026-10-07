@@ -1,0 +1,972 @@
+{
+  "profiles": {
+    "A": {
+      "body": "Light to medium",
+      "acidity": "High",
+      "sweetness": "Usually dry",
+      "tannin": "Low",
+      "serve": "8–12°C / 46–54°F",
+      "foods": [
+        "shellfish",
+        "fish",
+        "salads",
+        "vegetables"
+      ]
+    },
+    "B": {
+      "body": "Medium",
+      "acidity": "Medium to high",
+      "sweetness": "Usually dry",
+      "tannin": "Low",
+      "serve": "10–12°C / 50–54°F",
+      "foods": [
+        "poultry",
+        "fish",
+        "cream",
+        "vegetables"
+      ]
+    },
+    "C": {
+      "body": "Light to medium",
+      "acidity": "High",
+      "sweetness": "Dry to sweet; check the bottle",
+      "tannin": "Low",
+      "serve": "8–12°C / 46–54°F",
+      "foods": [
+        "spicy",
+        "poultry",
+        "salads"
+      ]
+    },
+    "D": {
+      "body": "Medium to full",
+      "acidity": "Medium",
+      "sweetness": "Usually dry",
+      "tannin": "Low",
+      "serve": "10–14°C / 50–57°F",
+      "foods": [
+        "cream",
+        "poultry",
+        "fish"
+      ]
+    },
+    "L": {
+      "body": "Medium to full",
+      "acidity": "Low to medium",
+      "sweetness": "Dry to off-dry; check the bottle",
+      "tannin": "Low",
+      "serve": "8–12°C / 46–54°F",
+      "foods": [
+        "spicy",
+        "cheese",
+        "vegetables"
+      ]
+    },
+    "E": {
+      "body": "Light to medium",
+      "acidity": "Medium to high",
+      "sweetness": "Usually dry",
+      "tannin": "Low to medium",
+      "serve": "12–16°C / 54–61°F",
+      "foods": [
+        "poultry",
+        "pork",
+        "fish",
+        "vegetables"
+      ]
+    },
+    "F": {
+      "body": "Medium to full",
+      "acidity": "Medium to high",
+      "sweetness": "Usually dry",
+      "tannin": "Medium",
+      "serve": "14–18°C / 57–64°F",
+      "foods": [
+        "pork",
+        "tomato",
+        "vegetables",
+        "cheese"
+      ]
+    },
+    "G": {
+      "body": "Full",
+      "acidity": "Medium to high",
+      "sweetness": "Usually dry",
+      "tannin": "Medium to high",
+      "serve": "16–18°C / 61–64°F",
+      "foods": [
+        "beef",
+        "cheese",
+        "vegetables"
+      ]
+    },
+    "H": {
+      "body": "Medium to full",
+      "acidity": "High",
+      "sweetness": "Usually dry",
+      "tannin": "High",
+      "serve": "14–18°C / 57–64°F",
+      "foods": [
+        "tomato",
+        "beef",
+        "vegetables"
+      ]
+    },
+    "J": {
+      "body": "Medium to full",
+      "acidity": "Medium",
+      "sweetness": "Usually dry; ripe fruit is not sugar",
+      "tannin": "Medium",
+      "serve": "14–18°C / 57–64°F",
+      "foods": [
+        "barbecue",
+        "beef",
+        "pork"
+      ]
+    },
+    "R": {
+      "body": "Light to medium",
+      "acidity": "Medium to high",
+      "sweetness": "Usually dry",
+      "tannin": "Low",
+      "serve": "8–12°C / 46–54°F",
+      "foods": [
+        "fish",
+        "poultry",
+        "vegetables",
+        "salads"
+      ]
+    },
+    "K": {
+      "body": "Light to medium",
+      "acidity": "High",
+      "sweetness": "Usually dry in brut styles",
+      "tannin": "Low",
+      "serve": "6–10°C / 43–50°F",
+      "foods": [
+        "fried",
+        "shellfish",
+        "cheese"
+      ]
+    },
+    "S": {
+      "body": "Medium to full",
+      "acidity": "Medium to high",
+      "sweetness": "Sweet",
+      "tannin": "Low",
+      "serve": "8–12°C / 46–54°F",
+      "foods": [
+        "dessert",
+        "cheese"
+      ]
+    },
+    "T": {
+      "body": "Full",
+      "acidity": "Medium",
+      "sweetness": "Sweet",
+      "tannin": "Medium",
+      "serve": "14–18°C / 57–64°F",
+      "foods": [
+        "chocolate",
+        "cheese",
+        "dessert"
+      ]
+    },
+    "P": {
+      "body": "Full",
+      "acidity": "Medium",
+      "sweetness": "Sweet",
+      "tannin": "Low to medium",
+      "serve": "12–16°C / 54–61°F",
+      "foods": [
+        "dessert",
+        "chocolate",
+        "cheese"
+      ]
+    },
+    "Q": {
+      "body": "Light to medium",
+      "acidity": "Medium",
+      "sweetness": "Dry",
+      "tannin": "Low",
+      "serve": "6–10°C / 43–50°F",
+      "foods": [
+        "shellfish",
+        "cheese",
+        "vegetables"
+      ]
+    },
+    "O": {
+      "body": "Medium to full",
+      "acidity": "Medium",
+      "sweetness": "Dry in the traditional dry style",
+      "tannin": "Low",
+      "serve": "12–16°C / 54–61°F",
+      "foods": [
+        "cheese",
+        "vegetables",
+        "pork"
+      ]
+    }
+  },
+  "foods": [
+    {
+      "id": "shellfish",
+      "title": "Shellfish",
+      "examples": "Oysters, mussels, prawns and gently dressed seafood"
+    },
+    {
+      "id": "fish",
+      "title": "Fish",
+      "examples": "Grilled white fish, butter-roasted fish or richer salmon"
+    },
+    {
+      "id": "poultry",
+      "title": "Poultry",
+      "examples": "Roast chicken, turkey or gently spiced poultry"
+    },
+    {
+      "id": "pork",
+      "title": "Pork & charcuterie",
+      "examples": "Roast pork, cured meats or a savory pork dish"
+    },
+    {
+      "id": "beef",
+      "title": "Beef & lamb",
+      "examples": "Steak, lamb chops or a rich slow-cooked dish"
+    },
+    {
+      "id": "spicy",
+      "title": "Spicy dishes",
+      "examples": "Chili heat, aromatic curries or spicy noodles"
+    },
+    {
+      "id": "vegetables",
+      "title": "Vegetables & mushrooms",
+      "examples": "Grilled vegetables, mushroom dishes or vegetarian mains"
+    },
+    {
+      "id": "salads",
+      "title": "Salads & herbs",
+      "examples": "Fresh greens, herbs and citrus or vinaigrette dressing"
+    },
+    {
+      "id": "cream",
+      "title": "Creamy dishes",
+      "examples": "Cream sauces, buttery preparations or rich risotto"
+    },
+    {
+      "id": "cheese",
+      "title": "Cheese",
+      "examples": "Fresh, creamy, aged or strong cheeses"
+    },
+    {
+      "id": "tomato",
+      "title": "Tomato & pasta",
+      "examples": "Tomato sauces, pizza or a tomato-based pasta dish"
+    },
+    {
+      "id": "barbecue",
+      "title": "Barbecue",
+      "examples": "Smoky grilled food with a mild or gently sweet sauce"
+    },
+    {
+      "id": "fried",
+      "title": "Fried & crispy food",
+      "examples": "Tempura, fried chicken or crisp potato dishes"
+    },
+    {
+      "id": "dessert",
+      "title": "Fruit & pastries",
+      "examples": "Fruit tarts, honeyed desserts or nutty pastries"
+    },
+    {
+      "id": "chocolate",
+      "title": "Chocolate",
+      "examples": "Dark chocolate, cocoa-rich desserts or chocolate pastries"
+    }
+  ],
+  "reasons": {
+    "A": {
+      "shellfish": "Bright acidity and restrained fruit can complement briny shellfish. Choose a fresh, dry bottle.",
+      "fish": "Fresh acidity works with lemon-dressed or simply grilled fish without overwhelming delicate flavors.",
+      "salads": "A crisp dry style can meet the acidity of a citrus or vinaigrette dressing.",
+      "vegetables": "Citrus and herbal notes can echo fresh herbs and lighter vegetable dishes."
+    },
+    "B": {
+      "poultry": "A rounded white with freshness can match roast poultry without dominating it.",
+      "fish": "Pear and citrus notes suit roasted fish; choose a fresher bottle for a lighter preparation.",
+      "cream": "Some texture matches a creamy sauce, while a fresh finish keeps the pairing lively.",
+      "vegetables": "A medium-bodied white can meet roasted vegetables and gently savory flavors."
+    },
+    "C": {
+      "spicy": "Choose an off-dry, lower-alcohol bottle: a little sweetness can soften the impression of chili heat. A dry version behaves differently.",
+      "poultry": "A dry style suits roast poultry; an off-dry aromatic style can suit a gently spiced sauce.",
+      "salads": "Choose a dry, high-acid example to complement fresh herbs and an acidic dressing."
+    },
+    "D": {
+      "cream": "A fuller white can match a buttery or creamy texture. Oak and butter notes work best when they echo the preparation.",
+      "poultry": "Riper fruit and a fuller texture can stand alongside roast chicken or a richer poultry sauce.",
+      "fish": "Choose butter-roasted or richer fish for a fuller white; lean raw seafood usually calls for a lighter style."
+    },
+    "L": {
+      "spicy": "Choose an off-dry bottle with modest alcohol for aromatic spice. Dry, high-alcohol examples may intensify heat.",
+      "cheese": "Perfumed fruit and a broad texture can complement stronger or washed-rind cheeses. Check the bottle’s sweetness.",
+      "vegetables": "Floral and spice notes can echo aromatic vegetable dishes rather than a sharp vinaigrette."
+    },
+    "E": {
+      "poultry": "Lighter body and gentler tannins let poultry remain the focus.",
+      "pork": "Freshness can balance roast pork’s richness without a very heavy tannic finish.",
+      "fish": "Choose richer salmon or tuna preparations: gentle tannins are a better starting point than a powerful tannic red.",
+      "vegetables": "Fresh red fruit and earthy notes can complement mushrooms or lightly roasted vegetables."
+    },
+    "F": {
+      "pork": "Savory pork and charcuterie can meet medium-bodied red fruit and moderate tannins.",
+      "tomato": "Choose a fresher example so its acidity can keep pace with tomato sauce.",
+      "vegetables": "Roasted vegetables and mushrooms can match a red’s savory fruit and medium body.",
+      "cheese": "Aged or firm cheeses can meet moderate tannins and a fuller fruit profile."
+    },
+    "G": {
+      "beef": "Rich meat, fat and protein can soften the impression of firm tannins and match a full body.",
+      "cheese": "Firm, aged cheeses can meet a structured red more comfortably than very delicate fresh cheese.",
+      "vegetables": "Choose a substantial mushroom or roasted vegetable dish to match the wine’s body and savory flavors."
+    },
+    "H": {
+      "tomato": "High acidity is a useful match for a tomato-based sauce; the food should have enough substance for the tannins.",
+      "beef": "Rich meat and fat can balance firm tannins, while acidity refreshes the palate.",
+      "vegetables": "Earthy mushroom dishes can echo savory aromas; use a substantial preparation for stronger tannins."
+    },
+    "J": {
+      "barbecue": "Ripe fruit can complement smoky char and a mildly sweet sauce. Strong chili heat may clash with high alcohol.",
+      "beef": "A generous body and dark fruit can meet grilled beef or lamb.",
+      "pork": "Ripe fruit and spice notes can complement smoky or roasted pork preparations."
+    },
+    "R": {
+      "fish": "A fresh, lower-tannin rosé can bridge light seafood and richer grilled fish.",
+      "poultry": "Red-fruit freshness can complement roast poultry without a heavy tannic finish.",
+      "vegetables": "Fresh fruit and acidity suit Mediterranean vegetables and herb-led dishes.",
+      "salads": "Choose a dry, fresh style for citrus, herbs and a light vinaigrette."
+    },
+    "K": {
+      "fried": "Acidity and bubbles refresh the palate after a fatty, crispy bite.",
+      "shellfish": "Choose a dry sparkling style to complement delicate, saline shellfish.",
+      "cheese": "A fresh sparkling wine can contrast creamy cheese with acidity and bubbles."
+    },
+    "S": {
+      "dessert": "Choose a wine at least as sweet as the dessert; floral or stone-fruit notes can echo fruit and honeyed flavors.",
+      "cheese": "Sweetness can create a contrast with salty or stronger cheese. Match the wine’s intensity to the cheese."
+    },
+    "T": {
+      "chocolate": "Sweetness and dark-fruit flavor can complement cocoa-rich desserts. The wine should be at least as sweet as the food.",
+      "cheese": "A sweet, full-bodied style creates contrast with salty blue or strong cheese.",
+      "dessert": "A rich sweet style can match dried fruit or a substantial pastry. Compare the sweetness levels."
+    },
+    "P": {
+      "dessert": "Nutty, dried-fruit or caramel notes can echo nut pastries and caramelized desserts; match sweetness.",
+      "chocolate": "Choose a sufficiently sweet style for cocoa-rich desserts, especially when the wine shows dried fruit or caramel.",
+      "cheese": "Sweetness and concentrated flavor can balance salty or stronger cheeses."
+    },
+    "Q": {
+      "shellfish": "Dry, saline and savory notes can work alongside shellfish and salty seafood preparations.",
+      "cheese": "Dry savory flavors can complement salty hard cheese and almonds.",
+      "vegetables": "A savory dry style can complement olives, nuts and a vegetable-led tapas plate."
+    },
+    "O": {
+      "cheese": "Oxidative nutty notes and a dry finish can complement mature hard cheese.",
+      "vegetables": "Nutty, savory aromas can echo mushrooms and roasted vegetables.",
+      "pork": "A dry, savory style can complement cured meats or a rich pork preparation."
+    }
+  },
+  "families": [
+    {
+      "id": "old-fashioned",
+      "title": "Old Fashioned-style",
+      "structure": "Spirit + sweetener + bitters",
+      "taste": "Spirit-led, aromatic and gently sweet.",
+      "method": "Usually stir with ice; finish with an aromatic garnish.",
+      "variation": "Change the base spirit or sweetener while preserving its role. Sazerac and Japanese Cocktail are related patterns, with their own named specifications.",
+      "recipeFamilies": [
+        "Old Fashioned",
+        "Sazerac",
+        "Japanese Cocktail"
+      ]
+    },
+    {
+      "id": "martini",
+      "title": "Martini & vermouth-led",
+      "structure": "Base spirit + vermouth or aromatized wine",
+      "taste": "Clean, spirit-forward and often herbal.",
+      "method": "Usually stir and serve up; Vesper is a documented shaken exception.",
+      "variation": "Change the spirit or wine ratio intentionally. A Gibson uses an onion garnish; El Presidente is a rum-and-vermouth relative.",
+      "recipeFamilies": [
+        "Martini",
+        "Gibson",
+        "El Presidente"
+      ]
+    },
+    {
+      "id": "manhattan",
+      "title": "Manhattan-style",
+      "structure": "Spirit + sweet wine or amaro + bitters",
+      "taste": "Rich, aromatic and bittersweet.",
+      "method": "Stir, then serve up or in the specified rocks presentation.",
+      "variation": "Black Manhattan replaces vermouth with Averna. Vieux Carré combines rye, cognac, vermouth and an additional liqueur.",
+      "recipeFamilies": [
+        "Manhattan",
+        "Vieux Carré"
+      ]
+    },
+    {
+      "id": "negroni",
+      "title": "Negroni-style",
+      "structure": "Base spirit + bitter aperitif + aromatized wine",
+      "taste": "Bitter, herbal and spirit-forward.",
+      "method": "Stir and use the specified chilled or rocks presentation.",
+      "variation": "A Boulevardier changes gin to whiskey; White Negroni changes the bitter and wine components. Ratios are recipe-specific.",
+      "recipeFamilies": [
+        "Negroni"
+      ]
+    },
+    {
+      "id": "sours",
+      "title": "Classic sours",
+      "structure": "Spirit + citrus + sweetener",
+      "taste": "Bright acidity balanced by sweetness.",
+      "method": "Usually shake; egg-white foam is a separate optional choice in specified recipes.",
+      "variation": "Compare the original measured recipe before changing citrus, sweetener or base spirit. A fruit or wine addition changes the individual recipe.",
+      "recipeFamilies": [
+        "Sour",
+        "Gimlet",
+        "Cosmopolitan"
+      ]
+    },
+    {
+      "id": "daiquiri",
+      "title": "Daiquiri variations",
+      "structure": "Rum + lime + sweet component",
+      "taste": "Rum-led, fresh and citrusy.",
+      "method": "Shake classic versions; blend a specified frozen version.",
+      "variation": "Hemingway adds grapefruit and maraschino; Royal Bermuda Yacht Club uses falernum and curaçao. These are distinct measured variations.",
+      "recipeFamilies": [
+        "Daiquiri"
+      ]
+    },
+    {
+      "id": "margarita",
+      "title": "Margarita variations",
+      "structure": "Agave spirit + lime + sweet component",
+      "taste": "Bright, citrusy and agave-led.",
+      "method": "Shake; prepare the chosen rim and presentation before pouring.",
+      "variation": "Orange liqueur supplies sweetness in a classic serving. Tommy’s uses agave; mezcal or split bases change the character.",
+      "recipeFamilies": [
+        "Margarita"
+      ]
+    },
+    {
+      "id": "sidecar",
+      "title": "Sidecar & brandy sours",
+      "structure": "Brandy + citrus + liqueur or sweet component",
+      "taste": "Bright citrus with a rich brandy base.",
+      "method": "Shake and strain into the specified prepared glass.",
+      "variation": "Between the Sheets adds rum; Brandy Crusta includes extra aromatics and a characteristic citrus-peel serving.",
+      "recipeFamilies": [
+        "Sidecar"
+      ]
+    },
+    {
+      "id": "herbal-sours",
+      "title": "Herbal & liqueur sours",
+      "structure": "Spirit + citrus + flavorful liqueurs",
+      "taste": "Citrus balanced with herbal, floral or bitter flavor.",
+      "method": "Shake and strain; measure the liqueurs carefully.",
+      "variation": "Last Word and Paper Plane use equal-part recipes. Aviation uses different ratios and is not an equal-parts drink.",
+      "recipeFamilies": [
+        "Paper Plane",
+        "Last Word",
+        "Aviation"
+      ]
+    },
+    {
+      "id": "fizzes",
+      "title": "Collins & fizz-style",
+      "structure": "Sour mixture + a carbonated finish",
+      "taste": "Light, fresh and sparkling.",
+      "method": "Shake the non-carbonated mixture, then add bubbles gently.",
+      "variation": "Collins serves over ice; a Gin Fizz commonly uses no serving ice. French 75 adds Champagne rather than soda.",
+      "recipeFamilies": [
+        "Collins",
+        "Fizz",
+        "French 75"
+      ]
+    },
+    {
+      "id": "highballs",
+      "title": "Highballs & built long drinks",
+      "structure": "Base + mixer, with recipe-specific seasoning",
+      "taste": "Long, refreshing and mixer-led.",
+      "method": "Usually build over ice; some recipes shake non-carbonated ingredients first.",
+      "variation": "Mules use ginger beer; Rickey uses unsweetened soda; Bloody Mary is a savory, non-carbonated long drink. These are a teaching group, not one fixed formula.",
+      "recipeFamilies": [
+        "Highball",
+        "Mule",
+        "Rickey",
+        "Bloody Mary"
+      ]
+    },
+    {
+      "id": "mint",
+      "title": "Mint, juleps & swizzles",
+      "structure": "Base + mint + sweetener; citrus where specified",
+      "taste": "Fresh mint aroma and cold, refreshing texture.",
+      "method": "Press mint gently; churn or swizzle with the specified ice.",
+      "variation": "Julep has no sour structure; Mojito includes lime and soda; Queen’s Park Swizzle finishes with aromatic bitters.",
+      "recipeFamilies": [
+        "Julep",
+        "Mojito",
+        "Swizzle"
+      ]
+    },
+    {
+      "id": "tropical",
+      "title": "Tropical & tiki patterns",
+      "structure": "Rum with recipe-specific citrus, fruit or sweet modifiers",
+      "taste": "Fruit-led, complex or creamy depending on the recipe.",
+      "method": "Follow the individual shake or blend method and ice presentation.",
+      "variation": "This is a broad teaching group. Classic Mai Tai has no pineapple; Jungle Bird adds Campari, while Colada and Painkiller use cream of coconut.",
+      "recipeFamilies": [
+        "Mai Tai",
+        "Tiki",
+        "Colada"
+      ]
+    },
+    {
+      "id": "after-dinner",
+      "title": "Coffee, cream & after-dinner",
+      "structure": "Base + coffee, cream, cacao or mint modifier",
+      "taste": "Coffee-rich, creamy or aromatic depending on the drink.",
+      "method": "Follow the specific shake, stir or built method.",
+      "variation": "Black Russian contains no cream; White Russian does. Espresso Martini is a shaken coffee cocktail, and Stinger is cognac with white mint liqueur.",
+      "recipeFamilies": [
+        "Espresso Martini",
+        "Russian",
+        "Alexander",
+        "Stinger"
+      ]
+    },
+    {
+      "id": "modern-fruit",
+      "title": "Modern fruit & muddled variations",
+      "structure": "A base with recipe-specific fruit and sweet components",
+      "taste": "Fruit-led and variable in texture.",
+      "method": "Follow the named recipe; strain shaken drinks and retain fruit in a Caipiroska.",
+      "variation": "French Martini and Pornstar Martini are named modern drinks without vermouth. Caipiroska is a vodka-and-muddled-lime variation. This is a comparison group.",
+      "recipeFamilies": [
+        "French Martini",
+        "Pornstar Martini",
+        "Caipiroska"
+      ]
+    }
+  ],
+  "spirits": [
+    {
+      "id": "whiskey",
+      "name": "Whiskey",
+      "taste": "Grain, oak and warming spice; fruit, smoke and sweetness vary with grain, origin, aging and cask.",
+      "styles": [
+        [
+          "Bourbon",
+          "Corn-led whiskey, often with vanilla, caramel and oak; commonly rounded and rich."
+        ],
+        [
+          "Rye whiskey",
+          "Often peppery or herbal with grain and oak notes; sweetness and intensity vary."
+        ],
+        [
+          "Scotch whisky",
+          "Ranges from delicate malt and fruit to rich sherry-cask flavors or pronounced peat smoke."
+        ],
+        [
+          "Irish whiskey",
+          "Often approachable grain and fruit flavors; pot-still, malt and grain styles differ."
+        ],
+        [
+          "Japanese whisky",
+          "Styles vary from delicate fruit and oak to fuller or smoky expressions."
+        ]
+      ],
+      "recipes": [
+        "Old Fashioned",
+        "Manhattan",
+        "Whiskey Sour"
+      ]
+    },
+    {
+      "id": "gin",
+      "name": "Gin",
+      "taste": "Juniper-led with citrus, herbs and spice according to the botanical recipe.",
+      "styles": [
+        [
+          "London Dry",
+          "Typically dry, juniper-led and crisp; citrus and spice vary by producer."
+        ],
+        [
+          "Old Tom",
+          "Often rounder or slightly sweetened, with a softer impression."
+        ],
+        [
+          "Contemporary gin",
+          "Juniper remains part of gin, while other floral, citrus or herbal botanicals may stand out."
+        ],
+        [
+          "Navy strength",
+          "A higher-strength bottling; botanical intensity and dilution need attention."
+        ],
+        [
+          "Genever",
+          "A related Dutch/Belgian spirit, often showing maltier flavors; it is not interchangeable with every gin."
+        ]
+      ],
+      "recipes": [
+        "Dry Martini",
+        "Negroni",
+        "Tom Collins"
+      ]
+    },
+    {
+      "id": "rum",
+      "name": "Rum",
+      "taste": "Sugarcane-derived flavors ranging from light and fresh to rich molasses, tropical fruit, oak and spice.",
+      "styles": [
+        [
+          "White rum",
+          "Often light and fresh; some white rums are aged then filtered."
+        ],
+        [
+          "Aged rum",
+          "Can gain oak, vanilla, dried fruit and spice from maturation."
+        ],
+        [
+          "Dark rum",
+          "Color may reflect aging or added color; check the specific bottle’s sweetness and style."
+        ],
+        [
+          "Rhum agricole",
+          "Cane-juice rum can show grassy, herbal and earthy flavors."
+        ],
+        [
+          "Overproof rum",
+          "Higher strength; flavor and serving measures are recipe-specific."
+        ]
+      ],
+      "recipes": [
+        "Daiquiri",
+        "Mai Tai",
+        "Rum Old Fashioned"
+      ]
+    },
+    {
+      "id": "agave",
+      "name": "Tequila & mezcal",
+      "taste": "Agave, citrus, herbs and earth; aging and production influence oak, sweetness and smoke.",
+      "styles": [
+        [
+          "Blanco tequila",
+          "Usually fresh agave, citrus and herbal or peppery notes."
+        ],
+        [
+          "Reposado tequila",
+          "Aging can add gentle oak, vanilla and a rounder texture."
+        ],
+        [
+          "Añejo tequila",
+          "Longer aging often brings more oak, spice and a fuller impression."
+        ],
+        [
+          "Mezcal",
+          "Agave variety and production create diverse herbal, earthy, fruity or smoky styles."
+        ],
+        [
+          "Split agave base",
+          "A recipe can combine tequila and mezcal to balance fresh agave and the chosen mezcal’s character."
+        ]
+      ],
+      "recipes": [
+        "Margarita",
+        "Mezcal Margarita",
+        "Oaxacan Old Fashioned"
+      ]
+    },
+    {
+      "id": "vodka",
+      "name": "Vodka",
+      "taste": "Often restrained in aroma, with texture and subtle grain, mineral or other base-related differences.",
+      "styles": [
+        [
+          "Unflavored vodka",
+          "A relatively neutral base that lets mixers and modifiers stand out."
+        ],
+        [
+          "Citrus vodka",
+          "Adds lemon or other citrus character; sweetness varies."
+        ],
+        [
+          "Vanilla vodka",
+          "Adds vanilla aroma for specified dessert or fruit cocktails."
+        ],
+        [
+          "Other flavored vodka",
+          "Fruit, spice and sweetness vary; read the bottle before replacing a neutral base."
+        ]
+      ],
+      "recipes": [
+        "Moscow Mule",
+        "Espresso Martini",
+        "Cosmopolitan"
+      ]
+    },
+    {
+      "id": "brandy",
+      "name": "Brandy",
+      "taste": "Distilled fruit with possible oak, dried-fruit, spice and floral notes; the fruit source and aging matter.",
+      "styles": [
+        [
+          "Cognac",
+          "Grape brandy from the Cognac region, often with fruit, oak and spice shaped by aging."
+        ],
+        [
+          "Armagnac",
+          "Grape brandy from Gascony, often with robust fruit, spice and aging-related savory notes."
+        ],
+        [
+          "Pisco",
+          "A grape spirit with fruit or floral aromas; country and grape style matter."
+        ],
+        [
+          "Calvados",
+          "Apple or apple-and-pear brandy, with orchard fruit and possible oak notes."
+        ],
+        [
+          "Other fruit brandies",
+          "Cherry, plum, pear and other fruit spirits have distinct aromas and may be unaged."
+        ]
+      ],
+      "recipes": [
+        "Sidecar",
+        "Brandy Alexander",
+        "Japanese Cocktail"
+      ]
+    }
+  ],
+  "cocktailPairings": {
+    "shellfish": [
+      [
+        "Dry Martini",
+        "A dry, savory gin-and-vermouth serving can suit briny shellfish; keep the garnish and seasoning gentle."
+      ],
+      [
+        "Gin Rickey",
+        "Unsweetened lime and soda provide a light, fresh contrast to gently dressed seafood."
+      ],
+      [
+        "French 75",
+        "Citrus and bubbles can refresh the palate alongside a richer seafood bite."
+      ]
+    ],
+    "fish": [
+      [
+        "Gin Rickey",
+        "A light lime-and-soda structure leaves room for delicate fish."
+      ],
+      [
+        "Tom Collins",
+        "Lemon freshness can echo a citrus-dressed or grilled preparation."
+      ],
+      [
+        "Margarita",
+        "Lime and agave can complement grilled fish tacos; match rim salt to the dish."
+      ]
+    ],
+    "poultry": [
+      [
+        "Tom Collins",
+        "Fresh lemon and bubbles can balance roast poultry’s richness."
+      ],
+      [
+        "Daiquiri",
+        "A well-balanced citrus sour can complement grilled or gently seasoned chicken."
+      ],
+      [
+        "Whiskey Sour",
+        "A fuller whiskey sour can suit roasted poultry with a savory or lightly sweet glaze."
+      ]
+    ],
+    "pork": [
+      [
+        "Old Fashioned",
+        "Oak, bitters and restrained sweetness can echo roast or smoked pork."
+      ],
+      [
+        "Boulevardier",
+        "A bitter, whiskey-led serving can create contrast with a rich savory bite."
+      ],
+      [
+        "Paloma",
+        "Grapefruit and bubbles can refresh the palate after a fatty pork taco."
+      ]
+    ],
+    "beef": [
+      [
+        "Old Fashioned",
+        "A spirit-forward whiskey drink can match grilled meat and char."
+      ],
+      [
+        "Manhattan",
+        "Whiskey and sweet vermouth can echo a rich, savory beef preparation."
+      ],
+      [
+        "Negroni",
+        "A bitter, structured serving can contrast with fatty grilled food; personal preference matters."
+      ]
+    ],
+    "spicy": [
+      [
+        "Mojito",
+        "Use a balanced, lightly sweet serving for aromatic spice; alcohol can still intensify strong heat."
+      ],
+      [
+        "Piña Colada",
+        "Sweetness and a creamy texture can contrast with chili; the alcohol strength still matters."
+      ],
+      [
+        "Paloma",
+        "Fruit and a long serving can suit gently spicy tacos; it is not a guarantee against strong chili heat."
+      ]
+    ],
+    "vegetables": [
+      [
+        "Negroni",
+        "Herbal bitterness can complement grilled vegetables and a substantial savory dish."
+      ],
+      [
+        "Southside",
+        "Mint and citrus can echo herbs in a lighter vegetable preparation."
+      ],
+      [
+        "Bloody Mary",
+        "Savory tomato and seasoning can connect with roasted or vegetable-led food."
+      ]
+    ],
+    "salads": [
+      [
+        "Gin Rickey",
+        "A light, unsweetened citrus serving can meet a lemon dressing without a heavy finish."
+      ],
+      [
+        "Southside",
+        "Mint and citrus can echo fresh herbs."
+      ],
+      [
+        "Tom Collins",
+        "Lemon freshness can complement a citrus-based dressing; balance sweetness thoughtfully."
+      ]
+    ],
+    "cream": [
+      [
+        "French 75",
+        "Citrus acidity and bubbles can refresh the palate after a creamy bite."
+      ],
+      [
+        "Negroni",
+        "Bitterness can contrast with a rich savory sauce; avoid overwhelming a delicate dish."
+      ],
+      [
+        "Gin Rickey",
+        "A lighter citrus highball provides contrast without adding more cream."
+      ]
+    ],
+    "cheese": [
+      [
+        "Manhattan",
+        "Rich whiskey and vermouth can match mature hard cheese."
+      ],
+      [
+        "French 75",
+        "Freshness and bubbles can contrast with soft, creamy cheese."
+      ],
+      [
+        "Old Fashioned",
+        "A spirit-led serving can suit stronger aged cheeses and nuts."
+      ]
+    ],
+    "tomato": [
+      [
+        "Negroni",
+        "Herbal bitterness can suit a substantial tomato-and-herb dish."
+      ],
+      [
+        "Boulevardier",
+        "A fuller bitter cocktail can match rich pizza or a meat-based tomato sauce."
+      ],
+      [
+        "Tom Collins",
+        "A fresh, lighter option can suit a simpler tomato preparation."
+      ]
+    ],
+    "barbecue": [
+      [
+        "Old Fashioned",
+        "Oak and measured sweetness can echo smoke and a mild glaze."
+      ],
+      [
+        "Whiskey Sour",
+        "Lemon freshness can balance grilled richness and a gently sweet sauce."
+      ],
+      [
+        "Paloma",
+        "A long grapefruit serving can refresh the palate between smoky bites."
+      ]
+    ],
+    "fried": [
+      [
+        "French 75",
+        "Bubbles and citrus provide a fresh contrast to a crispy, fatty bite."
+      ],
+      [
+        "Tom Collins",
+        "Lemon and soda can refresh the palate after fried food."
+      ],
+      [
+        "Paloma",
+        "Grapefruit freshness can complement lightly seasoned fried food."
+      ]
+    ],
+    "dessert": [
+      [
+        "Brandy Alexander",
+        "Cream and cacao can complement a rich, moderately sweet pastry."
+      ],
+      [
+        "Espresso Martini",
+        "Coffee flavor can echo chocolate or coffee-accented pastries; sweetness varies by recipe."
+      ],
+      [
+        "Pornstar Martini",
+        "Passion fruit can complement a fruit dessert; compare the dish’s sweetness with the drink."
+      ]
+    ],
+    "chocolate": [
+      [
+        "Espresso Martini",
+        "Coffee can echo chocolate’s roasted flavors; choose a dessert that does not overwhelm the drink’s sweetness."
+      ],
+      [
+        "Brandy Alexander",
+        "Cacao and cream can complement a creamy chocolate dessert."
+      ],
+      [
+        "White Russian",
+        "Coffee and cream can echo cocoa-rich flavors; balance overall sweetness."
+      ]
+    ]
+  }
+}

@@ -1,0 +1,101 @@
+# Name | Profile | Typical tasting notes | Common regions | Aliases
+Cabernet Sauvignon|G|Blackcurrant, dark cherry and cedar; cooler examples can show herbal or green-pepper notes, while oak can add vanilla and tobacco.|Bordeaux, California, Chile, Australia|cab sauv
+Merlot|F|Plum, black cherry and chocolate-like notes, often with a rounded texture; oak can add vanilla or baking spice.|Bordeaux, California, Chile|
+Pinot Noir|E|Red cherry, raspberry and flowers; mature examples may develop earthy, mushroom-like or savory notes.|Burgundy, Oregon, New Zealand, Germany|spätburgunder,spatburgunder
+Syrah / Shiraz|G|Blackberry, plum and pepper; cooler styles may show floral, olive or savory notes, while warmer Shiraz can be richer and riper.|Rhône Valley, Australia, South Africa|syrah,shiraz
+Grenache / Garnacha|J|Ripe strawberry, raspberry, cherry and gentle spice; often warm and generous, with softer tannins than Cabernet-based wines.|Spain, southern France, Australia|grenache,garnacha
+Tempranillo|F|Cherry, plum and dried-fruit notes; oak-aged styles can show vanilla, leather and tobacco-like aromas.|Spain, Portugal|tinta roriz,aragonez
+Sangiovese|H|Sour cherry, red plum, dried herbs and earthy notes, commonly with firm acidity and noticeable tannins.|Tuscany, central Italy|
+Nebbiolo|H|Rose petals, red cherry, dried herbs and tar-like aromas; the pale color can conceal very firm tannins and high acidity.|Piedmont, Italy|
+Barbera|E|Bright cherry, plum and red berries, with high acidity and typically less tannin than Nebbiolo.|Piedmont, Italy|
+Dolcetto|F|Black cherry, plum and sometimes an almond-like finish; often softer in acidity but still distinctly tannic.|Piedmont, Italy|
+Zinfandel / Primitivo|J|Blackberry, raspberry jam, plum and pepper; often ripe and generous, with dry wines that can feel sweetly fruity.|California, Puglia|zinfandel,primitivo
+Malbec|G|Plum, blackberry, violet and sometimes cocoa or smoky oak notes; tannin and freshness vary between Argentina and French styles.|Argentina, Cahors|
+Cabernet Franc|F|Raspberry, red plum, herbs and sometimes bell-pepper aromas; usually lighter than Cabernet Sauvignon in comparable conditions.|Loire Valley, Bordeaux, northeastern United States|cab franc
+Petit Verdot|G|Blackberry, violet, dark plum and spice, usually with deep color and firm structure.|Bordeaux, Spain, Australia, California|
+Petite Sirah|G|Blueberry, blackberry, pepper and cocoa-like notes, often with dense color and strong tannins; it is distinct from Syrah.|California|durif
+Mourvèdre / Monastrell|G|Dark plum, blackberry, herbs and savory or game-like notes, often with a firm, full-bodied structure.|Southern France, Spain|mourvedre,monastrell,mataro
+Carignan / Cariñena|F|Dark cherry, red berries, herbs and spice; old-vine examples can be concentrated while retaining freshness.|Southern France, Spain|carignan,carinena,mazuelo
+Cinsault|E|Strawberry, red cherry and flowers, generally with a lighter body and softer tannins.|Southern France, South Africa|cinsaut
+Gamay|E|Red cherry, raspberry, violet and sometimes a lively, juicy texture; carbonic styles can show banana-like aromas.|Beaujolais, Loire Valley|
+Pinotage|F|Plum, blackberry and earthy or smoky notes, with style-dependent tannins and oak influence.|South Africa|
+Carménère|F|Black plum, blackberry and herbal or green-pepper notes, sometimes with a spicy edge.|Chile|carmenere
+Touriga Nacional|G|Blackberry, plum and violet, often with firm tannins and concentrated flavor.|Portugal|
+Touriga Franca|F|Red and black berries, flowers and spice; often contributing fragrance and structure to Douro blends.|Portugal|touriga francesa
+Tinta Barroca|J|Ripe plum, dark berries and a generous fruit profile, commonly used in Portuguese blends and Port.|Portugal|
+Trincadeira|F|Red and black berries, herbs and pepper, with noticeable structure in dry wines.|Portugal|tinta amarela
+Castelão|F|Red plum, cherry and earthy or herbal notes; mature examples can gain savory complexity.|Portugal|castelao,periquita grape
+Baga|H|Sour cherry, dark berries and earthy notes, commonly with high acidity and firm tannins.|Bairrada, Portugal|
+Alfrocheiro|F|Blackberry, red berries and floral notes, often with freshness and balanced structure.|Portugal|
+Aglianico|H|Black cherry, plum, earth and smoke-like notes, often with high acidity and substantial tannins.|Campania, Basilicata|
+Montepulciano|F|Dark cherry, plum, herbs and sometimes cocoa-like notes, commonly with a broad, approachable texture.|Abruzzo, central Italy|
+Nero d’Avola|J|Black cherry, plum, blackberry and gentle spice, often in a ripe, generous style.|Sicily|nero d'avola
+Nerello Mascalese|H|Red cherry, herbs, flowers and savory notes, often with a lighter-looking color but firm freshness and tannins.|Mount Etna, Sicily|
+Frappato|E|Strawberry, raspberry, red cherry and floral perfume, usually with a light body and gentle tannins.|Sicily|
+Corvina|F|Sour cherry, red berries and herbs; dried-grape styles can develop richer fruit and a fuller texture.|Veneto, Italy|
+Rondinella|F|Cherry, red berries and gentle herbs, commonly as part of Valpolicella-style blends.|Veneto, Italy|
+Molinara|E|Light red berries and herbal notes, commonly contributing freshness to blends rather than appearing alone.|Veneto, Italy|
+Teroldego|F|Blackberry, dark cherry and violet, often with fresh acidity and a firm but rounded texture.|Trentino, Italy|
+Lagrein|G|Dark plum, blackberry, violet and earthy notes, commonly with a substantial, tannic texture.|Alto Adige, Italy|
+Schiava|E|Strawberry, cherry and light floral notes, usually with a pale color, light body and gentle tannins.|Alto Adige, Italy|vernatsch,trollinger
+Marzemino|F|Dark cherry, plum and violet, often with a fresh, gently tannic impression.|Northern Italy|
+Refosco|H|Dark cherry, blackberry, herbs and savory notes, with noticeable acidity and tannins.|Northeastern Italy, Slovenia|
+Sagrantino|H|Blackberry, plum and dried herbs, commonly with exceptionally firm tannins and a full body.|Umbria, Italy|
+Negroamaro|J|Dark cherry, plum, herbs and a sometimes earthy or gently bitter finish.|Puglia, Italy|
+Susumaniello|F|Dark berries, plum and flowers, commonly with fresh acidity and a firm texture.|Puglia, Italy|
+Uva di Troia|G|Dark cherry, blackberry, spice and savory notes, commonly with noticeable tannins.|Puglia, Italy|nero di troia
+Gaglioppo|F|Red cherry, dried herbs and earthy notes, with a generally firm tannic structure.|Calabria, Italy|
+Perricone|F|Dark berries, plum and herbs, often with a rustic, savory edge.|Sicily|perricone,pignatello
+Grignolino|E|Light red cherry, herbs and pepper, with more tannin than its pale color might suggest.|Piedmont, Italy|
+Freisa|H|Raspberry, red cherry and floral notes, often with firm tannins and lively acidity; still and lightly sparkling styles exist.|Piedmont, Italy|
+Brachetto|S|Rose petals, strawberry and raspberry; commonly associated with sweet, lightly sparkling red wine.|Piedmont, Italy|
+Lambrusco varieties|E|Red cherry, berries and sometimes floral or earthy notes, with fresh acidity and bubbles; styles range from dry to sweet.|Emilia-Romagna, Italy|lambrusco
+Blaufränkisch|H|Black cherry, blackberry and pepper, often with bright acidity and a firm structure.|Austria, Hungary, Germany|blaufrankisch,kékfrankos,kekfrankos,lemberger
+Zweigelt|E|Red cherry, raspberry and plum, often with a juicy texture and gentler tannins.|Austria|
+St. Laurent|F|Dark cherry, plum and sometimes a savory or earthy edge, often with fresh acidity.|Austria, Czechia|saint laurent
+Blauer Portugieser|E|Red cherry, light berries and gentle spice, usually with a light body and relatively soft tannins.|Germany, Austria|
+Dornfelder|F|Dark cherry, blackberry and plum, with deep color; dry and off-dry examples exist.|Germany|
+Trousseau|E|Red cherry, wild berries, pepper and earthy notes, commonly with a light-to-medium body.|Jura, Portugal|bastardo
+Poulsard|E|Strawberry, red cherry and delicate earthy notes, usually very pale and light-bodied.|Jura, France|ploussard
+Pinot Meunier|E|Red berries, cherry and floral notes; often used in Champagne, with still red examples offering softer fruit-led flavors.|Champagne, Germany|meunier,schwarzriesling
+Mencía|F|Red cherry, raspberry, flowers and herbs, with site-dependent freshness and savory complexity.|Bierzo, Galicia|mencia
+Bobal|F|Blackberry, dark plum and fresh red berries, often with firm acidity and tannins.|Eastern Spain|
+Graciano|H|Blackberry, red cherry, floral spice and herbs, often bringing high acidity and structure to blends.|Rioja, Spain|
+Listán Negro|E|Red berries, pepper, herbs and sometimes smoky or earthy notes, with a generally lighter profile.|Canary Islands|listan negro
+Alicante Bouschet|G|Dark berries, plum and spice, often with intense color and a broad, tannic texture.|Portugal, Spain, southern France|
+Bonarda (Argentina)|F|Blackberry, plum and red berries, usually in a juicy, moderately tannic style; this is distinct from some Italian Bonarda grapes.|Argentina|douce noire,charbono
+País|E|Red cherry, wild berries and earthy notes, often with a light, rustic and refreshing profile.|Chile|pais,mission,listán prieto
+Ciliegiolo|E|Red cherry, plum and fresh fruit, usually with a softer structure than many Sangiovese-based wines.|Italy|
+Cesanese|F|Red cherry, plum, flowers and gentle spice, often with a medium-bodied, savory texture.|Lazio, Italy|
+Xinomavro|H|Sour cherry, dried tomato, olive and rose-like notes, with high acidity and firm tannins.|Northern Greece|
+Agiorgitiko|F|Red cherry, plum and gentle spice, ranging from soft, fruity styles to more structured versions.|Nemea, Greece|
+Limniona|F|Red cherry, dark berries, herbs and fresh acidity, commonly with a medium-bodied texture.|Thessaly, Greece|
+Mavrodaphne|S|Dried plum, raisin, cocoa and spice in traditional sweet wines; dry examples have a different flavor balance.|Greece|mavrodafni
+Saperavi|G|Blackberry, dark plum and earthy or spicy notes, often with deep color, freshness and firm tannins.|Georgia|
+Plavac Mali|G|Dark cherry, plum, dried herbs and ripe-fruit notes, often with a firm, full-bodied structure.|Croatia|
+Vranac|G|Dark plum, blackberry and spicy or earthy notes, commonly with dense color and pronounced tannins.|Montenegro, North Macedonia|
+Kadarka|E|Red cherry, raspberry and pepper, usually with a lighter color and gentle structure.|Hungary, Balkans|
+Fetească Neagră|F|Plum, blackberry, spice and sometimes dried-fruit notes, commonly with a rounded texture.|Romania, Moldova|feteasca neagra
+Öküzgözü|F|Red cherry, dark berries and fresh acidity, often with a medium-bodied texture.|Turkey|okuzgozu
+Boğazkere|G|Dark berries, plum, earth and spice, commonly with strong tannins and a substantial body.|Turkey|bogazkere
+Baco Noir|F|Dark plum, berries and smoky or earthy notes, often with a robust flavor and bright acidity.|Canada, northeastern United States|
+Maréchal Foch|F|Dark berries, plum and sometimes earthy or roasted notes, with style-dependent acidity and tannins.|Canada, northern United States|marechal foch
+Chambourcin|F|Dark cherry, plum and gentle herbal notes, often with vivid color and moderate structure.|United States|
+Norton|G|Dark berries, plum and spice, often with strong flavor, firm acidity and a substantial texture.|Central United States|cynthiana
+Marquette|F|Red and black cherry, plum and spice, with high acidity and a moderately firm texture.|Northern United States|
+Frontenac|H|Cherry, dark berries and plum, with notably high acidity; producers may use blending or sweetness to balance it.|Northern United States, Canada|
+Regent|F|Dark cherry, plum and gentle spice, commonly with moderate tannins and fresh acidity.|Germany, Central Europe|
+Rondo|F|Dark berries, cherry and plum, often with deep color and a fresh, moderately tannic profile.|Northern Europe|
+Léon Millot|F|Dark cherry, berries and light earthy notes, usually in a fresh, moderately structured style.|Canada, northern United States|leon millot
+Tannat|H|Blackberry, dark plum and savory spice; usually deeply colored with substantial tannins, though modern examples can be softer and fruit-led.|Uruguay, Madiran, southwestern France|
+Négrette|F|Black cherry, plum, violet and sometimes licorice or pepper; generally aromatic with a medium-to-full texture.|Fronton, southwestern France|negrette
+Fer Servadou|H|Dark berries, blackcurrant, herbs and sometimes a peppery edge; freshness and firm tannins can give a savory structure.|Southwestern France|braucol,mansois
+Counoise|E|Red cherry, raspberry and pepper, often with fresh acidity and relatively gentle tannin; used in Rhône blends and occasional varietal wines.|Southern Rhône, California|
+Muscardin|E|Light red fruit, flowers and herbal notes; usually a small component in southern Rhône blends, contributing freshness rather than power.|Southern Rhône, France|
+Terret Noir|E|Red berries and savory herbal notes with a lighter profile; mostly encountered in regional blends rather than single-variety bottlings.|Southern France|
+Vaccarèse|F|Red and dark berries, pepper and herbal notes; a rare Rhône blending grape that can contribute color, freshness and structure.|Southern Rhône, France|vaccarese,brun argente
+Areni|F|Red cherry, dark berries, flowers and peppery or earthy notes; altitude and winemaking influence body and freshness.|Armenia|areni noir
+Prokupac|F|Cherry, raspberry, plum and sometimes herbs or spice; dry reds can range from fresh and medium-bodied to more structured.|Serbia, Balkans|
+Blatina|F|Dark cherry, plum and savory or herbal notes; typically a dry red, with body and tannin depending on ripeness and oak.|Bosnia and Herzegovina|
+Krasnostop Zolotovsky|G|Dark berries, plum and sometimes tobacco or spice, with substantial color and structure in concentrated examples.|Southern Russia|krasnostop
+Prunelard|G|Dark plum, blackberry and spice; usually a deeply colored, structured wine when bottled alone rather than blended.|Gaillac, southwestern France|prunelart

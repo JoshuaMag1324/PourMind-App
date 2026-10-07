@@ -1,6 +1,6 @@
 # PourMind
 
-A responsive cocktail prototype with 86 recipes and local cocktail artwork. The redesigned app starts at `index.html`; the original upload remains unchanged in `PourMind_v6_Audited_Test.html`.
+A responsive cocktail learning app with 86 recipes, 15 cocktail teaching families, food pairings and a 244-entry wine reference. The redesigned app starts at `index.html`; the original upload remains unchanged in `PourMind_v6_Audited_Test.html`.
 
 ## Develop
 
@@ -20,6 +20,8 @@ The server process needs to be started again in each new task. The files are ret
 - `data.js`: generated catalogue of measured recipes and named local images
 - `methods.js`: cocktail-specific methods and related recipe families
 - `learning.js`: 30 educational questions across five topics
+- `academy-data.js` and `academy.js`: lessons, guided recipes, journal and private recipe-file sharing
+- `discovery-data.js` and `discovery.js`: wine/spirits reference, cocktail families and food pairings
 
 Saved recipes, ingredients, and training progress are stored in this browser's local storage. There is no backend or account sync. The scan flow adds sample inventory, and the inspiration flow searches existing recipes; camera recognition and AI generation are not connected.
 
@@ -29,12 +31,15 @@ With the local server running:
 
 ```sh
 node --check app.js
-node /workspace/scratch/pourmind-smoke.cjs
+node tests/catalogue.test.cjs
+node tests/learning.test.cjs
+node tests/academy.test.cjs
+node tests/discovery.test.cjs
 ```
 
-The smoke check uses the environment's existing Playwright package and `/usr/bin/chromium`. It exercises recipe search, image loading, filters, favorites persistence, inventory editing, training, dialog keyboard controls, and phone/tablet/desktop layouts. It writes screenshots to `/workspace/scratch/`.
+The browser suites use the environment's existing Playwright package and `/usr/bin/chromium`. Set `POURMIND_TEST_URL` to use a different local port. Checks cover education, recipe-file sharing, reference search, pairings, persistence, offline use and phone/tablet/desktop layouts.
 
-The GitHub repository was empty when this upload was imported. This source includes the preserved original prototype and the redesigned mobile web app. Deployment serves the application at the repository's GitHub Pages site once Pages has been enabled.
+The GitHub repository was empty when this upload was imported. This source includes the preserved original prototype and the redesigned mobile web app. The published iPhone app is at https://joshuamag1324.github.io/PourMind-App/.
 
 ## Mobile builds
 
@@ -58,12 +63,26 @@ Learn includes five six-question topics and ten-question mixed rounds. Every res
 
 With the local server on port 8000, run `node tests/learning.test.cjs`. Set `POURMIND_TEST_URL` to test another local or published HTTPS address. The browser test checks all 30 questions, topic and mixed rounds, explanations, retry behavior, persistence, legacy progress, offline access and mobile layouts. It uses the environment’s installed Playwright and Chromium.
 
-## Education review
+## Education and private recipe sharing
 
-The `education-review` branch adds eight short lessons, twelve guided recipes with an explanation for each preparation step, four practical exercises, a private learning journal and five learning stages. Learn includes a separate Knowledge checks tab for the existing 30 questions. Completion and resume positions persist on the device.
+The approved education update includes eight short lessons, twelve guided recipes with an explanation for each preparation step, four practical exercises, a private learning journal and five learning stages. Learn includes a separate Knowledge checks tab for the existing 30 questions. Completion and resume positions persist on the device.
 
-Share supports private recipe drafts, optional photo uploads, measured-ingredient validation, teaching notes, recipe-file export/import and returned feedback merging. This is the private file-sharing version selected for review; it has no public feed or accounts. Files are exchanged by users. Imported creator names and feedback are supplied by the file, not verified identities.
+Share supports private recipe drafts, optional photo uploads, measured-ingredient validation, teaching notes, recipe-file export/import and returned feedback merging. This is the private file-sharing version selected by the user; it has no public feed or accounts. Files are exchanged by users. Imported creator names and feedback are supplied by the file, not verified identities.
 
 Run `node tests/academy.test.cjs` and `node tests/learning.test.cjs` with the local server on port 8000. The first suite exercises every lesson and guide, practice journaling, photo ownership confirmation, the full two-device file-sharing cycle, input validation, offline state and mobile layouts.
 
-See [the review walkthrough](REVIEW.md). This branch is awaiting approval before deployment to the main app.
+See [the app walkthrough](REVIEW.md). The education update was approved and published.
+
+## Wine, spirits, families and food pairings
+
+Learn links to Cocktail families and Food pairings. My bar links to Spirits & wines. The reference includes 118 white, 110 red, four rosé, five sparkling and seven fortified entries (grape varieties and named regional styles, not individual producers). Each has tasting notes, body, acidity, sweetness, tannin, serving temperature and food ideas. Six distilled-spirit categories include named styles and linked cocktail examples.
+
+Wine search covers names, aliases, regions and flavors, including accent-insensitive matching and the common Riesling misspelling “resling.” Results are paginated. Wine and spirit detail panels can add bottles to the existing private inventory without duplicates.
+
+Fifteen teaching families cover all 86 recipes exactly once. Family patterns explain structure, taste, method and thoughtful variations, with links to the measured recipes and corresponding images. Fifteen food groups offer wine and cocktail suggestions with reasons. Preparation, sauce, sweetness and alcohol matter; suggestions are starting points.
+
+Tasting descriptions are original educational summaries of typical styles, not bottle-specific evaluations or a claim to list every grape worldwide. Variations such as dry versus sweet Riesling, rosé White Zinfandel and dry Sherry are labelled.
+
+Edit `reference/white-wines.txt`, `reference/red-wines.txt`, `reference/wine-styles.txt` or `reference/knowledge.json`, then run `python3 tools/build_reference.py`. The compiler checks IDs, references, profile overrides and exact family coverage before generating `discovery-data.js`. Rebuild the mobile package and increment the service-worker cache revision when publishing.
+
+After building the mobile package, run `node tests/discovery-standalone.test.cjs` to check the self-contained HTML build, embedded recipe images, offline reference and storage fallback without any external requests.

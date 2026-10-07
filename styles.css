@@ -25,3 +25,61 @@ body{min-height:100dvh;-webkit-tap-highlight-color:transparent}
 @media(max-width:900px){.learning-overview,.sharing-intro{grid-template-columns:1fr}.sharing-intro .actions{max-width:none}}
 @media(max-width:640px){.academy-grid{grid-template-columns:1fr;gap:16px}.academy-tabs{margin-right:-20px;padding-right:20px}.learning-overview{gap:20px}.learning-overview h2{font-size:28px}.learning-stats{padding-top:20px;border-top:1px solid var(--line)}.learning-stats strong{font-size:26px}.stage-card{grid-template-columns:28px minmax(0,1fr);padding:20px;gap:12px}.stage-number{width:28px;height:28px;font-size:16px}.stage-card h3{font-size:24px}.stage-links .filter{padding:9px 12px;font-size:11px}.sharing-intro h2{font-size:28px}.mobile-nav button{font-size:9px}.guide-photo{height:170px}.academy-card h3{font-size:25px}}
 .dialog-body>.eyebrow{padding-right:34px;line-height:1.6;letter-spacing:1.7px}
+
+/* Bottle reference and family teaching */
+.reference-tools {margin-bottom:24px}
+.reference-tools .input {max-width:640px}
+.reference-tools .academy-tabs {margin-bottom:0}
+.reference-count {color:var(--muted);font-size:14px;margin:24px 0 18px}
+.reference-card {display:flex;flex-direction:column;gap:14px;min-width:0}
+.reference-card h3 {font-size:25px;line-height:1.2;overflow-wrap:anywhere}
+.reference-card p {margin:0;line-height:1.65}
+.reference-card .button {margin-top:auto;align-self:flex-start;text-align:left;white-space:normal}
+.wine-chips {display:flex;gap:8px;flex-wrap:wrap}
+.wine-chips span {font-size:12px;color:var(--muted);border:1px solid var(--line);border-radius:20px;padding:5px 10px}
+.reference-more {display:flex;justify-content:center;margin-top:28px}
+.tasting-glossary {margin:20px 0;padding:22px}
+.tasting-glossary summary {font-weight:600;cursor:pointer;min-height:24px}
+.tasting-glossary dl,.spirit-styles {margin:22px 0}
+.tasting-glossary dt,.spirit-styles dt {font-weight:600;margin-top:18px}
+.tasting-glossary dd,.spirit-styles dd {margin:8px 0 0;line-height:1.65;color:var(--muted)}
+.tasting-glossary p {margin-top:20px;line-height:1.65}
+.reference-detail {padding-top:52px}
+.reference-detail p {line-height:1.7}
+.reference-detail .actions {margin-top:20px}
+.taste-metrics {display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:24px 0}
+.taste-metrics div {padding:14px;border:1px solid var(--line);border-radius:12px;min-width:0}
+.taste-metrics dt {font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+.taste-metrics dd {margin:8px 0 0;line-height:1.5;overflow-wrap:anywhere}
+.pairing-list {padding-left:20px}
+.pairing-list li {margin-bottom:22px}
+.pairing-list li p {margin:8px 0}
+.family-structure {font-weight:600;color:var(--gold)}
+.discovery-intro {margin-bottom:28px}
+.discovery-intro p {margin:14px 0;line-height:1.7}
+.family-recipes {display:grid;gap:10px;margin-top:18px}
+.family-recipe {display:flex;align-items:center;gap:14px;background:transparent;border:1px solid var(--line);padding:10px;border-radius:12px;color:inherit;text-align:left;min-height:64px}
+.family-recipe img {width:50px;height:60px;object-fit:cover;border-radius:8px}
+.family-recipe span {flex:1;overflow-wrap:anywhere}
+.family-recipe svg {flex:none}
+.pairing-controls {margin-bottom:30px}
+.pairing-controls select {max-width:500px}
+.pairing-controls p {margin-top:18px;line-height:1.7}
+.pairing-controls .academy-tabs {margin-bottom:0}
+.pairing-cocktail img {width:100%;height:210px;object-fit:cover;border-radius:12px}
+.pairing-reason {padding-top:12px;border-top:1px solid var(--line)}
+@media (max-width:600px) {
+  .reference-card h3 {font-size:23px}
+  .reference-detail {padding-top:44px}
+  .taste-metrics {gap:8px}
+  .taste-metrics div {padding:10px}
+  .reference-tools .academy-tabs {gap:8px}
+}
+
+select.input {font:inherit;min-height:48px;max-width:100%}
+select:focus-visible,summary:focus-visible {outline:2px solid var(--gold);outline-offset:5px}
+
+.discovery-nav {flex-wrap:wrap;overflow:visible;margin-right:0}
+.discovery-links {display:flex;gap:12px;flex-wrap:wrap;margin:-15px 0 24px}
+.discovery-intro summary,.pairing-principles summary {cursor:pointer;font-weight:600;min-height:26px}
+.pairing-principles {margin-top:22px}

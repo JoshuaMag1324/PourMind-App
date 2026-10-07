@@ -1,0 +1,106 @@
+# Name | Profile | Typical tasting notes | Common regions | Aliases
+Chardonnay|D|Green apple, citrus and pear in fresher examples; riper styles can show pineapple, while oak and malolactic fermentation can add vanilla, toast and buttery notes.|Burgundy, California, Australia, Chile|chardonay
+Sauvignon Blanc|A|Lime, gooseberry, grapefruit and fresh herbs; some examples show passion fruit or a grassy edge.|Loire Valley, New Zealand, Bordeaux, Chile|sauv blanc
+Riesling|C|Lime, green apple, white peach and floral aromas; some mature bottles develop a petrol-like note. Styles range from bone dry to dessert sweet.|Germany, Alsace, Austria, Australia|resling,reisling
+Pinot Gris / Pinot Grigio|B|Pear, apple and lemon; Italian-style Pinot Grigio is often lighter and crisp, while Alsace Pinot Gris can be richer, spicy and occasionally off-dry.|Italy, Alsace, Oregon|pinot gris,pinot grigio
+Chenin Blanc|C|Apple, quince, pear and citrus; richer or aged examples can show honey and beeswax. Dry, off-dry, sparkling and sweet versions exist.|Loire Valley, South Africa|
+Gewürztraminer|L|Lychee, rose petals, ginger and ripe stone fruit; a strongly aromatic grape that can be dry or off-dry, with a broad texture.|Alsace, Germany, northern Italy|gewurztraminer
+Viognier|D|Apricot, peach, honeysuckle and sometimes a creamy texture; often fuller and softer in acidity than crisp citrus-led whites.|Northern Rhône, California, Australia|
+Sémillon|B|Lemon, apple and subtle waxy notes when young; richer or aged versions can develop honey, toast and lanolin-like aromas.|Bordeaux, Hunter Valley|semillon
+Muscat / Moscato|L|Orange blossom, fresh grapes, peach and floral perfume; the grape family produces dry, lightly sweet and dessert styles.|Italy, France, Spain, Mediterranean regions|muscat blanc,moscato,muscat blanc à petits grains
+Albariño|A|Peach, lemon, lime and a sometimes saline impression, with bright acidity and a fresh finish.|Rías Baixas, Portugal|albarino,alvarinho
+Godello|B|Pear, apple, lemon and occasionally a subtle herbal or lees-derived creamy texture.|Galicia, northwestern Spain|
+Verdejo|A|Lemon, green apple, fennel and herbal notes, often with a slightly bitter citrus-pith finish.|Rueda, Spain|
+Vermentino|A|Lemon, peach, fresh herbs and a saline or almond-like finish in some examples.|Sardinia, Liguria, southern France|rolle
+Grüner Veltliner|A|Lime, green apple, white pepper and sometimes a savory herbal edge; styles range from light to more concentrated.|Austria, Czechia|gruner veltliner
+Marsanne|D|Ripe pear, melon and almond, with a broad texture; aged examples can develop nutty and honeyed notes.|Rhône Valley, Australia|
+Roussanne|D|Pear, apricot, herbal tea and floral notes, often with more freshness than Marsanne in a Rhône-style blend.|Rhône Valley, California|
+Pinot Blanc|B|Apple, pear, light citrus and gentle almond notes; usually restrained rather than intensely aromatic.|Alsace, northern Italy, Germany|pinot bianco,weissburgunder
+Melon de Bourgogne|A|Lemon, green apple and a subtle saline impression; lees aging can add texture to the otherwise restrained fruit.|Loire Valley|melon,muscadet grape
+Trebbiano / Ugni Blanc|A|Lemon, green apple and light floral notes; typically fresh and restrained, though quality and concentration vary by variety and site.|Italy, France|trebbiano,ugni blanc
+Garganega|B|Lemon, pear, white flowers and almond; better concentrated examples retain a firm, refreshing finish.|Veneto, Italy|
+Fiano|B|Pear, citrus, floral aromas and hazelnut-like notes, sometimes with a slightly waxy texture.|Campania, Italy|
+Greco|B|Lemon, stone fruit and a savory, sometimes saline finish with firm acidity.|Campania, Italy|
+Falanghina|A|Lemon, apple, peach and white flowers, commonly with a crisp, fresh finish.|Campania, Italy|
+Arneis|B|Pear, apricot, white flowers and almond; commonly rounder and less sharply acidic than lean citrus whites.|Piedmont, Italy|
+Cortese|A|Lemon, green apple and almond, with a restrained aromatic profile and refreshing acidity.|Piedmont, Italy|gavi grape
+Grechetto|B|Pear, apple, citrus and almond, with a broad texture and a slightly savory finish.|Umbria, Italy|
+Verdicchio|A|Lemon, green apple, herbs and almond, usually with bright acidity and a savory finish.|Marche, Italy|
+Pecorino|A|Citrus, ripe pear and herbal or floral notes, often with strong freshness and some body.|Abruzzo, Marche|
+Passerina|A|Lemon, apple and light floral aromas, generally made in a fresh, lighter style.|Marche, Abruzzo|
+Inzolia|B|Pear, peach, citrus and almond; usually softly aromatic with a gently rounded texture.|Sicily, Italy|insolia,ansonica
+Catarratto|B|Lemon, apple, flowers and occasional herbal or citrus-pith notes.|Sicily, Italy|
+Grillo|B|Citrus, peach and herbs; fresh versions are bright, while fuller styles can show more ripe fruit.|Sicily, Italy|
+Carricante|A|Lemon, green apple, herbs and a firm, sometimes saline finish, with pronounced freshness.|Mount Etna, Sicily|
+Turbiana|B|Lemon, pear, flowers and almond, often combining a rounded texture with firm acidity.|Lugana, northern Italy|trebbiano di lugana
+Friulano|B|Pear, herbs, white flowers and a characteristic almond-like finish.|Friuli, Italy|sauvignonasse
+Ribolla Gialla|A|Lemon, apple and restrained floral notes; skin-contact versions gain more texture and tannin than conventional whites.|Friuli, Slovenia|rebula
+Picolit|S|Apricot, peach, honey and floral aromas; commonly associated with rare, concentrated sweet wines.|Friuli, Italy|
+Timorasso|B|Citrus, ripe apple and savory notes, often with substantial texture and freshness; mature examples can develop honeyed aromas.|Piedmont, Italy|
+Assyrtiko|A|Lemon, citrus peel and a strong saline impression in some examples, with high acidity even in warm sites.|Santorini, mainland Greece|
+Moschofilero|C|Rose petals, citrus and fresh floral notes, commonly in a light, aromatic and refreshing style.|Peloponnese, Greece|
+Malagousia|C|Peach, apricot, orange blossom and herbal aromas, often with a fuller aromatic impression.|Greece|malagouzia
+Roditis|A|Citrus, apple and light herbal notes; styles vary by altitude, blend and winemaking.|Greece|
+Savatiano|B|Apple, pear and gentle citrus; traditional resin-flavored Retsina is a separate style often made with this grape.|Attica, Greece|
+Robola|A|Lemon, green apple and restrained herbal notes, generally with crisp acidity.|Cephalonia, Greece|
+Vilana|A|Citrus, green apple and floral notes, typically in fresh, dry examples.|Crete, Greece|
+Sideritis|A|Lemon, apple, flowers and a light herbal impression, commonly made as a fresh white.|Greece|
+Furmint|A|Green apple, lemon and quince in dry versions; sweet Tokaji styles add honey, apricot and dried-fruit notes.|Hungary, Slovenia|
+Hárslevelű|C|Linden blossom, honeyed floral aromas, peach and citrus; dry and sweet styles exist.|Hungary|harslevelu
+Welschriesling|A|Lemon, green apple and fresh herbs in dry wines; the grape is distinct from Riesling and also makes sweet styles.|Austria, Croatia, Hungary|graševina,grasevina,olaszrizling
+Müller-Thurgau|C|Apple, peach and gentle floral or muscat-like aromas; often light and approachable.|Germany, northern Italy|muller thurgau,rivaner
+Silvaner|A|Green apple, herbs and restrained earthy or savory notes, commonly in a dry style.|Germany, Alsace|sylvaner
+Kerner|C|Apple, pear, citrus and floral aromas, often with lively freshness.|Germany, northern Italy|
+Bacchus|C|Elderflower, citrus, herbs and occasionally a grassy or gooseberry-like edge.|Germany, England|
+Scheurebe|C|Grapefruit, blackcurrant-like aromas and flowers; dry, off-dry and sweet examples exist.|Germany, Austria|
+Gutedel / Chasselas|B|Delicate apple, pear and floral notes, often with a restrained, light flavor and gentle acidity.|Switzerland, Germany|chasselas,gutedel,fendant
+Elbling|A|Lemon, green apple and a notably fresh, light profile, often used in sparkling wines.|Germany, Luxembourg|
+Auxerrois|B|Pear, apple and restrained floral aromas, generally rounder and softer than highly acidic whites.|Alsace, Luxembourg|
+Jacquère|A|Lemon, green apple and light herbal notes, commonly very fresh and light-bodied.|Savoie, France|jacquere
+Altesse|B|Pear, peach, flowers and a fuller texture than many light alpine whites.|Savoie, France|roussette
+Savagnin|B|Citrus, apple and savory notes in fresh styles; oxidative Jura versions can show walnut, spice and a distinctive tang.|Jura, France|
+Petit Manseng|C|Pineapple, citrus and apricot, with high acidity; both dry and concentrated sweet versions exist.|Southwestern France|
+Gros Manseng|A|Citrus, pineapple and herbal notes, often with firm acidity in dry styles.|Southwestern France|
+Colombard|A|Lime, green apple, passion fruit and grassy notes, commonly in a fresh, crisp style.|Southwestern France, South Africa, California|french colombard
+Clairette|B|Apple, pear, flowers and gentle herbs, often with a soft, rounded texture.|Southern France|
+Picpoul|A|Lemon, green apple and a fresh, sometimes saline impression, with bright acidity.|Languedoc, France|piquepoul
+Bourboulenc|A|Citrus, herbs and restrained floral notes, often contributing freshness to southern French blends.|Southern France|
+Macabeo / Viura|B|Apple, citrus and flowers; oak-aged examples can develop richer, nutty or spicy aromas.|Spain|macabeo,viura
+Xarel·lo|B|Citrus, apple and savory herbal notes, often with texture and firm acidity.|Catalonia, Spain|xarello,xarel lo
+Parellada|A|Green apple, lemon and delicate flowers, commonly providing lightness and freshness in Cava blends.|Catalonia, Spain|
+Palomino|B|Restrained apple and citrus in unfortified wines; Sherry styles made from this grape develop very different savory or oxidative aromas.|Jerez, Spain|
+Pedro Ximénez|S|Raisin, fig, date and molasses-like richness in traditional sweet fortified wines; dry versions have a different profile.|Jerez, Montilla-Moriles|pedro ximenez,px
+Airén|A|Lemon, apple and restrained floral notes, usually in a simple, fresh style.|Central Spain|airen
+Loureiro|A|Lime, citrus blossom and fresh floral aromas, often in a lively, lighter style.|Vinho Verde, Portugal|
+Arinto|A|Lemon, green apple and firm freshness, commonly retaining high acidity in warm conditions.|Portugal|pedernã
+Encruzado|B|Citrus, peach and gentle flowers; richer examples can gain a creamy texture from oak or lees work.|Dão, Portugal|
+Antão Vaz|D|Ripe peach, tropical fruit and citrus, often with a fuller texture.|Alentejo, Portugal|antao vaz
+Fernão Pires|C|Orange blossom, ripe citrus and floral perfume; generally more aromatic than restrained white varieties.|Portugal|fernao pires,maria gomes
+Aligoté|A|Lemon, green apple and bright acidity, often in a leaner style than Chardonnay.|Burgundy, Eastern Europe|aligote
+Gros Plant / Folle Blanche|A|Lemon, green apple and a very fresh, lean impression in Loire-style whites.|Loire Valley, France|folle blanche,gros plant
+Malvasia Bianca|C|Floral perfume, citrus and ripe peach; Malvasia includes several distinct grapes and both dry and sweet styles.|Italy, Mediterranean regions|malvasia
+Vidal Blanc|C|Peach, apricot and citrus in dry wines; icewine examples concentrate tropical fruit, honey and sweetness.|Canada, northeastern United States|vidal
+Seyval Blanc|A|Lemon, apple and restrained herbal notes, commonly made as a fresh, dry white.|England, northeastern United States|
+Chardonel|B|Apple, pear and citrus, with potential for a rounder, oak-influenced style.|United States|
+Traminette|C|Floral spice, rose and stone-fruit aromas, reflecting some Gewürztraminer-like character.|United States|
+Cayuga White|A|Apple, citrus and gentle floral notes, often in fresh still or sparkling styles.|Northeastern United States|cayuga
+La Crescent|C|Apricot, peach and floral aromas, with high acidity; often made in off-dry styles.|Northern United States|
+Frontenac Gris|C|Peach, apricot and citrus with high acidity; styles range from dry to sweet.|Northern United States, Canada|
+Solaris|C|Ripe apple, peach and sometimes tropical fruit, with dry and off-dry styles depending on site and producer.|Northern Europe|
+Muscaris|C|Muscat-like flowers, citrus and fresh-grape aromas, commonly in aromatic dry or off-dry wines.|Central Europe|
+Johanniter|A|Apple, citrus and restrained floral notes, commonly in fresh, dry styles.|Central Europe|
+Souvignier Gris|B|Apple, pear and citrus, with a more textured impression in some dry examples.|Central Europe|
+Torrontés|L|Orange blossom, jasmine, peach and fresh grape aromas; Argentine examples are usually dry despite their perfumed nose, with a medium-weight texture.|Argentina|torrontes,torrontes riojano
+Rkatsiteli|A|Green apple, citrus and herbal notes in conventional whites; skin-contact amber versions can add tea, dried fruit and noticeable tannin.|Georgia, eastern Europe|
+Kisi|B|Pear, apricot and floral notes; Georgian skin-contact styles can become more textured, tannic and savory.|Georgia|
+Mtsvane|A|Citrus, white peach, flowers and fresh herbs; often used alone or in Georgian blends, with skin-contact styles adding structure.|Georgia|mtsvane kakhuri
+Grenache Blanc|D|Pear, apple, fennel and sometimes ripe stone fruit; often broad in texture, with acidity depending on site and ripeness.|Southern Rhône, Spain, California|garnacha blanca
+Grenache Gris|D|Peach, pear, citrus peel and herbal notes; a pink-skinned grape that can make textured white or rosé wines.|Roussillon, Spain|garnacha gris
+Muscat of Alexandria / Zibibbo|L|Orange blossom, fresh grapes and citrus; dry versions are aromatic, while dried-grape sweet wines can show apricot, honey and raisins.|Mediterranean regions, Pantelleria, Spain|zibibbo,moscatel de alejandria
+Pedro Giménez|B|Gentle apple, citrus and floral notes; this South American white grape is distinct from Spain’s Pedro Ximénez and is often used in fresh blends.|Argentina, South America|pedro gimenez
+Fetească Albă|A|Apple, citrus and white flowers, generally with a fresh, light-to-medium profile; dry and sweeter versions exist.|Romania, Moldova|feteasca alba
+Fetească Regală|B|Apple, pear, citrus and floral notes; texture and freshness vary by site, with some richer examples showing spice.|Romania, Moldova|feteasca regala
+Malvar|B|Apple, pear, fennel and sometimes an almond-like finish; fresh styles are dry, while lees or oak can add texture.|Madrid, central Spain|
+Albarín Blanco|A|Citrus, peach, flowers and an herbal edge, often with bright acidity. It is a different grape from Albariño.|Asturias, León, Spain|albarin blanco
+Obeideh|B|Apple, citrus, gentle floral and sometimes nutty notes; Lebanese examples can be light or gain richness through blending and aging.|Lebanon|obaideh
+Merwah|B|Citrus, orchard fruit and sometimes herbal or nutty notes; often part of Lebanese whites, with style influenced by blending and aging.|Lebanon|

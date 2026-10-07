@@ -14,7 +14,7 @@ globalThis.POURMIND_ACADEMY_UI = (() => {
   const newId = () => typeof crypto.randomUUID === 'function' ? crypto.randomUUID() : Array.from(crypto.getRandomValues(new Uint8Array(16)),n=>n.toString(16).padStart(2,'0')).join('');
   const dateLabel = value => new Date(value).toLocaleDateString(undefined, {month:'short', day:'numeric', year:'numeric'});
   function nav() {
-    return `<div class="academy-tabs" role="group" aria-label="Learning sections">${[['path','Your path'],['lessons','Lessons'],['guides','Guided recipes'],['practice','Practice & journal'],['quiz','Knowledge checks']].map(([id,label]) => `<button class="filter" data-academy="tab" data-id="${id}" aria-pressed="${tab === id}">${label}</button>`).join('')}</div>`;
+    return `<div class="academy-tabs" role="group" aria-label="Learning sections">${[['path','Your path'],['lessons','Lessons'],['guides','Guided recipes'],['practice','Practice & journal'],['quiz','Knowledge checks']].map(([id,label]) => `<button class="filter" data-academy="tab" data-id="${id}" aria-pressed="${tab === id}">${label}</button>`).join('')}</div><div class="discovery-links" role="group" aria-label="Explore drink references"><button class="text-button" data-view="families">Cocktail families</button><button class="text-button" data-view="pairings">Food pairings</button><button class="text-button" data-view="reference">Spirits & wines</button></div>`;
   }
   function stageDone(stage) {
     return stage.lessons.every(id => progress.lessons.includes(id)) && stage.guides.every(name => progress.guides.includes(name)) && (stage.exercises || (stage.exercise ? [stage.exercise] : [])).every(id => progress.journal.some(j => j.exercise === id));

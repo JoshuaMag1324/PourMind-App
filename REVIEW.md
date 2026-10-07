@@ -1,8 +1,8 @@
-# PourMind education update — ready for review
+# PourMind app walkthrough
 
-This version is on the `education-review` branch. The live iPhone app remains unchanged until you approve publishing it.
+The education update was approved and published. [Open the live iPhone app](https://joshuamag1324.github.io/PourMind-App/).
 
-[Download the review test package](https://raw.githubusercontent.com/JoshuaMag1324/PourMind-App/education-review/downloads/PourMind-iPhone-Test.zip). Extract it on a computer and follow `START_HERE.md` to run the included server. Use its address in your browser, or in Safari on an iPhone on the same Wi-Fi. Local-network HTTP supports the interactive features; full installation and offline use require HTTPS after approval.
+[Download the mobile test package](https://raw.githubusercontent.com/JoshuaMag1324/PourMind-App/main/downloads/PourMind-iPhone-Test.zip). Extract it on a computer and follow `START_HERE.md` to run the included server. Use its address in your browser, or in Safari on an iPhone on the same Wi-Fi. Local-network HTTP supports the interactive features; full installation and offline use require HTTPS on the published HTTPS app.
 
 These screenshots show the working app. The example journal observation is a demonstration, and the shared recipe is explicitly labelled as an example.
 
@@ -68,3 +68,23 @@ The 30 questions remain available in their five topics and ten-question mixed pr
 - Existing 30-question practice, legacy progress and favorites retained.
 
 Approve this version to replace the live app, or request changes to the content or workflow.
+
+## Cocktail families
+
+Open Learn → Cocktail families. Search by family or drink name, then explore structure, mixing method, variations and the measured recipes. Fifteen groups cover all 86 library recipes.
+
+![Cocktail families on iPhone](review/10-cocktail-families.png)
+![Family detail on iPhone](review/11-family-detail.png)
+
+## Wines and spirits
+
+Open My bar → Spirits & wines. Search or filter 244 entries: 118 whites, 110 reds, four rosés, five sparkling and seven fortified styles. Every entry includes its typical taste, body, acidity, sweetness, tannin, serving range and food ideas. Expand the tasting guide for definitions, or add a wine to your private bar. Choose Spirits for six distilled-spirit categories and their named styles.
+
+![Wine library on iPhone](review/12-wine-library.png)
+![Riesling taste profile on iPhone](review/13-wine-detail.png)
+
+## Food pairings
+
+Open Learn → Food pairings, choose a food group and switch between Wines and Cocktails. Every suggestion explains the match and opens the corresponding wine profile or measured cocktail recipe. Expand the pairing principles for guidance on acidity, tannin, sweetness and preparation.
+
+![Food pairings on iPhone](review/14-food-pairings.png)

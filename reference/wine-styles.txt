@@ -1,0 +1,40 @@
+# Name | Category | Profile | Typical tasting notes | Common regions | Aliases
+White Burgundy|White|D|Chardonnay-led wines with apple, citrus and sometimes hazelnut, toast or a creamy texture; oak use and richness vary by village and producer.|Burgundy, France|bourgogne blanc
+Chablis|White|A|Chardonnay with lemon, green apple and a chalky or saline impression; usually fresher and less overtly oaky than richer white Burgundy.|Chablis, Burgundy, France|
+Sancerre Blanc|White|A|Sauvignon Blanc with citrus, gooseberry, herbs and sometimes a flinty impression; usually dry and bright.|Loire Valley, France|sancerre
+Pouilly-Fumé|White|A|Dry Sauvignon Blanc with grapefruit, herbs and occasionally a smoky or flinty impression.|Loire Valley, France|pouilly fume
+White Bordeaux|White|B|Sauvignon Blanc and Sémillon blends can show citrus, grass, pear and a waxy texture; oak-aged examples may add vanilla and toast.|Bordeaux, France|bordeaux blanc
+Soave|White|B|Garganega-led whites with pear, citrus, white flowers and an almond-like finish; richer examples have more texture.|Veneto, Italy|
+Gavi|White|A|Cortese with lemon, green apple and fresh floral notes; usually dry with bright acidity.|Piedmont, Italy|cortese di gavi
+Muscadet|White|A|Dry Melon de Bourgogne with citrus, green apple and a saline impression; sur-lie aging can add texture and subtle yeasty notes.|Loire Valley, France|muscadet sevre et maine
+Vinho Verde Branco|White|A|A regional style, often blending Loureiro, Arinto or other local grapes; citrus, apple and flowers, sometimes a light spritz. Alvarinho examples can be fuller and still.|Northwestern Portugal|vinho verde white
+White Rioja|White|B|Often Viura-led: apple, citrus and herbs in fresh versions; oak-aged styles may show nuts, vanilla and a broader texture.|Rioja, Spain|rioja blanco
+Tokaji Aszú|White|S|Sweet botrytized wine, usually Furmint-led, with apricot, honey, citrus peel and sometimes saffron; high acidity balances the concentrated sweetness.|Tokaj, Hungary|tokaji aszu,tokay
+Sauternes|White|S|Sweet botrytized Sémillon and Sauvignon Blanc blends with honey, apricot, marmalade and saffron-like notes; rich but supported by acidity.|Bordeaux, France|barsac
+White Icewine / Eiswein|White|S|Concentrated sweet wine from grapes frozen on the vine; Riesling, Vidal or other grapes can show honey, peach and citrus with bright acidity.|Canada, Germany, Austria|icewine,eiswein,ice wine
+Red Bordeaux|Red|G|Cabernet Sauvignon and Merlot-led blends with cassis, plum, cedar and sometimes tobacco; blend, bank, age and oak change the balance.|Bordeaux, France|bordeaux rouge,claret
+Red Burgundy|Red|E|Pinot Noir with cherry, raspberry, floral notes and sometimes earthy or mushroom-like aromas with age; usually lighter in tannin than Cabernet-led wines.|Burgundy, France|bourgogne rouge
+Rioja Tinto|Red|F|Tempranillo-led reds with red cherry and plum; traditional oak-aged examples may show vanilla, dill, leather and tobacco.|Rioja, Spain|red rioja,rioja red
+Chianti|Red|H|Sangiovese-led reds with sour cherry, dried herbs and an earthy edge; bright acidity and firm tannins work well with tomato and savory foods.|Tuscany, Italy|chianti classico
+Barolo|Red|H|Nebbiolo with rose, red cherry, anise and tar-like notes; high acidity and strong tannins can soften with bottle age.|Piedmont, Italy|
+Barbaresco|Red|H|Nebbiolo with red cherry, rose, dried herbs and sometimes licorice; high acidity and firm tannin, with producer and vintage affecting structure.|Piedmont, Italy|
+Valpolicella|Red|E|Corvina-led blends with fresh cherry, herbs and a sometimes bitter almond finish; basic Valpolicella is lighter than Ripasso or Amarone.|Veneto, Italy|
+Amarone della Valpolicella|Red|J|Dry wine from partially dried grapes, with concentrated black cherry, dried fruit, spice and sometimes chocolate; usually full-bodied and high in alcohol.|Veneto, Italy|amarone
+Châteauneuf-du-Pape Rouge|Red|J|Grenache-led blends with ripe red fruit, dried herbs and pepper; Syrah and Mourvèdre can add darker fruit and structure.|Southern Rhône, France|chateauneuf du pape
+Beaujolais|Red|E|Gamay with red cherry, raspberry and violet; some young styles show banana-like fermentation aromas, while crus can be more structured.|Beaujolais, France|beaujolais villages,beaujolais nouveau
+Provence Rosé|Rosé|R|Dry rosé, often Grenache, Cinsault and other local grapes, with strawberry, citrus and sometimes a herbal or saline finish.|Provence, France|provence rose
+Grenache Rosé|Rosé|R|Strawberry, red cherry, watermelon and citrus; usually dry, though sweetness and concentration depend on the bottle.|France, Spain, California|garnacha rose,grenache rose
+Pinot Noir Rosé|Rosé|R|Delicate red berries, cherry and citrus, often with fresh acidity; rosé refers to winemaking style, not a separate grape.|France, United States, Germany|pinot noir rose
+White Zinfandel|Rosé|R|Usually an off-dry or medium-sweet pink wine with strawberry, watermelon and soft citrus. Despite the name, it is rosé made from red Zinfandel grapes.|California, United States|white zin
+Champagne (Brut)|Sparkling|K|Traditional-method sparkling wine with citrus, apple and fine bubbles; lees aging can add bread dough, brioche and toasted nuts. Brut has limited residual sugar; other sweetness levels exist.|Champagne, France|champagne
+Prosecco (Brut)|Sparkling|K|Glera-led sparkling wine with pear, green apple, white flowers and fresh bubbles; generally more fruit-led than long lees-aged Champagne. Extra Dry is sweeter than Brut.|Veneto and Friuli, Italy|prosecco,glera
+Cava (Brut)|Sparkling|K|Traditional-method sparkling wine, often from Macabeo, Xarel·lo and Parellada, with citrus, apple and varying bread or nutty notes from lees aging.|Spain|cava
+Crémant (Brut)|Sparkling|K|Traditional-method sparkling wines from regions outside Champagne; grapes vary, with citrus, orchard fruit and bread-like notes depending on origin and lees aging.|Alsace, Loire, Burgundy and other French regions; Luxembourg|cremant
+Moscato d’Asti|Sparkling|S|Lightly sparkling, sweet Muscat wine with orange blossom, peach and fresh grape aromas; typically low in alcohol and lighter than many dessert wines.|Piedmont, Italy|moscato d asti,moscato asti
+Fino Sherry|Fortified|Q|Dry fortified Palomino aged under flor, with almond, fresh dough and sometimes saline notes; pale and delicate rather than syrupy.|Jerez, Spain|fino,manzanilla
+Oloroso Sherry (Dry)|Fortified|O|Dry oxidatively aged fortified wine with walnut, dried orange peel and savory spice; fuller than Fino. Sweetened Oloroso and Cream Sherry are different styles.|Jerez, Spain|oloroso
+Pedro Ximénez Sherry|Fortified|P|Very sweet fortified wine from dried Pedro Ximénez grapes, with raisin, fig, molasses and coffee-like notes; thick and concentrated.|Jerez and Montilla-Moriles, Spain|px sherry,pedro ximenez sherry
+Ruby Port|Fortified|T|Sweet fortified red with black cherry, blackberry and dark plum; youthful fruit is the focus rather than long oxidative aging.|Douro, Portugal|ruby port,lbv port,vintage port
+Tawny Port|Fortified|P|Sweet fortified wine with walnut, caramel, dried fruit and spice from oxidative maturation; aged tawnies often show more nutty complexity.|Douro, Portugal|tawny
+Madeira (Sercial)|Fortified|O|The drier end of Madeira: citrus peel, toasted nuts and saline or tangy notes, with strong acidity. It can retain some sugar even when described as dry.|Madeira, Portugal|sercial madeira
+Madeira (Bual / Boal)|Fortified|P|Medium-sweet fortified wine with caramel, dried orange, nuts and raisin-like notes, held together by high acidity; sweeter than Sercial and generally less sweet than Malmsey.|Madeira, Portugal|bual,boal

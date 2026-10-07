@@ -1,7 +1,7 @@
 'use strict';
-const CACHE = 'pourmind-mobile-v4';
+const CACHE = 'pourmind-mobile-v5';
 const FILES = [
-  './', './index.html', './styles.css', './data.js', './methods.js', './learning.js', './academy-data.js', './academy.js', './app.js',
+  './', './index.html', './styles.css', './data.js', './methods.js', './learning.js', './academy-data.js', './academy.js', './app.js', './discovery-data.js', './discovery.js',
   './mobile.js', './manifest.webmanifest', './photo-files.json', './icons/apple-touch-icon.png',
   './icons/icon-192.png', './icons/icon-512.png', './icons/icon-maskable-512.png'
 ];
