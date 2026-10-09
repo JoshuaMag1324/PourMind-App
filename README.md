@@ -118,3 +118,7 @@ The six-page IBA listing is represented by 102 canonical recipes within the 143-
 New recipes retain the IBA millilitre measures and use the same cards, detail panels, serving notes, source links and favorites as the original catalogue. All 102 IBA entries have unique original photorealistic illustrations generated for PourMind. They follow the cocktail serving specifications and are labelled as AI-generated artwork in recipe details. Base filters include pisco, cachaça, mezcal, grappa, wine and liqueur. All recipes are linked to one of the existing 15 teaching families.
 
 With the local server running, `node tests/iba.test.cjs` checks IBA coverage, name searches, artwork, filters, responsive detail panels and offline new recipes.
+
+## Automatic update recovery
+
+Versioned application asset URLs and the inline release check repair older offline caches on an online refresh. The release check compares the fetched release with the actually loaded catalogue version. The recovery entry accepts both minor and patch releases, clears only PourMind application caches and service-worker registration, and leaves local storage untouched. If the online release check fails, downloaded files remain available. `tests/update-recovery.test.cjs` reproduces the 86-recipe cached app with cacheable HTTP assets and verifies automatic and direct-link recovery to 143 recipes and 102 original images.

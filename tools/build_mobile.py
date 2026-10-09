@@ -15,7 +15,7 @@ args.output.mkdir(parents=True, exist_ok=True)
 
 html = (root / 'index.html').read_text()
 html = html.replace('<head>', '<head>\n<meta name="pourmind-standalone" content="true">')
-html = html.replace('<link rel="stylesheet" href="styles.css">', '<style>' + (root / 'styles.css').read_text() + '</style>')
+html = re.sub(r'<link rel="stylesheet" href="styles\.css(?:\?[^"]*)?">', lambda _: '<style>' + (root / 'styles.css').read_text() + '</style>', html)
 html = re.sub(r'\s*<link[^>]+(?:rel="manifest"|rel="apple-touch-icon"|rel="icon")[^>]*>', '', html)
 for filename in ['data.js', 'methods.js', 'learning.js', 'academy-data.js', 'academy.js', 'discovery-data.js', 'discovery.js', 'vendor/ocr/tesseract.min.js', 'scanner.js', 'app.js', 'mobile.js']:
     script = (root / filename).read_text().replace('</script', '<\\/script')
@@ -24,7 +24,7 @@ for filename in ['data.js', 'methods.js', 'learning.js', 'academy-data.js', 'aca
             mime = mimetypes.guess_type(photo)[0] or 'application/octet-stream'
             uri = 'data:' + mime + ';base64,' + base64.b64encode((root / photo).read_bytes()).decode()
             script = script.replace(json.dumps(photo), json.dumps(uri))
-    html = html.replace(f'<script src="{filename}" defer></script>', '<script defer>\n' + script + '\n</script>')
+    html = re.sub(r'<script src="' + re.escape(filename) + r'(?:\?[^"]*)?" defer></script>', lambda _: '<script defer>\n' + script + '\n</script>', html)
 ocr = {
     'worker': (root / 'vendor/ocr/worker.min.js').read_text(),
     'core': (root / 'vendor/ocr/tesseract-core-lstm.wasm.js').read_text(),

@@ -13,18 +13,32 @@
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
   <link rel="icon" type="image/png" href="icons/icon-192.png">
-  <link rel="stylesheet" href="styles.css">
-  <script src="data.js" defer></script>
-  <script src="methods.js" defer></script>
-  <script src="learning.js" defer></script>
-  <script src="academy-data.js" defer></script>
-  <script src="academy.js" defer></script>
-  <script src="discovery-data.js" defer></script>
-  <script src="discovery.js" defer></script>
-  <script src="vendor/ocr/tesseract.min.js" defer></script>
-  <script src="scanner.js" defer></script>
-  <script src="app.js" defer></script>
-  <script src="mobile.js" defer></script>
+  <link rel="stylesheet" href="styles.css?v=2.4.2">
+  <script>
+  // This inline check runs even when an older worker serves cached application scripts.
+  document.addEventListener('DOMContentLoaded', async () => {
+    if (document.querySelector('meta[name="pourmind-standalone"]') || location.protocol === 'file:') return;
+    try {
+      const response = await fetch('./release.json?check=' + Date.now(), {cache:'no-store'});
+      if (!response.ok) return;
+      const release = await response.json();
+      if (typeof release.version !== 'string' || !/^\d+\.\d+(?:\.\d+)?$/.test(release.version)) return;
+      if (globalThis.POURMIND_DATA?.release === release.version) return;
+      location.replace('./wines.html?open=library&update=' + encodeURIComponent(release.version));
+    } catch { /* Keep downloaded content available when offline. */ }
+  });
+  </script>
+  <script src="data.js?v=2.4.2" defer></script>
+  <script src="methods.js?v=2.4.2" defer></script>
+  <script src="learning.js?v=2.4.2" defer></script>
+  <script src="academy-data.js?v=2.4.2" defer></script>
+  <script src="academy.js?v=2.4.2" defer></script>
+  <script src="discovery-data.js?v=2.4.2" defer></script>
+  <script src="discovery.js?v=2.4.2" defer></script>
+  <script src="vendor/ocr/tesseract.min.js?v=2.4.2" defer></script>
+  <script src="scanner.js?v=2.4.2" defer></script>
+  <script src="app.js?v=2.4.2" defer></script>
+  <script src="mobile.js?v=2.4.2" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
