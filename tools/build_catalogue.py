@@ -28,7 +28,7 @@ def build():
         if len(method) < 3 or any(not item[0].isdigit() and not item.startswith('A few drops ') for item in ingredient_list):
             raise ValueError(f'Missing quantities or method: {name}')
         spirits = [spirit]
-        extra = {'Vesper': ['Vodka'], 'Vieux Carré': ['Whiskey'], 'Between the Sheets': ['Rum'], 'Angel Face': ['Brandy'], 'Illegal': ['Rum'], 'Long Island Iced Tea': ['Tequila', 'Rum', 'Gin'], 'Suffering Bastard': ['Gin'], 'Trinidad Sour': ['Whiskey'], 'Pisco Punch': ['Wine'], 'Porto Flip': ['Wine'], 'Champagne Cocktail': ['Brandy']}
+        extra = {'Vesper': ['Vodka'], 'Vieux Carré': ['Whiskey'], 'Between the Sheets': ['Rum'], 'Angel Face': ['Brandy'], 'Illegal': ['Rum'], 'Long Island Iced Tea': ['Tequila', 'Rum', 'Gin'], 'Suffering Bastard': ['Gin'], 'Trinidad Sour': ['Whiskey'], 'Pisco Punch': ['Wine'], 'Porto Flip': ['Brandy'], 'Champagne Cocktail': ['Brandy'], 'Oaxacan Old Fashioned': ['Mezcal'], 'Oaxacan Margarita': ['Mezcal'], 'New York Sour': ['Wine'], 'French 75': ['Wine'], 'Pornstar Martini': ['Wine'], 'Old Cuban': ['Wine'], 'Russian Spring Punch': ['Wine']}
         if name in extra:
             spirits.extend(extra[name])
         details[name] = dict(family=family, steps=method, note=note, spirits=spirits,

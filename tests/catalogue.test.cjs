@@ -26,7 +26,7 @@ assert.match(recipeDetails['French 75'].steps[2],/Top.*Champagne/);
 assert.match(recipe('Piña Colada'),/sweetened cream of coconut/);
 assert.match(recipe('Matador'),/pineapple/);
 assert.match(recipe('Stinger'),/white crème de menthe/);
-assert.equal(drinks.find(d=>d[0]==='Wisconsin Old Fashioned')[1],'Brandy');
+assert.equal(drinks.find(d=>d[0]==='Wisconsin Old Fashioned')[1],'Whiskey');
 assert.equal(drinks.find(d=>d[0]==='Oaxacan Old Fashioned')[1],'Tequila');
 assert.ok(recipeDetails.Vesper.spirits.includes('Vodka'));
 assert.ok(recipeDetails['Vieux Carré'].spirits.includes('Whiskey'));
