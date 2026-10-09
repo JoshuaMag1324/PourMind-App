@@ -124,3 +124,23 @@ select:focus-visible,summary:focus-visible {outline:2px solid var(--gold);outlin
 @media(max-width:640px){.recipe-groups{gap:32px}.spirit-heading{margin-bottom:18px}.spirit-heading h2{font-size:27px}}
 
 .related-recipes{display:grid;gap:10px}.related-recipe{display:block;width:100%;text-align:left;padding:14px 16px;background:var(--panel);border:1px solid var(--line);border-radius:10px}.related-recipe:hover{border-color:var(--gold)}.related-recipe strong{display:block;font-size:14px;color:var(--text)}.related-recipe span{display:block;margin-top:6px;font-size:12px;line-height:1.5;color:var(--muted)}
+
+/* Beer service reference. */
+.beer-tools{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,1fr);gap:18px;margin:26px 0}
+.beer-search{display:flex;gap:8px;align-items:center}.beer-search .input{min-width:0}.beer-search .icon-button{flex:none}
+.beer-menu-filters{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:8px}
+.beer-tools .beer-library-note{grid-column:1/-1;font-size:12px;line-height:1.65;margin:0;color:var(--muted)}
+.beer-style-group{margin-top:38px}.beer-style-group .spirit-heading{margin-bottom:20px}
+.beer-card .demo-label{align-self:flex-start;margin:0}.beer-card .beer-brewer{font-size:12px;color:var(--muted);margin-top:-7px}
+.beer-card-actions{margin-top:auto;display:grid;gap:12px}.beer-card-actions .button{margin:0}
+.beer-stock-button{display:inline-flex;align-items:center;justify-content:flex-start;gap:9px;min-height:44px;background:none;border:1px solid var(--line);border-radius:8px;padding:10px 13px;color:var(--muted);font-size:12px;text-align:left}
+.beer-stock-button svg{width:17px;flex:none}.beer-stock-button[aria-pressed=true]{border-color:var(--gold);color:var(--gold);background:#e4bd780a}
+.beer-style-summary{display:grid;grid-template-columns:1.2fr 1fr;gap:24px;margin:20px 0 28px}.beer-style-summary h2{font-size:28px;margin-bottom:12px}.beer-style-summary p{font-size:14px;line-height:1.7}
+.beer-style-summary blockquote{margin:0;padding:18px;border-left:2px solid var(--gold);background:var(--bg);font-family:var(--serif);font-size:23px;line-height:1.5}
+.beer-style-summary blockquote span{display:block;font:10px system-ui;text-transform:uppercase;letter-spacing:1.5px;color:var(--gold);margin-bottom:10px}
+.beer-guest-line{background:var(--panel);border-left:2px solid var(--gold);padding:16px;margin:22px 0}.dialog-body .beer-guest-line h3{margin:0 0 10px;color:var(--gold)}
+@media(max-width:640px){.beer-tools,.beer-style-summary{grid-template-columns:1fr}.beer-tools{padding:20px;gap:16px}.beer-style-group{margin-top:28px}.beer-style-summary{gap:18px}.beer-style-summary blockquote{font-size:21px}}
+.beer-search input::-webkit-search-cancel-button{-webkit-appearance:none;appearance:none}
+.beer-tools .beer-library-note summary{cursor:pointer;min-height:24px}.beer-library-note p{margin:12px 0 0;font-size:12px;line-height:1.65}
+.beer-style-summary{display:block;padding:18px 22px}.beer-style-summary summary{cursor:pointer;font-size:15px;color:var(--gold);min-height:26px}.beer-style-content{display:grid;grid-template-columns:1.2fr 1fr;gap:24px;margin-top:20px}
+@media(max-width:640px){.beer-style-summary{padding:16px 20px}.beer-style-content{grid-template-columns:1fr;gap:18px}}

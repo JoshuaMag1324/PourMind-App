@@ -11,8 +11,9 @@
 <script>
 'use strict';
 const requested=new URLSearchParams(location.search).get('open');
-const destination=['bar','library','wines','spirits'].includes(requested)?requested:'wines';
-const opening=destination==='bar'?'Opening the latest My Bar…':destination==='library'?'Opening the latest Library…':'Opening the latest wine and spirit library…';
+const destination=['bar','library','wines','spirits','beers'].includes(requested)?requested:'wines';
+const opening=destination==='beers'?'Opening the latest beer library…':destination==='bar'?'Opening the latest My Bar…':destination==='library'?'Opening the latest Library…':'Opening the latest wine and spirit library…';
+if(destination==='beers')document.querySelector('h1').textContent='Your beer library.';
 if(destination==='bar')document.querySelector('h1').textContent='Your personal bar.';
 if(destination==='library')document.querySelector('h1').textContent='Your drink library.';
 async function openLatest() {

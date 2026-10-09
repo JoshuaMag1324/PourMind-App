@@ -17,7 +17,7 @@ html = (root / 'index.html').read_text()
 html = html.replace('<head>', '<head>\n<meta name="pourmind-standalone" content="true">')
 html = re.sub(r'<link rel="stylesheet" href="styles\.css(?:\?[^"]*)?">', lambda _: '<style>' + (root / 'styles.css').read_text() + '</style>', html)
 html = re.sub(r'\s*<link[^>]+(?:rel="manifest"|rel="apple-touch-icon"|rel="icon")[^>]*>', '', html)
-for filename in ['data.js', 'methods.js', 'learning.js', 'academy-data.js', 'academy.js', 'discovery-data.js', 'discovery.js', 'vendor/ocr/tesseract.min.js', 'scanner.js', 'app.js', 'mobile.js']:
+for filename in ['data.js', 'methods.js', 'learning.js', 'academy-data.js', 'academy.js', 'discovery-data.js', 'discovery.js', 'beer-data.js', 'beer.js', 'vendor/ocr/tesseract.min.js', 'scanner.js', 'app.js', 'mobile.js']:
     script = (root / filename).read_text().replace('</script', '<\\/script')
     if filename == 'data.js':
         for photo in json.loads((root / 'photo-files.json').read_text()):
@@ -38,7 +38,7 @@ html = re.sub(r'\s*<script defer>[\s\S]*?</script>', '', html)
 html = html.replace('</body>', '\n' + '\n'.join(scripts) + '\n</body>')
 (args.output / 'PourMind-Mobile.html').write_text(html)
 
-files = ['index.html', 'styles.css', 'data.js', 'methods.js', 'learning.js', 'academy-data.js', 'academy.js', 'discovery-data.js', 'discovery.js', 'vendor/ocr/tesseract.min.js', 'scanner.js', 'app.js', 'mobile.js', 'sw.js', 'wines.html', 'release.json', 'manifest.webmanifest']
+files = ['index.html', 'styles.css', 'data.js', 'methods.js', 'learning.js', 'academy-data.js', 'academy.js', 'discovery-data.js', 'discovery.js', 'beer-data.js', 'beer.js', 'vendor/ocr/tesseract.min.js', 'scanner.js', 'app.js', 'mobile.js', 'sw.js', 'wines.html', 'release.json', 'manifest.webmanifest']
 files += ['icons/' + name for name in ['apple-touch-icon.png', 'icon-192.png', 'icon-512.png', 'icon-maskable-512.png']]
 files += [str(path.relative_to(root)) for path in sorted((root / 'vendor/ocr').iterdir()) if path.is_file() and str(path.relative_to(root)) not in files]
 files += ['photo-files.json'] + json.loads((root / 'photo-files.json').read_text())
