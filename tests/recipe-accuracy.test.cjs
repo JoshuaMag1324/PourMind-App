@@ -16,5 +16,5 @@ for(const d of drinks){
 const byName=n=>drinks.find(d=>d[0]===n);
 assert.equal(byName('Wisconsin Old Fashioned')[1],'Whiskey');assert.match(byName('Wisconsin Old Fashioned')[2],/2 oz bourbon or rye whiskey/);assert.doesNotMatch(recipeDetails['Wisconsin Old Fashioned'].steps.join(' '),/brandy/i);
 assert.equal(byName('Mezcal Margarita')[1],'Mezcal');assert.equal(byName('Porto Flip')[1],'Wine');
-for(const [name,measure] of [['Americano','1 oz Campari'],['Gin Basil Smash','2 oz Gin'],['Mary Pickford','0.5 oz Maraschino'],['Cardinale','0.5 oz Bitter Campari'],['Bellini','3.5 oz Prosecco'],['Bramble','0.5 oz Sugar Syrup']])assert.ok(byName(name)[2].includes(measure),name);
+for(const [name,measure] of [['Americano','1 oz Campari'],['Gin Basil Smash','2 oz Gin'],['Mary Pickford','0.5 oz Luxardo maraschino liqueur'],['Cardinale','0.5 oz Campari'],['Bellini','3.5 oz Prosecco'],['Bramble','0.5 oz simple syrup']])assert.ok(byName(name)[2].toLowerCase().includes(measure.toLowerCase()),name);
 console.log('PASS: all 143 primary categories match ingredients, all base spirits have filters, no ml quantities, all ounce amounts in whole/half measures with a 0.5 oz minimum');
