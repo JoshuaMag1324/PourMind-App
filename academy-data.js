@@ -452,7 +452,7 @@ globalThis.POURMIND_ACADEMY = {
       "skill": "balance",
       "goal": "Explain how a small sweetness adjustment changes a sour.",
       "steps": [
-        "Start with the measured Daiquiri recipe, or rehearse with 2 oz water, 1 oz lime juice and 0.75 oz simple syrup.",
+        "Start with the measured Daiquiri recipe, or rehearse with 2 oz water, 1 oz lime juice and 1 oz simple syrup.",
         "Describe the original tartness, sweetness and texture. Add a measured quarter-teaspoon of syrup to a small test portion.",
         "Compare the result and record the exact change. Keep the base recipe available so you can repeat the comparison."
       ],
