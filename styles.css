@@ -122,3 +122,5 @@ select:focus-visible,summary:focus-visible {outline:2px solid var(--gold);outlin
 
 .recipe-groups{display:grid;gap:42px}.spirit-heading{display:flex;align-items:baseline;justify-content:space-between;gap:16px;border-bottom:1px solid var(--line);padding-bottom:14px;margin-bottom:22px}.spirit-heading h2{font-size:30px}.spirit-heading span{color:var(--muted);font-size:12px;white-space:nowrap}
 @media(max-width:640px){.recipe-groups{gap:32px}.spirit-heading{margin-bottom:18px}.spirit-heading h2{font-size:27px}}
+
+.related-recipes{display:grid;gap:10px}.related-recipe{display:block;width:100%;text-align:left;padding:14px 16px;background:var(--panel);border:1px solid var(--line);border-radius:10px}.related-recipe:hover{border-color:var(--gold)}.related-recipe strong{display:block;font-size:14px;color:var(--text)}.related-recipe span{display:block;margin-top:6px;font-size:12px;line-height:1.5;color:var(--muted)}
