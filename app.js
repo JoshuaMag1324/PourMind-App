@@ -63,7 +63,7 @@ function renderHome() {
 }
 function heading(eyebrow, title, subtitle) { return `<div class="page-heading"><div class="eyebrow">${eyebrow}</div><h1>${title}</h1><p>${subtitle}</p></div>`; }
 function renderLibrary() {
-  main.innerHTML = heading('A recipe for every mood', view === 'saved' ? 'Your favorites, on the house.' : 'Your drink library.', view === 'saved' ? 'The drinks you want to come back to. Saved in this browser, ready when you are.' : 'From timeless classics to a twist on the familiar. Search by name, spirit, or ingredient.') + POURMIND_DISCOVERY_UI.libraryNav('recipes') + `<div class="library-tools"><label class="search-box">${icon('search')}<input id="recipe-search" type="search" placeholder="Try Negroni, gin, or lime…" aria-label="Search recipes" value="${escapeHTML(query)}"><button class="search-clear" data-action="clear-search" aria-label="Clear search">${icon('close')}</button></label><div class="filter-row" aria-label="Filter by spirit">${['All', ...new Set(drinks.flatMap(d => recipeDetails[d[0]].spirits))].map(c => `<button class="filter" data-category="${c}" aria-pressed="${category === c}">${c}</button>`).join('')}</div></div><div class="results-meta"><span id="result-count" role="status" aria-live="polite"></span><span>Made for your home bar</span></div><div id="recipe-results" class="recipe-grid library-grid"></div>`;
+  main.innerHTML = heading('A recipe for every mood', view === 'saved' ? 'Your favorites, on the house.' : 'Your drink library.', view === 'saved' ? 'The drinks you want to come back to. Saved in this browser, ready when you are.' : 'Browse recipes grouped by their main spirit. Search by name, spirit, or ingredient.') + POURMIND_DISCOVERY_UI.libraryNav('recipes') + `<div class="library-tools"><label class="search-box">${icon('search')}<input id="recipe-search" type="search" placeholder="Try Negroni, gin, or lime…" aria-label="Search recipes" value="${escapeHTML(query)}"><button class="search-clear" data-action="clear-search" aria-label="Clear search">${icon('close')}</button></label><div class="filter-row" aria-label="Filter by spirit">${['All', ...new Set(drinks.flatMap(d => recipeDetails[d[0]].spirits))].map(c => `<button class="filter" data-category="${c}" aria-pressed="${category === c}">${c}</button>`).join('')}</div></div><div class="results-meta"><span id="result-count" role="status" aria-live="polite"></span><span>Made for your home bar</span></div><div id="recipe-results" class="recipe-groups"></div>`;
   renderResults();
 }
 function normalizeRecipeSearch(value) { return value.normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]/g, ''); }
@@ -72,7 +72,17 @@ function renderResults() {
   const results = drinks.filter(d => (view !== 'saved' || saved.has(d[0])) && (category === 'All' || recipeDetails[d[0]].spirits.includes(category)) && normalizeRecipeSearch(`${d[0]} ${(recipeDetails[d[0]].aliases || []).join(' ')} ${recipeDetails[d[0]].spirits.join(' ')} ${d[2]}`).includes(normalizeRecipeSearch(q)));
   document.querySelector('#result-count').textContent = `${results.length} ${results.length === 1 ? 'recipe' : 'recipes'}${category !== 'All' ? ` · ${category}` : ''}`;
   const hasSaved = view === 'saved' && saved.size === 0;
-  document.querySelector('#recipe-results').innerHTML = results.length ? results.map(recipeCard).join('') : `<div class="empty-state">${icon(hasSaved ? 'bookmark' : 'search')}<h2>${hasSaved ? 'Make a little collection.' : 'No matches this time.'}</h2><p>${hasSaved ? 'Tap the bookmark on any cocktail to keep your favorites here.' : 'Try another ingredient, or clear the filters to see every recipe.'}</p><button class="button" ${hasSaved ? 'data-view="recipes"' : 'data-action="reset-search"'}>${hasSaved ? 'Explore recipes' : 'Clear all filters'}</button></div>`;
+  const groups = new Map();
+  for (const drink of results) {
+    const spirit = category === 'All' ? drink[1] : category;
+    if (!groups.has(spirit)) groups.set(spirit, []);
+    groups.get(spirit).push(drink);
+  }
+  const groupedRecipes = [...groups].sort(([a], [b]) => a.localeCompare(b)).map(([spirit, recipes], index) => {
+    recipes.sort((a, b) => a[0].localeCompare(b[0]));
+    return `<section class="recipe-spirit-group" data-spirit="${escapeHTML(spirit)}" aria-labelledby="spirit-heading-${index}"><div class="spirit-heading"><h2 id="spirit-heading-${index}">${escapeHTML(spirit)}</h2><span>${recipes.length} ${recipes.length === 1 ? 'recipe' : 'recipes'}</span></div><div class="recipe-grid library-grid">${recipes.map(recipeCard).join('')}</div></section>`;
+  }).join('');
+  document.querySelector('#recipe-results').innerHTML = results.length ? groupedRecipes : `<div class="empty-state">${icon(hasSaved ? 'bookmark' : 'search')}<h2>${hasSaved ? 'Make a little collection.' : 'No matches this time.'}</h2><p>${hasSaved ? 'Tap the bookmark on any cocktail to keep your favorites here.' : 'Try another ingredient, or clear the filters to see every recipe.'}</p><button class="button" ${hasSaved ? 'data-view="recipes"' : 'data-action="reset-search"'}>${hasSaved ? 'Explore recipes' : 'Clear all filters'}</button></div>`;
   const clear = document.querySelector('.search-clear');
   clear.style.visibility = query ? 'visible' : 'hidden';
 }
