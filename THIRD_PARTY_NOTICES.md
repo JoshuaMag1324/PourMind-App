@@ -19,4 +19,10 @@ Runtime code and model files are bundled with the app. Photos and extracted labe
 
 ## IBA catalogue expansion
 
-All six pages of https://iba-world.com/cocktails/all-cocktails/ were reviewed for this expansion. The 102 listed names map to 102 existing or added recipes in `recipes/iba-coverage.json`; 57 recipes were added. New quantities follow the linked IBA pages, with preparation steps rewritten for PourMind. Existing recipes retain their specified servings. Typographic variants and established alternate names map to one recipe. Six new entries use explicitly labelled family reference images where a named photograph was unavailable in the pinned datasets.
+All six pages of https://iba-world.com/cocktails/all-cocktails/ were reviewed for this expansion. The 102 listed names map to 102 existing or added recipes in `recipes/iba-coverage.json`; 57 recipes were added. New quantities follow the linked IBA pages, with preparation steps rewritten for PourMind. Existing recipes retain their specified servings. Typographic variants and established alternate names map to one recipe. The IBA entries now use original PourMind artwork as described below.
+
+## Original IBA cocktail artwork
+
+PourMind commissioned 102 unique AI-generated photorealistic cocktail illustrations, one for each canonical recipe in the six-page IBA catalogue. These are original images staged with a consistent dark bar background, centered glassware and recipe-appropriate colors, ice, foam and garnish. They use IBA serving specifications and existing PourMind cocktail photographs as visual guidance; direct downloads of IBA photographs were unavailable in the execution environment. They are not IBA-owned photographs or an IBA endorsement.
+
+The photo map labels every new image “AI-generated illustration” with the credit “PourMind,” retains the recipe-reference URL, and records its SHA-256. The complete generated compositions are encoded as WebP for delivery, without cropping. Existing photographs retained for non-IBA variations keep their original credits and notices.

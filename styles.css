@@ -115,3 +115,7 @@ select:focus-visible,summary:focus-visible {outline:2px solid var(--gold);outlin
 .recipe-detail-image{background:var(--panel);text-align:center;overflow:hidden}
 .recipe-detail-image .dialog-photo{display:block}
 .recipe-detail-image[data-photo-name="El Diablo"] .dialog-photo,.recipe-detail-image[data-photo-name="Dry Martini"] .dialog-photo{width:auto;max-width:100%;aspect-ratio:4/5;object-fit:cover;object-position:var(--photo-focus) center;margin-inline:auto}
+
+/* Original cocktail artwork keeps its centered composition in both layouts. */
+.recipe-image img.generated-cocktail-photo{object-position:center center}
+.recipe-detail-image .dialog-photo.generated-cocktail-photo{width:100%;max-width:100%;aspect-ratio:auto;object-fit:contain;object-position:center center;margin-inline:auto}
