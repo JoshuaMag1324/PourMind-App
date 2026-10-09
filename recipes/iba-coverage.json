@@ -1,0 +1,414 @@
+{
+  "source": "https://iba-world.com/cocktails/all-cocktails/",
+  "pages": 6,
+  "cocktails": [
+    {
+      "ibaName": "Alexander",
+      "recipeName": "Brandy Alexander"
+    },
+    {
+      "ibaName": "Americano",
+      "recipeName": "Americano"
+    },
+    {
+      "ibaName": "Angel Face",
+      "recipeName": "Angel Face"
+    },
+    {
+      "ibaName": "Aviation",
+      "recipeName": "Aviation"
+    },
+    {
+      "ibaName": "Bee’s Knees",
+      "recipeName": "Bee's Knees"
+    },
+    {
+      "ibaName": "Bellini",
+      "recipeName": "Bellini"
+    },
+    {
+      "ibaName": "Between the Sheets",
+      "recipeName": "Between the Sheets"
+    },
+    {
+      "ibaName": "Black Russian",
+      "recipeName": "Black Russian"
+    },
+    {
+      "ibaName": "Bloody Mary",
+      "recipeName": "Bloody Mary"
+    },
+    {
+      "ibaName": "Boulevardier",
+      "recipeName": "Boulevardier"
+    },
+    {
+      "ibaName": "Bramble",
+      "recipeName": "Bramble"
+    },
+    {
+      "ibaName": "Brandy Crusta",
+      "recipeName": "Brandy Crusta"
+    },
+    {
+      "ibaName": "Caipirinha",
+      "recipeName": "Caipirinha"
+    },
+    {
+      "ibaName": "Canchanchara",
+      "recipeName": "Canchanchara"
+    },
+    {
+      "ibaName": "Cardinale",
+      "recipeName": "Cardinale"
+    },
+    {
+      "ibaName": "Casino",
+      "recipeName": "Casino"
+    },
+    {
+      "ibaName": "Champagne Cocktail",
+      "recipeName": "Champagne Cocktail"
+    },
+    {
+      "ibaName": "Chartreuse Swizzle",
+      "recipeName": "Chartreuse Swizzle"
+    },
+    {
+      "ibaName": "Clover Club",
+      "recipeName": "Clover Club"
+    },
+    {
+      "ibaName": "Corpse Reviver #2",
+      "recipeName": "Corpse Reviver #2"
+    },
+    {
+      "ibaName": "Cosmopolitan",
+      "recipeName": "Cosmopolitan"
+    },
+    {
+      "ibaName": "Cuba Libre",
+      "recipeName": "Cuba Libre"
+    },
+    {
+      "ibaName": "Daiquiri",
+      "recipeName": "Daiquiri"
+    },
+    {
+      "ibaName": "Dark ‘N’ Stormy",
+      "recipeName": "Dark 'n' Stormy"
+    },
+    {
+      "ibaName": "Don's Special Daiquiri",
+      "recipeName": "Don's Special Daiquiri"
+    },
+    {
+      "ibaName": "Dry Martini",
+      "recipeName": "Dry Martini"
+    },
+    {
+      "ibaName": "Espresso Martini",
+      "recipeName": "Espresso Martini"
+    },
+    {
+      "ibaName": "Fernandito",
+      "recipeName": "Fernandito"
+    },
+    {
+      "ibaName": "French 75",
+      "recipeName": "French 75"
+    },
+    {
+      "ibaName": "French Connection",
+      "recipeName": "French Connection"
+    },
+    {
+      "ibaName": "French Martini",
+      "recipeName": "French Martini"
+    },
+    {
+      "ibaName": "Garibaldi",
+      "recipeName": "Garibaldi"
+    },
+    {
+      "ibaName": "Gin Basil Smash",
+      "recipeName": "Gin Basil Smash"
+    },
+    {
+      "ibaName": "Gin Fizz",
+      "recipeName": "Gin Fizz"
+    },
+    {
+      "ibaName": "Grand Margarita",
+      "recipeName": "Grand Margarita"
+    },
+    {
+      "ibaName": "Grasshopper",
+      "recipeName": "Grasshopper"
+    },
+    {
+      "ibaName": "Hanky Panky",
+      "recipeName": "Hanky Panky"
+    },
+    {
+      "ibaName": "Hemingway Special",
+      "recipeName": "Hemingway Daiquiri"
+    },
+    {
+      "ibaName": "Horse’s Neck",
+      "recipeName": "Horse’s Neck"
+    },
+    {
+      "ibaName": "IBA Tiki",
+      "recipeName": "IBA Tiki"
+    },
+    {
+      "ibaName": "Illegal",
+      "recipeName": "Illegal"
+    },
+    {
+      "ibaName": "Irish Coffee",
+      "recipeName": "Irish Coffee"
+    },
+    {
+      "ibaName": "John Collins",
+      "recipeName": "John Collins"
+    },
+    {
+      "ibaName": "Jungle Bird",
+      "recipeName": "Jungle Bird"
+    },
+    {
+      "ibaName": "Kir",
+      "recipeName": "Kir"
+    },
+    {
+      "ibaName": "Last Word",
+      "recipeName": "Last Word"
+    },
+    {
+      "ibaName": "Lemon Drop Martini",
+      "recipeName": "Lemon Drop Martini"
+    },
+    {
+      "ibaName": "Long Island Iced Tea",
+      "recipeName": "Long Island Iced Tea"
+    },
+    {
+      "ibaName": "Mai-Tai",
+      "recipeName": "Mai Tai"
+    },
+    {
+      "ibaName": "Manhattan",
+      "recipeName": "Manhattan"
+    },
+    {
+      "ibaName": "Margarita",
+      "recipeName": "Margarita"
+    },
+    {
+      "ibaName": "Martinez",
+      "recipeName": "Martinez"
+    },
+    {
+      "ibaName": "Mary Pickford",
+      "recipeName": "Mary Pickford"
+    },
+    {
+      "ibaName": "Mimosa",
+      "recipeName": "Mimosa"
+    },
+    {
+      "ibaName": "Mint Julep",
+      "recipeName": "Mint Julep"
+    },
+    {
+      "ibaName": "Missionary's Downfall",
+      "recipeName": "Missionary's Downfall"
+    },
+    {
+      "ibaName": "Mojito",
+      "recipeName": "Mojito"
+    },
+    {
+      "ibaName": "Monkey Gland",
+      "recipeName": "Monkey Gland"
+    },
+    {
+      "ibaName": "Moscow Mule",
+      "recipeName": "Moscow Mule"
+    },
+    {
+      "ibaName": "Naked and Famous",
+      "recipeName": "Naked and Famous"
+    },
+    {
+      "ibaName": "Negroni",
+      "recipeName": "Negroni"
+    },
+    {
+      "ibaName": "New York Sour",
+      "recipeName": "New York Sour"
+    },
+    {
+      "ibaName": "Old Cuban",
+      "recipeName": "Old Cuban"
+    },
+    {
+      "ibaName": "Old Fashioned",
+      "recipeName": "Old Fashioned"
+    },
+    {
+      "ibaName": "Paloma",
+      "recipeName": "Paloma"
+    },
+    {
+      "ibaName": "Paper Plane",
+      "recipeName": "Paper Plane"
+    },
+    {
+      "ibaName": "Paradise",
+      "recipeName": "Paradise"
+    },
+    {
+      "ibaName": "Penicillin",
+      "recipeName": "Penicillin"
+    },
+    {
+      "ibaName": "Pina Colada",
+      "recipeName": "Piña Colada"
+    },
+    {
+      "ibaName": "Pisco Punch",
+      "recipeName": "Pisco Punch"
+    },
+    {
+      "ibaName": "Pisco Sour",
+      "recipeName": "Pisco Sour"
+    },
+    {
+      "ibaName": "Planters Punch",
+      "recipeName": "Planters Punch"
+    },
+    {
+      "ibaName": "Porn Star Martini",
+      "recipeName": "Pornstar Martini"
+    },
+    {
+      "ibaName": "Porto Flip",
+      "recipeName": "Porto Flip"
+    },
+    {
+      "ibaName": "Rabo de Galo",
+      "recipeName": "Rabo de Galo"
+    },
+    {
+      "ibaName": "Ramos Fizz",
+      "recipeName": "Ramos Fizz"
+    },
+    {
+      "ibaName": "Remember the Maine",
+      "recipeName": "Remember the Maine"
+    },
+    {
+      "ibaName": "Russian Spring Punch",
+      "recipeName": "Russian Spring Punch"
+    },
+    {
+      "ibaName": "Rusty Nail",
+      "recipeName": "Rusty Nail"
+    },
+    {
+      "ibaName": "Sazerac",
+      "recipeName": "Sazerac"
+    },
+    {
+      "ibaName": "Sea Breeze",
+      "recipeName": "Sea Breeze"
+    },
+    {
+      "ibaName": "Sex on the Beach",
+      "recipeName": "Sex on the Beach"
+    },
+    {
+      "ibaName": "Sherry Cobbler",
+      "recipeName": "Sherry Cobbler"
+    },
+    {
+      "ibaName": "Sidecar",
+      "recipeName": "Sidecar"
+    },
+    {
+      "ibaName": "Singapore Sling",
+      "recipeName": "Singapore Sling"
+    },
+    {
+      "ibaName": "South Side",
+      "recipeName": "Southside"
+    },
+    {
+      "ibaName": "Spicy Fifty",
+      "recipeName": "Spicy Fifty"
+    },
+    {
+      "ibaName": "Spritz",
+      "recipeName": "Spritz"
+    },
+    {
+      "ibaName": "Stinger",
+      "recipeName": "Stinger"
+    },
+    {
+      "ibaName": "Suffering Bastard",
+      "recipeName": "Suffering Bastard"
+    },
+    {
+      "ibaName": "Tequila Sunrise",
+      "recipeName": "Tequila Sunrise"
+    },
+    {
+      "ibaName": "Three Dots and a Dash",
+      "recipeName": "Three Dots and a Dash"
+    },
+    {
+      "ibaName": "Tipperary",
+      "recipeName": "Tipperary"
+    },
+    {
+      "ibaName": "Tommy's Margarita",
+      "recipeName": "Tommy's Margarita"
+    },
+    {
+      "ibaName": "Trinidad Sour",
+      "recipeName": "Trinidad Sour"
+    },
+    {
+      "ibaName": "Tuxedo",
+      "recipeName": "Tuxedo"
+    },
+    {
+      "ibaName": "Ve.N.To",
+      "recipeName": "Ve.N.To"
+    },
+    {
+      "ibaName": "Vesper",
+      "recipeName": "Vesper"
+    },
+    {
+      "ibaName": "Vieux Carré",
+      "recipeName": "Vieux Carré"
+    },
+    {
+      "ibaName": "Whiskey Sour",
+      "recipeName": "Whiskey Sour"
+    },
+    {
+      "ibaName": "White Lady",
+      "recipeName": "White Lady"
+    },
+    {
+      "ibaName": "Zombie",
+      "recipeName": "Zombie"
+    }
+  ]
+}

@@ -42,7 +42,7 @@ files = ['index.html', 'styles.css', 'data.js', 'methods.js', 'learning.js', 'ac
 files += ['icons/' + name for name in ['apple-touch-icon.png', 'icon-192.png', 'icon-512.png', 'icon-maskable-512.png']]
 files += [str(path.relative_to(root)) for path in sorted((root / 'vendor/ocr').iterdir()) if path.is_file() and str(path.relative_to(root)) not in files]
 files += ['photo-files.json'] + json.loads((root / 'photo-files.json').read_text())
-files += ['recipes/photo-map.json', 'recipes/bar-assistant-LICENSE.txt', 'recipes/opendrinks-LICENSE.txt', 'THIRD_PARTY_NOTICES.md']
+files += ['recipes/photo-map.json', 'recipes/iba-coverage.json', 'recipes/bar-assistant-LICENSE.txt', 'recipes/opendrinks-LICENSE.txt', 'THIRD_PARTY_NOTICES.md']
 with zipfile.ZipFile(args.output / 'PourMind-iPhone-Test.zip', 'w', zipfile.ZIP_DEFLATED, compresslevel=9) as archive:
     for filename in files:
         archive.write(root / filename, 'PourMind-iPhone-Test/web/' + filename)
@@ -54,7 +54,7 @@ with zipfile.ZipFile(args.output / 'PourMind-iPhone-Test.zip', 'w', zipfile.ZIP_
 with zipfile.ZipFile(args.output / 'PourMind-Try-It.zip', 'w', zipfile.ZIP_DEFLATED, compresslevel=9) as archive:
     archive.writestr('PourMind-Try-It/PourMind.html', html)
     archive.write(root / 'tools/TRY_IT.txt', 'PourMind-Try-It/START_HERE.txt')
-    for filename in [str(path.relative_to(root)) for path in sorted((root / 'vendor/ocr').iterdir()) if path.name.endswith(('.txt', '.json'))] + ['THIRD_PARTY_NOTICES.md', 'recipes/photo-map.json', 'recipes/bar-assistant-LICENSE.txt', 'recipes/opendrinks-LICENSE.txt']:
+    for filename in [str(path.relative_to(root)) for path in sorted((root / 'vendor/ocr').iterdir()) if path.name.endswith(('.txt', '.json'))] + ['THIRD_PARTY_NOTICES.md', 'recipes/photo-map.json', 'recipes/iba-coverage.json', 'recipes/bar-assistant-LICENSE.txt', 'recipes/opendrinks-LICENSE.txt']:
         archive.write(root / filename, 'PourMind-Try-It/' + filename)
 print('Created:', args.output / 'PourMind-Try-It.zip')
 print('Created:', args.output / 'PourMind-iPhone-Test.zip')

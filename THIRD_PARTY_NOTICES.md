@@ -16,3 +16,7 @@ The photo map records the source recipe, repository revision, image path and SHA
 Bottle-label OCR uses Tesseract.js 5.1.1 and tesseract.js-core 5.1.1 (Apache License 2.0), with the English LSTM model distributed by @tesseract.js-data/eng 1.0.0 (MIT distribution notice). The compiled main and worker distributions include their dependency notices. Exact source URLs and SHA-256 hashes are retained in `vendor/ocr/sources.json`; licenses and notices are beside those files. The English traineddata derives from Tesseract’s Apache-licensed tessdata; see https://github.com/tesseract-ocr/tessdata and https://github.com/tesseract-ocr/tessdata/blob/main/LICENSE.
 
 Runtime code and model files are bundled with the app. Photos and extracted label text are processed on the device and are not uploaded or stored. Only user-confirmed names enter the private inventory.
+
+## IBA catalogue expansion
+
+All six pages of https://iba-world.com/cocktails/all-cocktails/ were reviewed for this expansion. The 102 listed names map to 102 existing or added recipes in `recipes/iba-coverage.json`; 57 recipes were added. New quantities follow the linked IBA pages, with preparation steps rewritten for PourMind. Existing recipes retain their specified servings. Typographic variants and established alternate names map to one recipe. Six new entries use explicitly labelled family reference images where a named photograph was unavailable in the pinned datasets.

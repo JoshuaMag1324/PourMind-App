@@ -1,6 +1,6 @@
 # PourMind
 
-A responsive cocktail learning app with 86 recipes, 15 cocktail teaching families, food pairings and a 244-entry wine reference. The redesigned app starts at `index.html`; the original upload remains unchanged in `PourMind_v6_Audited_Test.html`.
+A responsive cocktail learning app with 143 recipes, 15 cocktail teaching families, food pairings and a 244-entry wine reference. The redesigned app starts at `index.html`; the original upload remains unchanged in `PourMind_v6_Audited_Test.html`.
 
 ## Develop
 
@@ -55,7 +55,7 @@ See [phone testing instructions](tools/PHONE_TESTING.md) for Safari installation
 
 ## Editing recipes and photos
 
-Edit `recipes/catalogue.txt` and `recipes/photo-map.json`, then run `python3 tools/build_catalogue.py` and `node tests/catalogue.test.cjs`. Each of the 86 drinks has measured ingredients, explicit steps, serving notes and a named image. The compiler checks missing/duplicate pairs and image checksums, and writes `data.js` plus the offline photo manifest. See `THIRD_PARTY_NOTICES.md` for source credits. Rebuild the mobile package after changes. Increment the service worker cache revision when publishing a new catalogue.
+Edit `recipes/catalogue.txt` and `recipes/photo-map.json`, then run `python3 tools/build_catalogue.py` and `node tests/catalogue.test.cjs`. Each of the 143 drinks has measured ingredients, explicit steps, serving notes and a named image. The compiler checks missing/duplicate pairs and image checksums, and writes `data.js` plus the offline photo manifest. See `THIRD_PARTY_NOTICES.md` for source credits. Rebuild the mobile package after changes. Increment the service worker cache revision when publishing a new catalogue.
 
 ## Learning practice
 
@@ -79,7 +79,7 @@ The Library tab groups Cocktails, Spirits, Wines, Cocktail families and Food pai
 
 Wine search covers names, aliases, regions and flavors, including accent-insensitive matching and the common Riesling misspelling “resling.” Results are paginated. Wine and spirit detail panels can add bottles to the existing private inventory without duplicates.
 
-Fifteen teaching families cover all 86 recipes exactly once. Family patterns explain structure, taste, method and thoughtful variations, with links to the measured recipes and corresponding images. Fifteen food groups offer wine and cocktail suggestions with reasons. Preparation, sauce, sweetness and alcohol matter; suggestions are starting points.
+Fifteen teaching families cover all 143 recipes exactly once. Family patterns explain structure, taste, method and thoughtful variations, with links to the measured recipes and corresponding images. Fifteen food groups offer wine and cocktail suggestions with reasons. Preparation, sauce, sweetness and alcohol matter; suggestions are starting points.
 
 Tasting descriptions are original educational summaries of typical styles, not bottle-specific evaluations or a claim to list every grape worldwide. Variations such as dry versus sweet Riesling, rosé White Zinfandel and dry Sherry are labelled.
 
@@ -110,3 +110,11 @@ Choose a photo or capture one on a phone. The scanner limits photos to 20 MB, ac
 The hosted app precaches all OCR resources for offline use. The portable build embeds the worker, core and compressed model and exposes them as temporary Blob URLs, so scanning requires no external requests even in the self-contained document. The English reader works best with clear printed labels. Dark, curved, small, obstructed or non-English text can need correction; it does not recognize unlabelled objects by appearance.
 
 Run `node tests/scanner.test.cjs` (set `POURMIND_TEST_URL` for the local server) to check real OCR, unchanged inventory before confirmation, exclusions, editing, duplicates, persistence, cancellation, invalid files and layouts. Run `node tests/scanner-standalone.test.cjs` after packaging for actual OCR with embedded assets and zero external requests. The test image is an original controlled-label fixture; it does not establish accuracy for every real bar photo.
+
+## IBA catalogue coverage
+
+The six-page IBA listing is represented by 102 canonical recipes within the 143-recipe catalogue. The expansion adds 57 cocktails while keeping existing recipes and variations. `recipes/iba-coverage.json` maps IBA names to existing names, including Alexander → Brandy Alexander and Hemingway Special → Hemingway Daiquiri. Alternate names are searchable. The catalogue compiler rejects names that differ only in accents, punctuation, spacing or case.
+
+New recipes retain the IBA millilitre measures and use the same cards, detail panels, serving notes, source links and favorites as the original catalogue. Six additions use labelled family reference images: Chartreuse Swizzle, Don’s Special Daiquiri, Grand Margarita, IBA Tiki, Pisco Punch and Sherry Cobbler. Base filters include pisco, cachaça, mezcal, grappa, wine and liqueur. All recipes are linked to one of the existing 15 teaching families.
+
+With the local server running, `node tests/iba.test.cjs` checks IBA coverage, name searches, artwork, filters, responsive detail panels and offline new recipes.
