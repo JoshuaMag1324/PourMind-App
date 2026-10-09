@@ -1,6 +1,6 @@
 # Beer service reference
 
-The starter catalogue contains 104 named commercial beer products across 26 service categories, focused on US menus and common imports. It is a curated reference, not an exhaustive catalogue or a live distributor/venue stock feed.
+The starter catalogue contains 232 named commercial beer products across 26 service categories, each with at least eight products, including 28 Asian-brand products, focused on US menus and common imports. It is a curated reference, not an exhaustive catalogue or a live distributor/venue stock feed.
 
 Edit `catalogue.json`, then run `python3 tools/build_beers.py`. Each product has its own identity, style, typical ABV, brewery, flavor note, origin and official brewery website. Product names, ABV, production locations and distribution can change; verify the current product label and brewery information when updating records. Source links are brewery references, not assertions of live stock. Style descriptions and guest language are general guidance rather than exact descriptions of every product.
 

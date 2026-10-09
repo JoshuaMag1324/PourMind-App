@@ -1617,6 +1617,1518 @@
       "taste": "Light malt with a crisp, delicate ale finish.",
       "url": "https://bestdaybrewing.com/",
       "aliases": []
+    },
+    {
+      "id": "bohemia-pilsner",
+      "name": "Bohemia Pilsner",
+      "brewer": "Cervecería Cuauhtémoc Moctezuma",
+      "style": "pilsner",
+      "abv": "4.7",
+      "origin": "Mexico",
+      "taste": "Crisp malt, floral hops and a dry, bitter finish.",
+      "url": "https://www.bohemiabeerusa.com/",
+      "aliases": [
+        "bohemian pilsner"
+      ]
+    },
+    {
+      "id": "kirin-light",
+      "name": "Kirin Light",
+      "brewer": "Kirin",
+      "style": "light-lager",
+      "abv": "3.3",
+      "origin": "Japanese brand · US production varies",
+      "taste": "Light malt, delicate hops and a crisp finish.",
+      "url": "https://www.kirinichiban.com/",
+      "aliases": [
+        "asian beer",
+        "asian brand"
+      ]
+    },
+    {
+      "id": "busch-light",
+      "name": "Busch Light",
+      "brewer": "Anheuser-Busch",
+      "style": "light-lager",
+      "abv": "4.1",
+      "origin": "United States",
+      "taste": "Mild grain and malt with a light, clean finish.",
+      "url": "https://www.busch.com/",
+      "aliases": []
+    },
+    {
+      "id": "natural-light",
+      "name": "Natural Light",
+      "brewer": "Anheuser-Busch",
+      "style": "light-lager",
+      "abv": "4.2",
+      "origin": "United States",
+      "taste": "Light grain character and restrained bitterness.",
+      "url": "https://www.naturallight.com/",
+      "aliases": []
+    },
+    {
+      "id": "asahi-super-dry",
+      "name": "Asahi Super Dry",
+      "brewer": "Asahi Breweries",
+      "style": "pale-lager",
+      "abv": "5",
+      "origin": "Japan · import production varies",
+      "taste": "Crisp grain character with a distinctly dry, clean finish.",
+      "url": "https://www.asahisuperdry.com/",
+      "aliases": [
+        "asian beer",
+        "asian brand",
+        "japanese rice lager",
+        "asahi"
+      ]
+    },
+    {
+      "id": "sapporo-premium-beer",
+      "name": "Sapporo Premium Beer",
+      "brewer": "Sapporo Breweries",
+      "style": "pale-lager",
+      "abv": "4.9",
+      "origin": "Japanese brand · US/Canadian production varies",
+      "taste": "Clean, lightly bready malt with a crisp finish.",
+      "url": "https://sapporobeer.com/",
+      "aliases": [
+        "asian beer",
+        "asian brand",
+        "sapporo lager"
+      ]
+    },
+    {
+      "id": "kirin-ichiban",
+      "name": "Kirin Ichiban",
+      "brewer": "Kirin",
+      "style": "pale-lager",
+      "abv": "5",
+      "origin": "Japanese brand · US production varies",
+      "taste": "Smooth pale malt and a clean, restrained hop finish.",
+      "url": "https://www.kirinichiban.com/",
+      "aliases": [
+        "asian beer",
+        "asian brand",
+        "first press lager"
+      ]
+    },
+    {
+      "id": "tsingtao-premium-lager",
+      "name": "Tsingtao Premium Lager",
+      "brewer": "Tsingtao Brewery",
+      "style": "pale-lager",
+      "abv": "4.7",
+      "origin": "China",
+      "taste": "Light grain and malt with a crisp, gently bitter finish.",
+      "url": "https://www.tsingtaobeer.com/",
+      "aliases": [
+        "asian beer",
+        "asian brand"
+      ]
+    },
+    {
+      "id": "singha-lager",
+      "name": "Singha Lager",
+      "brewer": "Boon Rawd Brewery",
+      "style": "pale-lager",
+      "abv": "5",
+      "origin": "Thailand",
+      "taste": "Rounded malt and a crisp, slightly bitter finish.",
+      "url": "https://www.singhabeer.com/",
+      "aliases": [
+        "asian beer",
+        "asian brand"
+      ]
+    },
+    {
+      "id": "chang-classic",
+      "name": "Chang Classic",
+      "brewer": "Thai Beverage",
+      "style": "pale-lager",
+      "abv": "5",
+      "origin": "Thailand · export label varies",
+      "taste": "Smooth grain character with a clean, mild hop finish.",
+      "url": "https://www.changbeer.com/",
+      "aliases": [
+        "asian beer",
+        "asian brand"
+      ]
+    },
+    {
+      "id": "tiger-beer",
+      "name": "Tiger Beer",
+      "brewer": "Heineken Asia Pacific",
+      "style": "pale-lager",
+      "abv": "5",
+      "origin": "Singapore brand · production varies",
+      "taste": "Light malt and a clean, crisp finish.",
+      "url": "https://www.tigerbeer.com/",
+      "aliases": [
+        "asian beer",
+        "asian brand"
+      ]
+    },
+    {
+      "id": "beerlao-lager",
+      "name": "Beerlao Lager",
+      "brewer": "Lao Brewery Company",
+      "style": "pale-lager",
+      "abv": "5",
+      "origin": "Laos · specialty import",
+      "taste": "Soft rice and malt character with a clean finish.",
+      "url": "https://www.beerlao.la/",
+      "aliases": [
+        "asian beer",
+        "asian brand"
+      ]
+    },
+    {
+      "id": "san-miguel-pale-pilsen",
+      "name": "San Miguel Pale Pilsen",
+      "brewer": "San Miguel Brewery",
+      "style": "pale-lager",
+      "abv": "5",
+      "origin": "Philippines · specialty import",
+      "taste": "Rounded pale malt with a gently bitter finish.",
+      "url": "https://www.sanmiguelbrewery.com/",
+      "aliases": [
+        "asian beer",
+        "asian brand"
+      ]
+    },
+    {
+      "id": "cass-fresh",
+      "name": "Cass Fresh",
+      "brewer": "Oriental Brewery",
+      "style": "pale-lager",
+      "abv": "4.5",
+      "origin": "South Korea · specialty import",
+      "taste": "Light grain character and a crisp, mild finish.",
+      "url": "https://www.cass.co.kr/",
+      "aliases": [
+        "asian beer",
+        "asian brand"
+      ]
+    },
+    {
+      "id": "hite-extra-cold",
+      "name": "Hite Extra Cold",
+      "brewer": "HiteJinro",
+      "style": "pale-lager",
+      "abv": "4.5",
+      "origin": "South Korea · specialty import",
+      "taste": "Clean, light malt with restrained bitterness.",
+      "url": "https://www.hitejinro.com/",
+      "aliases": [
+        "asian beer",
+        "asian brand"
+      ]
+    },
+    {
+      "id": "orion-draft-beer",
+      "name": "Orion Draft Beer",
+      "brewer": "Orion Breweries",
+      "style": "pale-lager",
+      "abv": "5",
+      "origin": "Japan · Okinawa · specialty import",
+      "taste": "Light malt, gentle hops and a crisp finish.",
+      "url": "https://www.orionbeer.co.jp/",
+      "aliases": [
+        "asian beer",
+        "asian brand"
+      ]
+    },
+    {
+      "id": "echigo-koshihikari-rice-lager",
+      "name": "Echigo Koshihikari Rice Lager",
+      "brewer": "Echigo Beer",
+      "style": "pale-lager",
+      "abv": "5",
+      "origin": "Japan · specialty import",
+      "taste": "Delicate rice character and a light, clean finish.",
+      "url": "https://echigobeer.com/",
+      "aliases": [
+        "asian beer",
+        "asian brand"
+      ]
+    },
+    {
+      "id": "saigon-special",
+      "name": "Saigon Special",
+      "brewer": "SABECO",
+      "style": "pale-lager",
+      "abv": "4.9",
+      "origin": "Vietnam · specialty import",
+      "taste": "Clean pale malt with a crisp, mild hop finish.",
+      "url": "https://www.sabeco.com.vn/",
+      "aliases": [
+        "asian beer",
+        "asian brand"
+      ]
+    },
+    {
+      "id": "estrella-jalisco",
+      "name": "Estrella Jalisco",
+      "brewer": "Grupo Modelo",
+      "style": "mexican-lager",
+      "abv": "4.5",
+      "origin": "Mexico",
+      "taste": "Light, crisp malt and a mild finish.",
+      "url": "https://www.estrellajalisco.com/",
+      "aliases": []
+    },
+    {
+      "id": "sol",
+      "name": "Sol",
+      "brewer": "Cervecería Cuauhtémoc Moctezuma",
+      "style": "mexican-lager",
+      "abv": "4.4",
+      "origin": "Mexico · US product varies",
+      "taste": "Light grain and malt with a refreshing, clean finish.",
+      "url": "https://www.sol.com/",
+      "aliases": []
+    },
+    {
+      "id": "carta-blanca",
+      "name": "Carta Blanca",
+      "brewer": "Cervecería Cuauhtémoc Moctezuma",
+      "style": "mexican-lager",
+      "abv": "4.5",
+      "origin": "Mexico · regional import",
+      "taste": "Soft pale malt and a mild, clean finish.",
+      "url": "https://www.cartablanca.com.mx/",
+      "aliases": []
+    },
+    {
+      "id": "sapporo-premium-black",
+      "name": "Sapporo Premium Black",
+      "brewer": "Sapporo Breweries",
+      "style": "dark-lager",
+      "abv": "5",
+      "origin": "Japanese brand · US production varies",
+      "taste": "Toasted malt, caramel and light roasted notes with a smooth finish.",
+      "url": "https://sapporobeer.com/",
+      "aliases": [
+        "asian beer",
+        "asian brand",
+        "sapporo black"
+      ]
+    },
+    {
+      "id": "coedo-shikkoku",
+      "name": "Coedo Shikkoku",
+      "brewer": "Coedo Brewery",
+      "style": "dark-lager",
+      "abv": "5",
+      "origin": "Japan · specialty import",
+      "taste": "Light coffee and cocoa-like malt with a clean, dry finish.",
+      "url": "https://www.coedobrewery.com/",
+      "aliases": [
+        "asian beer",
+        "asian brand",
+        "schwarzbier"
+      ]
+    },
+    {
+      "id": "hofbrau-dunkel",
+      "name": "Hofbräu Dunkel",
+      "brewer": "Staatliches Hofbräuhaus München",
+      "style": "dark-lager",
+      "abv": "5.5",
+      "origin": "Germany",
+      "taste": "Bread crust and toasted malt with a smooth lager finish.",
+      "url": "https://www.hofbraeu-muenchen.de/",
+      "aliases": []
+    },
+    {
+      "id": "weihenstephaner-tradition-bayrisch-dunkel",
+      "name": "Weihenstephaner Tradition Bayrisch Dunkel",
+      "brewer": "Bayerische Staatsbrauerei Weihenstephan",
+      "style": "dark-lager",
+      "abv": "5.2",
+      "origin": "Germany",
+      "taste": "Toasted bread, caramel-like malt and a rounded finish.",
+      "url": "https://www.weihenstephaner.de/",
+      "aliases": []
+    },
+    {
+      "id": "paulaner-munchner-dunkel",
+      "name": "Paulaner Münchner Dunkel",
+      "brewer": "Paulaner",
+      "style": "dark-lager",
+      "abv": "5",
+      "origin": "Germany",
+      "taste": "Toasted malt and cocoa-like notes with a smooth finish.",
+      "url": "https://www.paulaner.com/",
+      "aliases": []
+    },
+    {
+      "id": "spaten-optimator",
+      "name": "Spaten Optimator",
+      "brewer": "Spaten-Franziskaner-Bräu",
+      "style": "bock",
+      "abv": "7.6",
+      "origin": "Germany",
+      "taste": "Rich toasted malt and caramel with a fuller, warming finish.",
+      "url": "https://www.spatenbeer.com/",
+      "aliases": []
+    },
+    {
+      "id": "einbecker-ur-bock-dunkel",
+      "name": "Einbecker Ur-Bock Dunkel",
+      "brewer": "Einbecker Brauhaus",
+      "style": "bock",
+      "abv": "6.5",
+      "origin": "Germany · specialty import",
+      "taste": "Dark bread, toasted malt and a gently sweet finish.",
+      "url": "https://www.einbecker.de/",
+      "aliases": []
+    },
+    {
+      "id": "hofbrau-maibock",
+      "name": "Hofbräu Maibock",
+      "brewer": "Staatliches Hofbräuhaus München",
+      "style": "bock",
+      "abv": "7.2",
+      "origin": "Germany · seasonal",
+      "taste": "Rich pale malt and a firm, warming finish.",
+      "url": "https://www.hofbraeu-muenchen.de/",
+      "aliases": []
+    },
+    {
+      "id": "weihenstephaner-korbinian",
+      "name": "Weihenstephaner Korbinian",
+      "brewer": "Bayerische Staatsbrauerei Weihenstephan",
+      "style": "bock",
+      "abv": "7.4",
+      "origin": "Germany",
+      "taste": "Toasted dark bread, caramel and dried-fruit-like malt.",
+      "url": "https://www.weihenstephaner.de/",
+      "aliases": []
+    },
+    {
+      "id": "troegs-troegenator-double-bock",
+      "name": "Tröegs Troegenator Double Bock",
+      "brewer": "Tröegs Independent Brewing",
+      "style": "bock",
+      "abv": "8.2",
+      "origin": "United States",
+      "taste": "Rich toasted malt, caramel and a full, warming body.",
+      "url": "https://troegs.com/",
+      "aliases": [
+        "doppelbock"
+      ]
+    },
+    {
+      "id": "fruh-kolsch",
+      "name": "Früh Kölsch",
+      "brewer": "Cölner Hofbräu Früh",
+      "style": "kolsch",
+      "abv": "4.8",
+      "origin": "Germany · specialty import",
+      "taste": "Delicate malt, subtle fruit and a crisp finish.",
+      "url": "https://www.frueh.de/",
+      "aliases": []
+    },
+    {
+      "id": "sunner-kolsch",
+      "name": "Sünner Kölsch",
+      "brewer": "Sünner Brewery",
+      "style": "kolsch",
+      "abv": "4.8",
+      "origin": "Germany · specialty import",
+      "taste": "Clean grain character and a light, dry finish.",
+      "url": "https://www.suenner-brauerei.de/",
+      "aliases": []
+    },
+    {
+      "id": "muhlen-kolsch",
+      "name": "Mühlen Kölsch",
+      "brewer": "Brauerei zur Malzmühle",
+      "style": "kolsch",
+      "abv": "4.8",
+      "origin": "Germany · specialty import",
+      "taste": "Delicate fruit and pale malt with a crisp finish.",
+      "url": "https://www.muehlenkoelsch.de/",
+      "aliases": []
+    },
+    {
+      "id": "schlafly-kolsch",
+      "name": "Schlafly Kölsch",
+      "brewer": "The Saint Louis Brewery",
+      "style": "kolsch",
+      "abv": "4.8",
+      "origin": "United States · regional",
+      "taste": "Light malt and gentle fruit with a dry finish.",
+      "url": "https://www.schlafly.com/",
+      "aliases": []
+    },
+    {
+      "id": "mother-earth-endless-river-kolsch",
+      "name": "Mother Earth Endless River Kölsch",
+      "brewer": "Mother Earth Brewing",
+      "style": "kolsch",
+      "abv": "4.9",
+      "origin": "United States · regional",
+      "taste": "Clean malt, delicate hops and a crisp finish.",
+      "url": "https://www.motherearthbrewing.com/",
+      "aliases": []
+    },
+    {
+      "id": "saint-arnold-fancy-lawnmower",
+      "name": "Saint Arnold Fancy Lawnmower",
+      "brewer": "Saint Arnold Brewing",
+      "style": "kolsch",
+      "abv": "4.9",
+      "origin": "United States · regional",
+      "taste": "Subtle fruit, pale malt and a refreshing finish.",
+      "url": "https://www.saintarnold.com/",
+      "aliases": []
+    },
+    {
+      "id": "schneider-weisse-original-tap7",
+      "name": "Schneider Weisse Original TAP7",
+      "brewer": "Schneider Weisse",
+      "style": "wheat",
+      "abv": "5.4",
+      "origin": "Germany",
+      "taste": "Banana, clove and richer wheat malt with a rounded finish.",
+      "url": "https://schneider-weisse.de/",
+      "aliases": []
+    },
+    {
+      "id": "erdinger-weissbier",
+      "name": "Erdinger Weissbier",
+      "brewer": "Erdinger Weissbräu",
+      "style": "wheat",
+      "abv": "5.3",
+      "origin": "Germany",
+      "taste": "Soft wheat, gentle banana-like fruit and a lively finish.",
+      "url": "https://www.erdinger.com/",
+      "aliases": []
+    },
+    {
+      "id": "hacker-pschorr-weisse",
+      "name": "Hacker-Pschorr Weisse",
+      "brewer": "Hacker-Pschorr",
+      "style": "wheat",
+      "abv": "5.5",
+      "origin": "Germany",
+      "taste": "Banana and clove yeast notes with soft wheat malt.",
+      "url": "https://www.hacker-pschorr.com/",
+      "aliases": []
+    },
+    {
+      "id": "hitachino-nest-weizen",
+      "name": "Hitachino Nest Weizen",
+      "brewer": "Kiuchi Brewery",
+      "style": "wheat",
+      "abv": "5",
+      "origin": "Japan · specialty import",
+      "taste": "Soft wheat with banana and clove yeast notes.",
+      "url": "https://hitachino.cc/",
+      "aliases": [
+        "asian beer",
+        "asian brand"
+      ]
+    },
+    {
+      "id": "coedo-shiro",
+      "name": "Coedo Shiro",
+      "brewer": "Coedo Brewery",
+      "style": "wheat",
+      "abv": "5.5",
+      "origin": "Japan · specialty import",
+      "taste": "Wheat malt, gentle banana-like fruit and clove spice.",
+      "url": "https://www.coedobrewery.com/",
+      "aliases": [
+        "asian beer",
+        "asian brand"
+      ]
+    },
+    {
+      "id": "st-bernardus-wit",
+      "name": "St. Bernardus Wit",
+      "brewer": "Brouwerij St. Bernardus",
+      "style": "witbier",
+      "abv": "5.5",
+      "origin": "Belgium",
+      "taste": "Citrus and gentle spice with a soft wheat body.",
+      "url": "https://www.sintbernardus.be/",
+      "aliases": []
+    },
+    {
+      "id": "unibroue-blanche-de-chambly",
+      "name": "Unibroue Blanche de Chambly",
+      "brewer": "Unibroue",
+      "style": "witbier",
+      "abv": "5",
+      "origin": "Canada",
+      "taste": "Soft wheat, citrus and coriander-like spice.",
+      "url": "https://www.unibroue.com/",
+      "aliases": []
+    },
+    {
+      "id": "lost-coast-great-white",
+      "name": "Lost Coast Great White",
+      "brewer": "Lost Coast Brewery",
+      "style": "witbier",
+      "abv": "4.8",
+      "origin": "United States",
+      "taste": "Citrus and spice over a soft, refreshing wheat base.",
+      "url": "https://www.lostcoast.com/",
+      "aliases": []
+    },
+    {
+      "id": "hitachino-nest-white-ale",
+      "name": "Hitachino Nest White Ale",
+      "brewer": "Kiuchi Brewery",
+      "style": "witbier",
+      "abv": "5.5",
+      "origin": "Japan",
+      "taste": "Citrus peel, coriander-like spice and a soft wheat finish.",
+      "url": "https://hitachino.cc/",
+      "aliases": [
+        "asian beer",
+        "asian brand"
+      ]
+    },
+    {
+      "id": "ommegang-hennepin",
+      "name": "Ommegang Hennepin",
+      "brewer": "Brewery Ommegang",
+      "style": "saison",
+      "abv": "7.7",
+      "origin": "United States",
+      "taste": "Dry fruit and peppery yeast notes with lively carbonation.",
+      "url": "https://www.ommegang.com/",
+      "aliases": []
+    },
+    {
+      "id": "boulevard-tank-7",
+      "name": "Boulevard Tank 7",
+      "brewer": "Boulevard Brewing",
+      "style": "saison",
+      "abv": "8.5",
+      "origin": "United States",
+      "taste": "Fruity hops and peppery yeast with a dry finish.",
+      "url": "https://www.boulevard.com/",
+      "aliases": []
+    },
+    {
+      "id": "funkwerks-saison",
+      "name": "Funkwerks Saison",
+      "brewer": "Funkwerks",
+      "style": "saison",
+      "abv": "6.8",
+      "origin": "United States · regional",
+      "taste": "Dry, fruity yeast notes and gentle peppery spice.",
+      "url": "https://funkwerks.com/",
+      "aliases": []
+    },
+    {
+      "id": "north-coast-le-merle",
+      "name": "North Coast Le Merle",
+      "brewer": "North Coast Brewing",
+      "style": "saison",
+      "abv": "7.9",
+      "origin": "United States",
+      "taste": "Peppery yeast, fruit and a dry, lively finish.",
+      "url": "https://northcoastbrewing.com/",
+      "aliases": []
+    },
+    {
+      "id": "oxbow-farmhouse-pale-ale",
+      "name": "Oxbow Farmhouse Pale Ale",
+      "brewer": "Oxbow Brewing",
+      "style": "saison",
+      "abv": "6",
+      "origin": "United States · regional",
+      "taste": "Dry malt and earthy, fruity farmhouse yeast notes.",
+      "url": "https://oxbowbeer.com/",
+      "aliases": []
+    },
+    {
+      "id": "prairie-standard",
+      "name": "Prairie Standard",
+      "brewer": "Prairie Artisan Ales",
+      "style": "saison",
+      "abv": "5.6",
+      "origin": "United States · rotating availability",
+      "taste": "Dry, fruity yeast and gentle herbal hops.",
+      "url": "https://prairieales.com/",
+      "aliases": []
+    },
+    {
+      "id": "jolly-pumpkin-bam-biere",
+      "name": "Jolly Pumpkin Bam Bière",
+      "brewer": "Jolly Pumpkin Artisan Ales",
+      "style": "saison",
+      "abv": "4.5",
+      "origin": "United States · regional",
+      "taste": "Dry farmhouse character with a tart, earthy edge.",
+      "url": "https://jollypumpkin.com/",
+      "aliases": []
+    },
+    {
+      "id": "st-bernardus-abt-12",
+      "name": "St. Bernardus Abt 12",
+      "brewer": "Brouwerij St. Bernardus",
+      "style": "belgian-ale",
+      "abv": "10",
+      "origin": "Belgium",
+      "taste": "Rich malt, dried-fruit-like flavors and warming yeast spice.",
+      "url": "https://www.sintbernardus.be/",
+      "aliases": [
+        "quadrupel"
+      ]
+    },
+    {
+      "id": "unibroue-la-fin-du-monde",
+      "name": "Unibroue La Fin du Monde",
+      "brewer": "Unibroue",
+      "style": "belgian-ale",
+      "abv": "9",
+      "origin": "Canada",
+      "taste": "Fruity yeast, peppery spice and a lively, dry finish.",
+      "url": "https://www.unibroue.com/",
+      "aliases": [
+        "tripel"
+      ]
+    },
+    {
+      "id": "rochefort-10",
+      "name": "Rochefort 10",
+      "brewer": "Brasserie de Rochefort",
+      "style": "belgian-ale",
+      "abv": "11.3",
+      "origin": "Belgium",
+      "taste": "Rich dark malt, dried fruit and a warming finish.",
+      "url": "https://www.trappistes-rochefort.com/",
+      "aliases": [
+        "quadrupel"
+      ]
+    },
+    {
+      "id": "delirium-tremens",
+      "name": "Delirium Tremens",
+      "brewer": "Brouwerij Huyghe",
+      "style": "belgian-ale",
+      "abv": "8.5",
+      "origin": "Belgium",
+      "taste": "Fruity yeast, peppery spice and a dry finish.",
+      "url": "https://www.delirium.be/",
+      "aliases": []
+    },
+    {
+      "id": "real-ale-firemans-4",
+      "name": "Real Ale Firemans #4",
+      "brewer": "Real Ale Brewing",
+      "style": "blonde",
+      "abv": "5.1",
+      "origin": "United States · regional",
+      "taste": "Light malt, gentle citrus hops and a smooth finish.",
+      "url": "https://realalebrewing.com/",
+      "aliases": []
+    },
+    {
+      "id": "perrin-blonde-ale",
+      "name": "Perrin Blonde Ale",
+      "brewer": "Perrin Brewing",
+      "style": "blonde",
+      "abv": "4.5",
+      "origin": "United States · regional",
+      "taste": "Light grain and malt sweetness with restrained bitterness.",
+      "url": "https://www.perrinbrewing.com/",
+      "aliases": []
+    },
+    {
+      "id": "3-daughters-beach-blonde-ale",
+      "name": "3 Daughters Beach Blonde Ale",
+      "brewer": "3 Daughters Brewing",
+      "style": "blonde",
+      "abv": "5",
+      "origin": "United States · regional",
+      "taste": "Light malt and gentle citrus-like hops with a clean finish.",
+      "url": "https://3dbrewing.com/",
+      "aliases": []
+    },
+    {
+      "id": "victory-summer-love",
+      "name": "Victory Summer Love",
+      "brewer": "Victory Brewing",
+      "style": "blonde",
+      "abv": "5.2",
+      "origin": "United States · seasonal",
+      "taste": "Clean pale malt with bright, gentle hop flavor.",
+      "url": "https://victorybeer.com/",
+      "aliases": []
+    },
+    {
+      "id": "river-horse-summer-blonde",
+      "name": "River Horse Summer Blonde",
+      "brewer": "River Horse Brewing",
+      "style": "blonde",
+      "abv": "4.5",
+      "origin": "United States · seasonal/regional",
+      "taste": "Light malt, restrained hops and a smooth finish.",
+      "url": "https://riverhorse.com/",
+      "aliases": []
+    },
+    {
+      "id": "pelican-kiwanda-cream-ale",
+      "name": "Pelican Kiwanda Cream Ale",
+      "brewer": "Pelican Brewing",
+      "style": "cream-ale",
+      "abv": "5.4",
+      "origin": "United States · regional",
+      "taste": "Smooth grain character and gentle malt sweetness.",
+      "url": "https://pelicanbrewing.com/",
+      "aliases": []
+    },
+    {
+      "id": "mother-earth-cali-creamin",
+      "name": "Mother Earth Cali Creamin’",
+      "brewer": "Mother Earth Brew Co.",
+      "style": "cream-ale",
+      "abv": "5",
+      "origin": "United States · regional",
+      "taste": "Smooth malt with gentle vanilla-like sweetness.",
+      "url": "https://www.motherearthbrewco.com/",
+      "aliases": []
+    },
+    {
+      "id": "newburgh-cream-ale",
+      "name": "Newburgh Cream Ale",
+      "brewer": "Newburgh Brewing",
+      "style": "cream-ale",
+      "abv": "4.2",
+      "origin": "United States · regional",
+      "taste": "Light grain, mild sweetness and a smooth finish.",
+      "url": "https://newburghbrewing.com/",
+      "aliases": []
+    },
+    {
+      "id": "catawba-farmer-teds-cream-ale",
+      "name": "Catawba Farmer Ted’s Cream Ale",
+      "brewer": "Catawba Brewing",
+      "style": "cream-ale",
+      "abv": "6",
+      "origin": "United States · regional",
+      "taste": "Smooth grain and malt character with low bitterness.",
+      "url": "https://catawbabrewing.com/",
+      "aliases": []
+    },
+    {
+      "id": "anderson-valley-summer-solstice",
+      "name": "Anderson Valley Summer Solstice",
+      "brewer": "Anderson Valley Brewing",
+      "style": "cream-ale",
+      "abv": "5",
+      "origin": "United States · seasonal",
+      "taste": "Smooth caramel-like malt with gentle vanilla-like notes.",
+      "url": "https://avbc.com/",
+      "aliases": []
+    },
+    {
+      "id": "kentucky-vanilla-barrel-cream-ale",
+      "name": "Kentucky Vanilla Barrel Cream Ale",
+      "brewer": "Lexington Brewing & Distilling",
+      "style": "cream-ale",
+      "abv": "5.5",
+      "origin": "United States · regional",
+      "taste": "Smooth malt with vanilla and light bourbon-barrel notes.",
+      "url": "https://lexingtonbrewingco.com/",
+      "aliases": []
+    },
+    {
+      "id": "baird-rising-sun-pale-ale",
+      "name": "Baird Rising Sun Pale Ale",
+      "brewer": "Baird Brewing",
+      "style": "pale-ale",
+      "abv": "5.5",
+      "origin": "Japan · specialty import",
+      "taste": "Citrus hops balanced by lightly toasted malt.",
+      "url": "https://bairdbeer.com/",
+      "aliases": [
+        "asian beer",
+        "asian brand"
+      ]
+    },
+    {
+      "id": "yona-yona-ale",
+      "name": "Yona Yona Ale",
+      "brewer": "Yo-Ho Brewing",
+      "style": "pale-ale",
+      "abv": "5.5",
+      "origin": "Japan · specialty import",
+      "taste": "Citrus hops, toasted malt and a balanced bitter finish.",
+      "url": "https://yohobrewing.com/",
+      "aliases": [
+        "asian beer",
+        "asian brand"
+      ]
+    },
+    {
+      "id": "hitachino-nest-pale-ale",
+      "name": "Hitachino Nest Pale Ale",
+      "brewer": "Kiuchi Brewery",
+      "style": "pale-ale",
+      "abv": "5.5",
+      "origin": "Japan · specialty import",
+      "taste": "Citrus and earthy hop notes over a rounded malt base.",
+      "url": "https://hitachino.cc/",
+      "aliases": [
+        "asian beer",
+        "asian brand"
+      ]
+    },
+    {
+      "id": "sweetwater-420-extra-pale-ale",
+      "name": "SweetWater 420 Extra Pale Ale",
+      "brewer": "SweetWater Brewing",
+      "style": "pale-ale",
+      "abv": "5.7",
+      "origin": "United States",
+      "taste": "Citrus hops with a lightly toasted malt balance.",
+      "url": "https://www.sweetwaterbrew.com/",
+      "aliases": []
+    },
+    {
+      "id": "great-lakes-burning-river",
+      "name": "Great Lakes Burning River",
+      "brewer": "Great Lakes Brewing",
+      "style": "pale-ale",
+      "abv": "6",
+      "origin": "United States · regional",
+      "taste": "Citrus and pine hops over a toasted malt base.",
+      "url": "https://www.greatlakesbrewing.com/",
+      "aliases": []
+    },
+    {
+      "id": "hitachino-nest-dai-dai-ale",
+      "name": "Hitachino Nest Dai Dai Ale",
+      "brewer": "Kiuchi Brewery",
+      "style": "ipa",
+      "abv": "6.2",
+      "origin": "Japan · specialty import",
+      "taste": "Citrus hop and orange-peel-like flavor with a bitter finish.",
+      "url": "https://hitachino.cc/",
+      "aliases": [
+        "asian beer",
+        "asian brand",
+        "dai dai ipa"
+      ]
+    },
+    {
+      "id": "deschutes-fresh-squeezed-ipa",
+      "name": "Deschutes Fresh Squeezed IPA",
+      "brewer": "Deschutes Brewery",
+      "style": "ipa",
+      "abv": "6.4",
+      "origin": "United States",
+      "taste": "Citrus and tropical hops with a rounded malt balance.",
+      "url": "https://www.deschutesbrewery.com/",
+      "aliases": []
+    },
+    {
+      "id": "firestone-walker-union-jack-ipa",
+      "name": "Firestone Walker Union Jack IPA",
+      "brewer": "Firestone Walker",
+      "style": "ipa",
+      "abv": "7",
+      "origin": "United States",
+      "taste": "Citrus and pine hops with firm bitterness.",
+      "url": "https://www.firestonewalker.com/",
+      "aliases": []
+    },
+    {
+      "id": "deschutes-fresh-haze-ipa",
+      "name": "Deschutes Fresh Haze IPA",
+      "brewer": "Deschutes Brewery",
+      "style": "hazy-ipa",
+      "abv": "6.5",
+      "origin": "United States",
+      "taste": "Juicy citrus and tropical hops with a softer finish.",
+      "url": "https://www.deschutesbrewery.com/",
+      "aliases": []
+    },
+    {
+      "id": "firestone-walker-mind-haze",
+      "name": "Firestone Walker Mind Haze",
+      "brewer": "Firestone Walker",
+      "style": "hazy-ipa",
+      "abv": "6.2",
+      "origin": "United States",
+      "taste": "Tropical and citrus hop flavor with a soft, hazy body.",
+      "url": "https://www.firestonewalker.com/",
+      "aliases": []
+    },
+    {
+      "id": "great-notion-ripe-ipa",
+      "name": "Great Notion Ripe IPA",
+      "brewer": "Great Notion Brewing",
+      "style": "hazy-ipa",
+      "abv": "7",
+      "origin": "United States · regional",
+      "taste": "Juicy citrus and tropical hop flavor with a soft, hazy body.",
+      "url": "https://greatnotion.com/",
+      "aliases": []
+    },
+    {
+      "id": "bells-official-hazy-ipa",
+      "name": "Bell’s Official Hazy IPA",
+      "brewer": "Bell’s Brewery",
+      "style": "hazy-ipa",
+      "abv": "6.4",
+      "origin": "United States",
+      "taste": "Citrus and tropical hop notes over a soft wheat-malt body.",
+      "url": "https://bellsbeer.com/",
+      "aliases": []
+    },
+    {
+      "id": "russian-river-pliny-the-elder",
+      "name": "Russian River Pliny the Elder",
+      "brewer": "Russian River Brewing",
+      "style": "double-ipa",
+      "abv": "8",
+      "origin": "United States · limited distribution",
+      "taste": "Pine, citrus and resin-like hops with a dry, bitter finish.",
+      "url": "https://www.russianriverbrewing.com/",
+      "aliases": []
+    },
+    {
+      "id": "stone-delicious-double-ipa",
+      "name": "Stone Delicious Double IPA",
+      "brewer": "Stone Brewing",
+      "style": "double-ipa",
+      "abv": "9.4",
+      "origin": "United States",
+      "taste": "Concentrated citrus hops with a full, bitter finish.",
+      "url": "https://www.stonebrewing.com/",
+      "aliases": []
+    },
+    {
+      "id": "sierra-nevada-big-little-thing",
+      "name": "Sierra Nevada Big Little Thing",
+      "brewer": "Sierra Nevada Brewing",
+      "style": "double-ipa",
+      "abv": "9",
+      "origin": "United States",
+      "taste": "Intense citrus and tropical hops with a fuller malt body.",
+      "url": "https://sierranevada.com/",
+      "aliases": []
+    },
+    {
+      "id": "lagunitas-maximus",
+      "name": "Lagunitas Maximus",
+      "brewer": "Lagunitas Brewing",
+      "style": "double-ipa",
+      "abv": "9",
+      "origin": "United States",
+      "taste": "Bold citrus and resin-like hops with a rich malt base.",
+      "url": "https://lagunitas.com/",
+      "aliases": []
+    },
+    {
+      "id": "baird-suruga-bay-imperial-ipa",
+      "name": "Baird Suruga Bay Imperial IPA",
+      "brewer": "Baird Brewing",
+      "style": "double-ipa",
+      "abv": "8.5",
+      "origin": "Japan · specialty import",
+      "taste": "Intense citrus and herbal hops with a full, bitter finish.",
+      "url": "https://bairdbeer.com/",
+      "aliases": [
+        "asian beer",
+        "asian brand",
+        "japanese double ipa"
+      ]
+    },
+    {
+      "id": "new-england-brewing-gandhi-bot",
+      "name": "New England Brewing Gandhi-Bot",
+      "brewer": "New England Brewing",
+      "style": "double-ipa",
+      "abv": "8.8",
+      "origin": "United States · regional",
+      "taste": "Intense citrus and tropical hop notes with firm bitterness.",
+      "url": "https://newenglandbrewing.com/",
+      "aliases": [
+        "gandhi bot"
+      ]
+    },
+    {
+      "id": "full-sail-amber-ale",
+      "name": "Full Sail Amber Ale",
+      "brewer": "Full Sail Brewing",
+      "style": "amber-ale",
+      "abv": "6",
+      "origin": "United States · regional",
+      "taste": "Caramel-like malt and toasted bread with a balanced hop finish.",
+      "url": "https://fullsailbrewing.com/",
+      "aliases": []
+    },
+    {
+      "id": "troegs-hopback-amber-ale",
+      "name": "Tröegs HopBack Amber Ale",
+      "brewer": "Tröegs Independent Brewing",
+      "style": "amber-ale",
+      "abv": "6",
+      "origin": "United States · regional/rotating",
+      "taste": "Toasted malt and caramel with floral and citrus hops.",
+      "url": "https://troegs.com/",
+      "aliases": []
+    },
+    {
+      "id": "four-peaks-kilt-lifter",
+      "name": "Four Peaks Kilt Lifter",
+      "brewer": "Four Peaks Brewing",
+      "style": "amber-ale",
+      "abv": "6",
+      "origin": "United States · regional",
+      "taste": "Rich toasted malt and caramel-like flavors with restrained bitterness.",
+      "url": "https://www.fourpeaks.com/",
+      "aliases": []
+    },
+    {
+      "id": "odell-90-shilling",
+      "name": "Odell 90 Shilling",
+      "brewer": "Odell Brewing",
+      "style": "amber-ale",
+      "abv": "5.3",
+      "origin": "United States · regional",
+      "taste": "Toasted malt, gentle caramel and a balanced finish.",
+      "url": "https://www.odellbrewing.com/",
+      "aliases": []
+    },
+    {
+      "id": "highland-gaelic-ale",
+      "name": "Highland Gaelic Ale",
+      "brewer": "Highland Brewing",
+      "style": "amber-ale",
+      "abv": "5.5",
+      "origin": "United States · regional",
+      "taste": "Caramel-like malt balanced by gentle citrus hops.",
+      "url": "https://highlandbrewing.com/",
+      "aliases": []
+    },
+    {
+      "id": "avery-ellies-brown-ale",
+      "name": "Avery Ellie’s Brown Ale",
+      "brewer": "Avery Brewing",
+      "style": "brown-ale",
+      "abv": "5.5",
+      "origin": "United States",
+      "taste": "Nutty malt and chocolate-like notes with a smooth finish.",
+      "url": "https://www.averybrewing.com/",
+      "aliases": []
+    },
+    {
+      "id": "bells-best-brown-ale",
+      "name": "Bell’s Best Brown Ale",
+      "brewer": "Bell’s Brewery",
+      "style": "brown-ale",
+      "abv": "5.8",
+      "origin": "United States · seasonal",
+      "taste": "Nutty, toasted malt and gentle caramel notes.",
+      "url": "https://bellsbeer.com/",
+      "aliases": []
+    },
+    {
+      "id": "brooklyn-brown-ale",
+      "name": "Brooklyn Brown Ale",
+      "brewer": "Brooklyn Brewery",
+      "style": "brown-ale",
+      "abv": "5.6",
+      "origin": "United States · availability varies",
+      "taste": "Roasted malt, chocolate-like notes and a balanced hop finish.",
+      "url": "https://brooklynbrewery.com/",
+      "aliases": []
+    },
+    {
+      "id": "big-sky-moose-drool",
+      "name": "Big Sky Moose Drool",
+      "brewer": "Big Sky Brewing",
+      "style": "brown-ale",
+      "abv": "5.1",
+      "origin": "United States · regional",
+      "taste": "Smooth caramel and chocolate-like malt with gentle hops.",
+      "url": "https://bigskybrew.com/",
+      "aliases": []
+    },
+    {
+      "id": "abita-turbodog",
+      "name": "Abita Turbodog",
+      "brewer": "Abita Brewing",
+      "style": "brown-ale",
+      "abv": "5.6",
+      "origin": "United States",
+      "taste": "Toasty malt, chocolate-like notes and a smooth finish.",
+      "url": "https://abita.com/",
+      "aliases": []
+    },
+    {
+      "id": "real-ale-brewhouse-brown-ale",
+      "name": "Real Ale Brewhouse Brown Ale",
+      "brewer": "Real Ale Brewing",
+      "style": "brown-ale",
+      "abv": "5.1",
+      "origin": "United States · regional",
+      "taste": "Nutty toasted malt with gentle caramel and cocoa notes.",
+      "url": "https://realalebrewing.com/",
+      "aliases": []
+    },
+    {
+      "id": "great-lakes-edmund-fitzgerald-porter",
+      "name": "Great Lakes Edmund Fitzgerald Porter",
+      "brewer": "Great Lakes Brewing",
+      "style": "porter",
+      "abv": "6",
+      "origin": "United States",
+      "taste": "Roasted malt, coffee and chocolate-like notes.",
+      "url": "https://www.greatlakesbrewing.com/",
+      "aliases": []
+    },
+    {
+      "id": "alaskan-smoked-porter",
+      "name": "Alaskan Smoked Porter",
+      "brewer": "Alaskan Brewing",
+      "style": "porter",
+      "abv": "6.5",
+      "origin": "United States · seasonal",
+      "taste": "Smoky malt over roasted coffee and chocolate-like flavors.",
+      "url": "https://alaskanbeer.com/",
+      "aliases": []
+    },
+    {
+      "id": "highland-oatmeal-porter",
+      "name": "Highland Oatmeal Porter",
+      "brewer": "Highland Brewing",
+      "style": "porter",
+      "abv": "5.9",
+      "origin": "United States · regional",
+      "taste": "Smooth oats with chocolate and coffee-like malt.",
+      "url": "https://highlandbrewing.com/",
+      "aliases": []
+    },
+    {
+      "id": "maui-coconut-hiwa-porter",
+      "name": "Maui Coconut Hiwa Porter",
+      "brewer": "Maui Brewing",
+      "style": "porter",
+      "abv": "6",
+      "origin": "United States · Hawaii",
+      "taste": "Toasted coconut flavor over roasted chocolate-like malt.",
+      "url": "https://mauibrewingco.com/",
+      "aliases": []
+    },
+    {
+      "id": "bells-porter",
+      "name": "Bell’s Porter",
+      "brewer": "Bell’s Brewery",
+      "style": "porter",
+      "abv": "5.6",
+      "origin": "United States · availability varies",
+      "taste": "Roasted malt, coffee and cocoa-like notes.",
+      "url": "https://bellsbeer.com/",
+      "aliases": []
+    },
+    {
+      "id": "murphys-irish-stout",
+      "name": "Murphy’s Irish Stout",
+      "brewer": "Murphy’s Brewery",
+      "style": "stout",
+      "abv": "4",
+      "origin": "Ireland",
+      "taste": "Dry roasted malt and coffee-like notes with a smooth nitrogen texture.",
+      "url": "https://www.murphys.com/",
+      "aliases": []
+    },
+    {
+      "id": "guinness-extra-stout",
+      "name": "Guinness Extra Stout",
+      "brewer": "Guinness",
+      "style": "stout",
+      "abv": "5.6",
+      "origin": "Ireland · US label",
+      "taste": "Dry roasted malt and firm bitterness with a lively finish.",
+      "url": "https://www.guinness.com/",
+      "aliases": []
+    },
+    {
+      "id": "deschutes-obsidian-stout",
+      "name": "Deschutes Obsidian Stout",
+      "brewer": "Deschutes Brewery",
+      "style": "stout",
+      "abv": "6.4",
+      "origin": "United States",
+      "taste": "Roasted coffee and chocolate-like malt with firm bitterness.",
+      "url": "https://www.deschutesbrewery.com/",
+      "aliases": []
+    },
+    {
+      "id": "anderson-valley-barney-flats-oatmeal-stout",
+      "name": "Anderson Valley Barney Flats Oatmeal Stout",
+      "brewer": "Anderson Valley Brewing",
+      "style": "stout",
+      "abv": "5.8",
+      "origin": "United States",
+      "taste": "Smooth oats, roasted malt and coffee-like notes.",
+      "url": "https://avbc.com/",
+      "aliases": []
+    },
+    {
+      "id": "hitachino-nest-espresso-stout",
+      "name": "Hitachino Nest Espresso Stout",
+      "brewer": "Kiuchi Brewery",
+      "style": "stout",
+      "abv": "7",
+      "origin": "Japan · specialty import",
+      "taste": "Espresso flavor, roasted malt and chocolate-like notes.",
+      "url": "https://hitachino.cc/",
+      "aliases": [
+        "asian beer",
+        "asian brand"
+      ]
+    },
+    {
+      "id": "hitachino-nest-sweet-stout",
+      "name": "Hitachino Nest Sweet Stout",
+      "brewer": "Kiuchi Brewery",
+      "style": "stout",
+      "abv": "4.5",
+      "origin": "Japan · specialty import",
+      "taste": "Sweet roasted malt with coffee and cocoa-like notes.",
+      "url": "https://hitachino.cc/",
+      "aliases": [
+        "asian beer",
+        "asian brand"
+      ]
+    },
+    {
+      "id": "belching-beaver-peanut-butter-milk-stout",
+      "name": "Belching Beaver Peanut Butter Milk Stout",
+      "brewer": "Belching Beaver Brewery",
+      "style": "stout",
+      "abv": "5.3",
+      "origin": "United States · regional",
+      "taste": "Peanut-butter-like flavor and cocoa over a sweeter malt base; contains lactose.",
+      "url": "https://belchingbeaver.com/",
+      "aliases": []
+    },
+    {
+      "id": "sierra-nevada-narwhal",
+      "name": "Sierra Nevada Narwhal",
+      "brewer": "Sierra Nevada Brewing",
+      "style": "imperial-stout",
+      "abv": "10.2",
+      "origin": "United States · seasonal",
+      "taste": "Rich roasted malt, coffee and dark chocolate-like notes.",
+      "url": "https://sierranevada.com/",
+      "aliases": []
+    },
+    {
+      "id": "oskar-blues-ten-fidy",
+      "name": "Oskar Blues Ten FIDY",
+      "brewer": "Oskar Blues Brewery",
+      "style": "imperial-stout",
+      "abv": "10.5",
+      "origin": "United States",
+      "taste": "Concentrated chocolate and roasted malt with a full body.",
+      "url": "https://oskarblues.com/",
+      "aliases": []
+    },
+    {
+      "id": "great-divide-yeti-imperial-stout",
+      "name": "Great Divide Yeti Imperial Stout",
+      "brewer": "Great Divide Brewing",
+      "style": "imperial-stout",
+      "abv": "9.5",
+      "origin": "United States · regional",
+      "taste": "Rich roasted malt, cocoa and a firm bitter finish.",
+      "url": "https://greatdivide.com/",
+      "aliases": []
+    },
+    {
+      "id": "stone-xocoveza",
+      "name": "Stone Xocoveza",
+      "brewer": "Stone Brewing",
+      "style": "imperial-stout",
+      "abv": "8.1",
+      "origin": "United States · seasonal",
+      "taste": "Rich cocoa and coffee with warm spice; contains lactose.",
+      "url": "https://www.stonebrewing.com/",
+      "aliases": []
+    },
+    {
+      "id": "bells-expedition-stout",
+      "name": "Bell’s Expedition Stout",
+      "brewer": "Bell’s Brewery",
+      "style": "imperial-stout",
+      "abv": "10.5",
+      "origin": "United States · seasonal",
+      "taste": "Rich roasted malt and dried-fruit-like notes with a full body.",
+      "url": "https://bellsbeer.com/",
+      "aliases": []
+    },
+    {
+      "id": "westbrook-gose",
+      "name": "Westbrook Gose",
+      "brewer": "Westbrook Brewing",
+      "style": "sour",
+      "abv": "4",
+      "origin": "United States · regional",
+      "taste": "Tart citrus-like flavor with a light salty finish.",
+      "url": "https://westbrookbrewing.com/",
+      "aliases": []
+    },
+    {
+      "id": "dogfish-head-festina-peche",
+      "name": "Dogfish Head Festina Pêche",
+      "brewer": "Dogfish Head Craft Brewery",
+      "style": "sour",
+      "abv": "4.5",
+      "origin": "United States · seasonal",
+      "taste": "Tart wheat character with gentle peach flavor.",
+      "url": "https://www.dogfish.com/",
+      "aliases": []
+    },
+    {
+      "id": "lost-nation-gose",
+      "name": "Lost Nation Gose",
+      "brewer": "Lost Nation Brewing",
+      "style": "sour",
+      "abv": "4.5",
+      "origin": "United States · regional",
+      "taste": "Tart citrus-like character and a lightly salty finish.",
+      "url": "https://lostnationbrewing.com/",
+      "aliases": []
+    },
+    {
+      "id": "prairie-rainbow-sherbet",
+      "name": "Prairie Rainbow Sherbet",
+      "brewer": "Prairie Artisan Ales",
+      "style": "sour",
+      "abv": "5.2",
+      "origin": "United States",
+      "taste": "Tart fruit flavor with orange, raspberry and pineapple-like notes.",
+      "url": "https://prairieales.com/",
+      "aliases": []
+    },
+    {
+      "id": "victory-sour-monkey",
+      "name": "Victory Sour Monkey",
+      "brewer": "Victory Brewing",
+      "style": "sour",
+      "abv": "9.5",
+      "origin": "United States",
+      "taste": "Tart citrus-like flavor with fruity Belgian-style yeast notes.",
+      "url": "https://victorybeer.com/",
+      "aliases": []
+    },
+    {
+      "id": "leinenkugels-berry-weiss",
+      "name": "Leinenkugel’s Berry Weiss",
+      "brewer": "Jacob Leinenkugel Brewing",
+      "style": "fruit",
+      "abv": "4.7",
+      "origin": "United States · seasonal",
+      "taste": "Sweet berry fruit flavor over soft wheat malt.",
+      "url": "https://www.leinie.com/",
+      "aliases": []
+    },
+    {
+      "id": "abita-strawberry-lager",
+      "name": "Abita Strawberry Lager",
+      "brewer": "Abita Brewing",
+      "style": "fruit",
+      "abv": "4.2",
+      "origin": "United States · seasonal",
+      "taste": "Light malt with gentle strawberry fruit flavor.",
+      "url": "https://abita.com/",
+      "aliases": []
+    },
+    {
+      "id": "founders-rubaeus",
+      "name": "Founders Rubaeus",
+      "brewer": "Founders Brewing",
+      "style": "fruit",
+      "abv": "5.7",
+      "origin": "United States",
+      "taste": "Bright raspberry fruit with a balance of sweetness and tartness.",
+      "url": "https://foundersbrewing.com/",
+      "aliases": []
+    },
+    {
+      "id": "fruli-strawberry-beer",
+      "name": "Früli Strawberry Beer",
+      "brewer": "Huyghe / Früli",
+      "style": "fruit",
+      "abv": "4.1",
+      "origin": "Belgian brand · import availability varies",
+      "taste": "Sweet strawberry fruit over a soft wheat base.",
+      "url": "https://www.fruli.be/",
+      "aliases": []
+    },
+    {
+      "id": "samuel-smiths-organic-cherry-fruit-beer",
+      "name": "Samuel Smith’s Organic Cherry Fruit Beer",
+      "brewer": "Samuel Smith’s Brewery",
+      "style": "fruit",
+      "abv": "5.1",
+      "origin": "England",
+      "taste": "Cherry fruit flavor with a rounded, gently sweet malt base.",
+      "url": "https://www.samuelsmithsbrewery.co.uk/",
+      "aliases": []
+    },
+    {
+      "id": "asahi-super-dry-0-0",
+      "name": "Asahi Super Dry 0.0",
+      "brewer": "Asahi Breweries",
+      "style": "non-alcoholic",
+      "abv": "0.0",
+      "origin": "Japan brand · US import",
+      "taste": "Light malt and a crisp, dry lager-like finish.",
+      "url": "https://www.asahisuperdry.com/",
+      "aliases": [
+        "asian beer",
+        "asian brand"
+      ]
+    },
+    {
+      "id": "clausthaler-original",
+      "name": "Clausthaler Original",
+      "brewer": "Radeberger Gruppe",
+      "style": "non-alcoholic",
+      "abv": "<0.5",
+      "origin": "Germany",
+      "taste": "Light grain and malt with a crisp hop finish.",
+      "url": "https://www.clausthaler.com/",
+      "aliases": []
+    },
+    {
+      "id": "bitburger-drive-0-0",
+      "name": "Bitburger Drive 0.0",
+      "brewer": "Bitburger",
+      "style": "non-alcoholic",
+      "abv": "0.0",
+      "origin": "Germany",
+      "taste": "Mild malt, gentle herbal hops and a crisp finish.",
+      "url": "https://www.bitburger.com/",
+      "aliases": []
+    },
+    {
+      "id": "corona-non-alcoholic",
+      "name": "Corona Non-Alcoholic",
+      "brewer": "Grupo Modelo",
+      "style": "non-alcoholic",
+      "abv": "<0.5",
+      "origin": "Mexico",
+      "taste": "Light, crisp malt with a mild lager-like finish.",
+      "url": "https://www.coronausa.com/",
+      "aliases": []
     }
   ]
 }

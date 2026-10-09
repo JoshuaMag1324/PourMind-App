@@ -144,3 +144,5 @@ select:focus-visible,summary:focus-visible {outline:2px solid var(--gold);outlin
 .beer-tools .beer-library-note summary{cursor:pointer;min-height:24px}.beer-library-note p{margin:12px 0 0;font-size:12px;line-height:1.65}
 .beer-style-summary{display:block;padding:18px 22px}.beer-style-summary summary{cursor:pointer;font-size:15px;color:var(--gold);min-height:26px}.beer-style-content{display:grid;grid-template-columns:1.2fr 1fr;gap:24px;margin-top:20px}
 @media(max-width:640px){.beer-style-summary{padding:16px 20px}.beer-style-content{grid-template-columns:1fr;gap:18px}}
+/* Keep the complete glass visible in these wider-framed replacement photos. */
+.recipe-image[data-photo-name="Bourbon Old Fashioned"] img,.recipe-image[data-photo-name="Rye Old Fashioned"] img,.recipe-image[data-photo-name="Tequila Sour"] img{object-fit:contain;object-position:center center}

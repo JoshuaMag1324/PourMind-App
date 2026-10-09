@@ -722,15 +722,14 @@
     "imageSha256": "bed5a68b40e0b82e97c4877132d8ef481c4feed939be18657a6eb9f6d3737bf5"
   },
   "Bourbon Old Fashioned": {
-    "file": "photos/bourbon-old-fashioned.jpg",
-    "kind": "reference photograph",
-    "credit": "Open Drinks contributors",
+    "file": "photos/original-bourbon-old-fashioned.webp",
+    "kind": "AI-generated illustration",
+    "credit": "PourMind",
     "reference": "https://www.liquor.com/recipes/bourbon-old-fashioned/#gs.892391",
-    "dataset": "alfg/opendrinks",
-    "commit": "f446f0e9356b9b43155d207b4f7c5214d9da91ab",
-    "record": "src/recipes/bourbon-old-fashioned.json",
-    "imageSource": "src/assets/recipes/bourbon-old-fashioned.jpg",
-    "imageSha256": "60ebdd98b23804ab4bbc98b98d52dd23017b64085efafb5fa592753515198270"
+    "dataset": "PourMind original artwork",
+    "imageSource": "Generated for Bourbon Old Fashioned",
+    "referenceBasis": "Existing PourMind serving references; original wider framing, staging and lighting",
+    "imageSha256": "f4f5a974564124ef80ac85f2a142f0a3acd81296009ab2113128106b423d5516"
   },
   "Caipiroska": {
     "file": "photos/caipiroska.jpg",
@@ -744,24 +743,24 @@
     "imageSha256": "906ef222415266ea4b26d3669e4b082f2dbd17cd48a506ed1571bc501480582a"
   },
   "Tequila Sour": {
-    "file": "photos/tequila-sour.jpg",
-    "kind": "original recipe illustration",
-    "credit": "PourMind · original cocktail illustration",
+    "file": "photos/original-tequila-sour.webp",
+    "kind": "AI-generated illustration",
+    "credit": "PourMind",
     "reference": "",
-    "originalKey": "Coconut Daiquiri",
-    "imageSha256": "bca27e1fcfe66a9dfdfce3a59d2d3fcbdf5e6343b4742d884e8b4304bade8a41"
+    "dataset": "PourMind original artwork",
+    "imageSource": "Generated for Tequila Sour",
+    "referenceBasis": "Existing PourMind serving references; original wider framing, staging and lighting",
+    "imageSha256": "d4fbcaa03e02060e3069589bf276dbc2e6b1e5635eb3447012e5588d84279eea"
   },
   "Rye Old Fashioned": {
-    "file": "photos/bourbon-old-fashioned.jpg",
-    "kind": "recipe-family photograph",
-    "credit": "Open Drinks contributors",
+    "file": "photos/original-rye-old-fashioned.webp",
+    "kind": "AI-generated illustration",
+    "credit": "PourMind",
     "reference": "https://www.liquor.com/recipes/bourbon-old-fashioned/#gs.892391",
-    "dataset": "alfg/opendrinks",
-    "commit": "f446f0e9356b9b43155d207b4f7c5214d9da91ab",
-    "record": "src/recipes/bourbon-old-fashioned.json",
-    "imageSource": "src/assets/recipes/bourbon-old-fashioned.jpg",
-    "imageSha256": "60ebdd98b23804ab4bbc98b98d52dd23017b64085efafb5fa592753515198270",
-    "familyPhoto": "Bourbon Old Fashioned"
+    "dataset": "PourMind original artwork",
+    "imageSource": "Generated for Rye Old Fashioned",
+    "referenceBasis": "Existing PourMind serving references; original wider framing, staging and lighting",
+    "imageSha256": "0cd341b63daadd34ef43f6a5222831e3df6cf5dc33ee112d07b9c087cb7c24ce"
   },
   "Coconut Daiquiri": {
     "file": "photos/coconut-daiquiri.png",
