@@ -16,23 +16,63 @@
         },
         {
           "oz": 0.5,
-          "name": "Sweet-and-sour mix"
+          "name": "Fresh citrus sour mix (see prep)"
+        },
+        {
+          "oz": 0.5,
+          "name": "Lemon-lime soda"
         }
       ],
       "taste": "Peach, citrus and a gentle whiskey finish.",
-      "garnish": "No garnish",
-      "note": "Despite the name, this version contains no brewed tea. Some venues add a little lemon-lime soda.",
+      "garnish": "Thin lime half-wheel",
+      "note": "Fresh-mixer house version with a measured soda finish. The name refers to the drink style; neither version contains brewed tea.",
       "aliases": [
         "green tea",
         "jameson green tea"
       ],
       "steps": [
-        "Chill a shooter glass large enough for the measured pour and a little ice dilution.",
-        "Add the measured ingredients to a shaker with ice.",
-        "Shake until chilled, about 10–15 seconds.",
-        "Strain into the chilled glass. Serve without a garnish."
+        "Chill the shooter glass while preparing the ingredients.",
+        "Make the fresh citrus sour mix using the prep recipe below. Wash and cut a thin lime half-wheel.",
+        "Measure the irish whiskey, peach schnapps and 0.5 oz of the prepared sour mix into a shaker. Keep the soda aside.",
+        "Add firm ice cubes and shake for about 10–12 seconds to chill and combine.",
+        "Strain through a cocktail strainer and a fine sieve into the glass, leaving room for the soda.",
+        "Add the 0.5 oz lemon-lime soda last and set the lime half-wheel on the rim. Serve while the bubbles are lively."
       ],
-      "totalOz": 1.5
+      "totalOz": 2.0,
+      "technique": "Fresh mixer & soda finish",
+      "upgrade": "Prepare fresh lemon-lime sour mix, shake the chilled base, then finish with a measured soda pour.",
+      "techniqueTip": "Keep carbonated mixers out of the shaker. Adding soda last preserves the fizz.",
+      "sources": [
+        {
+          "title": "Shot Chef · Green Tea Shot",
+          "url": "https://www.shotchef.com/recipes/green-tea-shot/"
+        }
+      ],
+      "servings": 1,
+      "adaptation": "PourMind house version: portion size, whole/half-ounce measures and finishing steps may differ from the reference.",
+      "prep": {
+        "title": "Fresh citrus sour mix",
+        "yield": "2 oz batch; use 0.5 oz in this recipe and reserve the rest",
+        "ingredients": [
+          {
+            "oz": 0.5,
+            "name": "Fresh lemon juice"
+          },
+          {
+            "oz": 0.5,
+            "name": "Fresh lime juice"
+          },
+          {
+            "oz": 1,
+            "name": "Simple syrup (1:1 sugar and water)"
+          }
+        ],
+        "steps": [
+          "Squeeze the lemon and lime, then strain out the seeds and coarse pulp.",
+          "Measure the three ingredients into a clean jar and stir until combined.",
+          "Cover, refrigerate and use within 24 hours. This house mix is measured separately from the shot."
+        ]
+      }
     },
     {
       "id": "white-tea",
@@ -50,22 +90,62 @@
         },
         {
           "oz": 0.5,
-          "name": "Sweet-and-sour mix"
+          "name": "Fresh citrus sour mix (see prep)"
+        },
+        {
+          "oz": 0.5,
+          "name": "Lemon-lime soda"
         }
       ],
       "taste": "A bright peach-and-citrus shooter with a vodka base.",
-      "garnish": "No garnish",
-      "note": "A vodka variation of the Green Tea Shot; this version contains no brewed tea.",
+      "garnish": "Thin lime half-wheel",
+      "note": "Fresh-mixer house version with a measured soda finish. The name refers to the drink style; neither version contains brewed tea.",
       "aliases": [
         "white tea"
       ],
       "steps": [
-        "Chill a shooter glass large enough for the measured pour and a little ice dilution.",
-        "Add the measured ingredients to a shaker with ice.",
-        "Shake until chilled, about 10–15 seconds.",
-        "Strain into the chilled glass. Serve without a garnish."
+        "Chill the shooter glass while preparing the ingredients.",
+        "Make the fresh citrus sour mix using the prep recipe below. Wash and cut a thin lime half-wheel.",
+        "Measure the vodka, peach schnapps and 0.5 oz of the prepared sour mix into a shaker. Keep the soda aside.",
+        "Add firm ice cubes and shake for about 10–12 seconds to chill and combine.",
+        "Strain through a cocktail strainer and a fine sieve into the glass, leaving room for the soda.",
+        "Add the 0.5 oz lemon-lime soda last and set the lime half-wheel on the rim. Serve while the bubbles are lively."
       ],
-      "totalOz": 1.5
+      "totalOz": 2.0,
+      "technique": "Fresh mixer & soda finish",
+      "upgrade": "Prepare fresh lemon-lime sour mix, shake the chilled base, then finish with a measured soda pour.",
+      "techniqueTip": "Keep carbonated mixers out of the shaker. Adding soda last preserves the fizz.",
+      "sources": [
+        {
+          "title": "Emily Laurae · White Tea Shot",
+          "url": "https://emilylaurae.com/white-tea-shot/"
+        }
+      ],
+      "servings": 1,
+      "adaptation": "PourMind house version: portion size, whole/half-ounce measures and finishing steps may differ from the reference.",
+      "prep": {
+        "title": "Fresh citrus sour mix",
+        "yield": "2 oz batch; use 0.5 oz in this recipe and reserve the rest",
+        "ingredients": [
+          {
+            "oz": 0.5,
+            "name": "Fresh lemon juice"
+          },
+          {
+            "oz": 0.5,
+            "name": "Fresh lime juice"
+          },
+          {
+            "oz": 1,
+            "name": "Simple syrup (1:1 sugar and water)"
+          }
+        ],
+        "steps": [
+          "Squeeze the lemon and lime, then strain out the seeds and coarse pulp.",
+          "Measure the three ingredients into a clean jar and stir until combined.",
+          "Cover, refrigerate and use within 24 hours. This house mix is measured separately from the shot."
+        ]
+      }
     },
     {
       "id": "lemon-drop",
@@ -79,26 +159,39 @@
         },
         {
           "oz": 0.5,
-          "name": "Fresh lemon juice"
+          "name": "Triple sec"
         },
         {
           "oz": 0.5,
-          "name": "Simple syrup"
+          "name": "Fresh lemon juice"
         }
       ],
       "taste": "Sweet-tart lemon with a clean vodka finish.",
-      "garnish": "Lemon wedge; optional sugar on half the rim",
-      "note": "This is a small house-style shooter, distinct from the Lemon Drop Martini. Sugar only half the rim so the guest can choose.",
+      "garnish": "Half sugar rim and sugar-coated lemon wheel",
+      "note": "Triple-sec version based on the reference shot. The rim supplies sweetness; this version omits the former simple-syrup ingredient.",
       "aliases": [
         "lemon drop"
       ],
       "steps": [
-        "Chill a shooter glass large enough for the measured pour and a little ice dilution.",
-        "Add the measured ingredients to a shaker with ice.",
-        "Shake until chilled, about 10–15 seconds.",
-        "Strain into the chilled glass. Finish with the stated garnish."
+        "Chill the shooter glass while preparing the ingredients.",
+        "Run a lemon wedge around the outside of half the rim; roll that edge in fine sugar and let it set. Keep sugar out of the glass.",
+        "Cut a thin lemon wheel, remove its seeds and lightly coat one side with sugar.",
+        "Measure vodka, triple sec and freshly squeezed lemon juice into a shaker with firm ice cubes.",
+        "Shake for 10–12 seconds, then fine-strain into the glass without wetting the sugar rim.",
+        "Place the sugared lemon wheel on the rim and serve with the finish intact."
       ],
-      "totalOz": 1.5
+      "totalOz": 1.5,
+      "technique": "Sugar rim & fine straining",
+      "upgrade": "Orange liqueur, a clean sugar rim and a freshly cut lemon finish.",
+      "techniqueTip": "A dry, even rim stays cleaner than a thick wet sugar band. The sugar belongs on the exterior.",
+      "sources": [
+        {
+          "title": "Difford’s Guide · Lemon Drop Shot",
+          "url": "https://www.diffordsguide.com/cocktails/recipe/1143/lemon-drop-shot"
+        }
+      ],
+      "servings": 1,
+      "adaptation": "PourMind house version: portion size, whole/half-ounce measures and finishing steps may differ from the reference."
     },
     {
       "id": "kamikaze",
@@ -120,18 +213,31 @@
         }
       ],
       "taste": "Tart lime and orange over a vodka base.",
-      "garnish": "Lime wedge",
-      "note": "Equal-parts shooter specification; larger cocktail versions use different proportions.",
+      "garnish": "Narrow lime peel",
+      "note": "Equal-parts house shot with a citrus-peel finish. The linked Kamikaze uses its own proportion; this pour retains the app’s existing ratio.",
       "aliases": [
         "kamikaze"
       ],
       "steps": [
-        "Chill a shooter glass large enough for the measured pour and a little ice dilution.",
-        "Add the measured ingredients to a shaker with ice.",
-        "Shake until chilled, about 10–15 seconds.",
-        "Strain into the chilled glass. Finish with the stated garnish."
+        "Chill the shooter glass while preparing the ingredients.",
+        "Squeeze the lime and strain out the seeds. Cut a narrow strip of lime peel with as little white pith as practical.",
+        "Measure the vodka, triple sec and fresh lime juice into a shaker.",
+        "Add firm ice cubes and shake for about 10–12 seconds.",
+        "Fine-strain through a cocktail strainer and sieve into the chilled glass.",
+        "Gently bend the lime peel, colored side facing the drink, to release its oils; rest it on the rim."
       ],
-      "totalOz": 1.5
+      "totalOz": 1.5,
+      "technique": "Fresh lime & fine straining",
+      "upgrade": "Freshly strained lime juice and a clean citrus-peel finish.",
+      "techniqueTip": "Fine straining removes pulp and tiny ice shards. The peel finish is a house addition.",
+      "sources": [
+        {
+          "title": "Difford’s Guide · Kamikaze",
+          "url": "https://www.diffordsguide.com/cocktails/recipe/1087/kamikaze"
+        }
+      ],
+      "servings": 1,
+      "adaptation": "PourMind house version: portion size, whole/half-ounce measures and finishing steps may differ from the reference."
     },
     {
       "id": "b52",
@@ -154,18 +260,31 @@
       ],
       "taste": "Coffee, cream and orange in three distinct layers.",
       "garnish": "No garnish",
-      "note": "Layer in the listed order. Ingredient density varies by brand, so pour each layer slowly.",
+      "note": "Three-layer house pour using orange cognac liqueur (Grand Marnier). The reference uses orange liqueur; test the layering with your venue’s actual bottles.",
       "aliases": [
         "b52",
         "b 52"
       ],
       "steps": [
-        "Chill a shooter glass.",
-        "Pour coffee liqueur into the glass.",
-        "Hold a barspoon just above the first layer. Slowly pour irish cream liqueur over the back of the spoon.",
-        "Repeat slowly with orange cognac liqueur (grand marnier) for the top layer. Serve chilled."
+        "Chill a clear shooter glass and the measured ingredients; do not put ice in the glass.",
+        "Measure each liqueur into its own small pouring vessel so you can control the flow.",
+        "Pour the coffee liqueur down the inside wall to form the base.",
+        "Hold the back of a barspoon close to the base layer and trickle the Irish cream onto it; raise the spoon as the level rises.",
+        "Move the clean spoon just above the cream and slowly float the orange cognac liqueur over it.",
+        "Inspect the three bands and serve the glass upright without stirring."
       ],
-      "totalOz": 1.5
+      "totalOz": 1.5,
+      "technique": "Three precise layers",
+      "upgrade": "Pre-chilled bottles and a controlled spoon pour for three distinct bands.",
+      "techniqueTip": "A long drop disturbs the lower layer. Keep the spoon near the surface; actual bottle densities determine how well layers hold.",
+      "sources": [
+        {
+          "title": "Kahlúa · B-52",
+          "url": "https://www.kahlua.com/en-ca/drinks/b-52-recipe/"
+        }
+      ],
+      "servings": 1,
+      "adaptation": "PourMind house version: portion size, whole/half-ounce measures and finishing steps may differ from the reference."
     },
     {
       "id": "baby-guinness",
@@ -184,18 +303,31 @@
       ],
       "taste": "Coffee liqueur topped with a creamy pale layer.",
       "garnish": "No garnish",
-      "note": "There is no beer in this shot. The cream cap makes it resemble a tiny stout.",
+      "note": "Retains the coffee-and-cream identity and measured ratio. The added difficulty is clean spoon floating; there is no beer in this shot.",
       "aliases": [
         "baby guinness",
         "mini guinness"
       ],
       "steps": [
-        "Chill a shooter glass.",
-        "Pour coffee liqueur into the glass.",
-        "Hold a barspoon just above the first layer. Slowly pour irish cream liqueur over the back of the spoon.",
-        "Leave the layers undisturbed and serve chilled."
+        "Chill a narrow, clear shooter glass and both liqueurs before service.",
+        "Measure the coffee liqueur and Irish cream into separate small pouring vessels.",
+        "Pour the coffee liqueur into the glass, keeping the inner wall above it clean.",
+        "Rest a barspoon just above the coffee layer with its rounded back facing upward.",
+        "Trickle the Irish cream over the spoon, slowly raising it so the cap spreads evenly across the surface.",
+        "Withdraw the spoon gently and serve upright without stirring."
       ],
-      "totalOz": 1.5
+      "totalOz": 1.5,
+      "technique": "A clean cream cap",
+      "upgrade": "A narrow glass and a carefully floated, even cream layer.",
+      "techniqueTip": "The pale cap should cover the whole surface. A fast stream makes cream streak down into the coffee layer.",
+      "sources": [
+        {
+          "title": "Kahlúa · Baby Stout",
+          "url": "https://www.kahlua.com/en-us/drinks/baby-stout/"
+        }
+      ],
+      "servings": 1,
+      "adaptation": "PourMind house version: portion size, whole/half-ounce measures and finishing steps may differ from the reference."
     },
     {
       "id": "buttery-nipple",
@@ -204,8 +336,12 @@
       "method": "Layered",
       "ingredients": [
         {
-          "oz": 1,
+          "oz": 0.5,
           "name": "Butterscotch schnapps"
+        },
+        {
+          "oz": 0.5,
+          "name": "Amaretto"
         },
         {
           "oz": 0.5,
@@ -214,18 +350,31 @@
       ],
       "taste": "Rich butterscotch with a creamy finish.",
       "garnish": "No garnish",
-      "note": "Float the Irish cream over the butterscotch; some venues shake these ingredients instead.",
+      "note": "Amaretto variation of the Buttery Nipple. It adds a nutty note; check the actual amaretto label for ingredient questions.",
       "aliases": [
         "buttery nipple",
         "butterball"
       ],
       "steps": [
-        "Chill a shooter glass.",
-        "Pour butterscotch schnapps into the glass.",
-        "Hold a barspoon just above the first layer. Slowly pour irish cream liqueur over the back of the spoon.",
-        "Leave the layers undisturbed and serve chilled."
+        "Chill a clear shooter glass and the liqueurs.",
+        "Measure butterscotch schnapps and amaretto into a small mixing vessel.",
+        "Stir those two ingredients gently without ice, then pour the combined base into the glass.",
+        "Measure the Irish cream separately. Hold a barspoon close to the surface of the base.",
+        "Slowly float the cream over the back of the spoon, raising it as the glass fills.",
+        "Serve without stirring so the butterscotch-amaretto base and cream remain separate."
       ],
-      "totalOz": 1.5
+      "totalOz": 1.5,
+      "technique": "Amaretto base & cream float",
+      "upgrade": "A published amaretto variation with a blended base and a separate cream cap.",
+      "techniqueTip": "Blend only the base. Do not stir after floating the Irish cream.",
+      "sources": [
+        {
+          "title": "The Live-In Kitchen · Buttery Nipple variations",
+          "url": "https://theliveinkitchen.com/buttery-nipple/"
+        }
+      ],
+      "servings": 1,
+      "adaptation": "PourMind house version: portion size, whole/half-ounce measures and finishing steps may differ from the reference."
     },
     {
       "id": "slippery-nipple",
@@ -234,7 +383,11 @@
       "method": "Layered",
       "ingredients": [
         {
-          "oz": 1,
+          "oz": 0.5,
+          "name": "Grenadine"
+        },
+        {
+          "oz": 0.5,
           "name": "Sambuca"
         },
         {
@@ -242,19 +395,32 @@
           "name": "Irish cream liqueur"
         }
       ],
-      "taste": "Sweet anise topped with Irish cream.",
+      "taste": "Sweet grenadine and anise beneath an Irish-cream cap.",
       "garnish": "No garnish",
-      "note": "This two-layer version omits grenadine. Float the Irish cream slowly over the sambuca.",
+      "note": "Grenadine-layer variation. Portions are adjusted to the app’s 0.5 oz minimum and differ from the linked recipe.",
       "aliases": [
         "slippery nipple"
       ],
       "steps": [
-        "Chill a shooter glass.",
-        "Pour sambuca into the glass.",
-        "Hold a barspoon just above the first layer. Slowly pour irish cream liqueur over the back of the spoon.",
-        "Leave the layers undisturbed and serve chilled."
+        "Chill a clear shooter glass and the ingredients.",
+        "Measure the grenadine, sambuca and Irish cream into separate small pouring vessels.",
+        "Pour the grenadine into the glass as the base, keeping the upper wall clean.",
+        "Hold a barspoon just above the syrup and slowly float the sambuca over its back.",
+        "Clean the spoon, move it just above the sambuca and gently float the Irish cream.",
+        "Serve upright without stirring so all three layers remain visible."
       ],
-      "totalOz": 1.5
+      "totalOz": 1.5,
+      "technique": "Grenadine, sambuca & cream",
+      "upgrade": "A three-layer grenadine version with separate red, clear and cream bands.",
+      "techniqueTip": "This half-ounce version is sweeter than a small grenadine accent. Use a slow spoon pour for both upper layers.",
+      "sources": [
+        {
+          "title": "Difford’s Guide · Slippery Nipple",
+          "url": "https://www.diffordsguide.com/cocktails/recipe/1779/slippery-nipple"
+        }
+      ],
+      "servings": 1,
+      "adaptation": "PourMind house version: portion size, whole/half-ounce measures and finishing steps may differ from the reference."
     },
     {
       "id": "chocolate-cake",
@@ -264,7 +430,7 @@
       "ingredients": [
         {
           "oz": 1,
-          "name": "Vodka"
+          "name": "Vanilla vodka"
         },
         {
           "oz": 0.5,
@@ -272,18 +438,31 @@
         }
       ],
       "taste": "Nutty vanilla sweetness with a dessert-like finish.",
-      "garnish": "Lightly sugared lemon wedge",
-      "note": "The hazelnut liqueur and lemon accompaniment create the dessert association; this version contains no chocolate. Check the liqueur label for nut ingredients.",
+      "garnish": "Half sugar rim and lightly sugared lemon wedge",
+      "note": "Vanilla-vodka variation with a lemon-and-sugar finish. The dessert association comes from hazelnut, vanilla and citrus; this version contains no chocolate. Check the hazelnut liqueur label for nut ingredients.",
       "aliases": [
         "chocolate cake"
       ],
       "steps": [
-        "Chill a shooter glass large enough for the measured pour and a little ice dilution.",
-        "Add the measured ingredients to a shaker with ice.",
-        "Shake until chilled, about 10–15 seconds.",
-        "Strain into the chilled glass. Finish with the stated garnish."
+        "Chill the glass and spread fine sugar on a small dry plate.",
+        "Wash and cut a thin lemon wedge; remove any visible seeds.",
+        "Moisten only the outside of half the glass rim with lemon, then press it into the sugar.",
+        "Measure vanilla vodka and hazelnut liqueur into a shaker with firm ice.",
+        "Shake for 10–12 seconds, then strain into the glass without washing off the rim.",
+        "Lightly sugar the lemon wedge and serve it alongside the glass as the citrus accompaniment."
       ],
-      "totalOz": 1.5
+      "totalOz": 1.5,
+      "technique": "Vanilla, sugar rim & lemon",
+      "upgrade": "A vanilla-vodka variation with a prepared sugar rim and sugared lemon.",
+      "techniqueTip": "Keep the lemon separate until service so its juice does not dilute the shot or melt the rim.",
+      "sources": [
+        {
+          "title": "A Beautiful Mess · Chocolate Cake Shot",
+          "url": "https://abeautifulmess.com/chocolate-cake-shot/"
+        }
+      ],
+      "servings": 1,
+      "adaptation": "PourMind house version: portion size, whole/half-ounce measures and finishing steps may differ from the reference."
     },
     {
       "id": "washington-apple",
@@ -305,19 +484,32 @@
         }
       ],
       "taste": "Tart apple and cranberry with a whisky base.",
-      "garnish": "No garnish",
-      "note": "Equal parts make a practical shooter; full-size cocktail versions may use another ratio.",
+      "garnish": "Small fresh apple fan on a visible pick",
+      "note": "Retains the equal-parts house pour. The fresh apple fan is a PourMind presentation variation.",
       "aliases": [
         "washington apple",
         "apple shot"
       ],
       "steps": [
-        "Chill a shooter glass large enough for the measured pour and a little ice dilution.",
-        "Add the measured ingredients to a shaker with ice.",
-        "Shake until chilled, about 10–15 seconds.",
-        "Strain into the chilled glass. Serve without a garnish."
+        "Chill the shooter glass while preparing the ingredients.",
+        "Wash an apple. Cut three paper-thin slices and remove any core or seeds. Fan them on a visible cocktail pick.",
+        "Measure Canadian whisky, sour apple schnapps and cranberry juice into a shaker.",
+        "Add firm ice cubes and shake for 10–12 seconds.",
+        "Fine-strain into the chilled glass to remove ice chips.",
+        "Rest the apple fan on the rim, keeping the pick visible and easy to remove."
       ],
-      "totalOz": 1.5
+      "totalOz": 1.5,
+      "technique": "Apple fan & chilled straining",
+      "upgrade": "A freshly cut apple fan and a clean, fine-strained pour.",
+      "techniqueTip": "Cut the apple close to service to limit browning. Keep the fan small enough to balance on the glass.",
+      "sources": [
+        {
+          "title": "A Beautiful Mess · Washington Apple Shot",
+          "url": "https://abeautifulmess.com/washington-apple-shot/"
+        }
+      ],
+      "servings": 1,
+      "adaptation": "PourMind house version: portion size, whole/half-ounce measures and finishing steps may differ from the reference."
     },
     {
       "id": "royal-flush",
@@ -339,18 +531,31 @@
         }
       ],
       "taste": "Peach and cranberry with a whisky finish.",
-      "garnish": "No garnish",
-      "note": "House-style equal-parts shooter. This version uses peach schnapps and cranberry.",
+      "garnish": "Expressed orange peel",
+      "note": "Equal-parts shooter adaptation of the whisky, peach and cranberry combination. The producer’s reference is a larger cocktail with different proportions.",
       "aliases": [
         "royal flush"
       ],
       "steps": [
-        "Chill a shooter glass large enough for the measured pour and a little ice dilution.",
-        "Add the measured ingredients to a shaker with ice.",
-        "Shake until chilled, about 10–15 seconds.",
-        "Strain into the chilled glass. Serve without a garnish."
+        "Chill the shooter glass while preparing the ingredients.",
+        "Wash an orange and remove a short, thin strip of peel. Trim thick white pith on a cutting board.",
+        "Measure Canadian whisky, peach schnapps and cranberry juice into a shaker with firm ice.",
+        "Shake for 10–12 seconds until chilled.",
+        "Strain into the shooter glass. Bend the peel over the surface with its colored side facing the drink.",
+        "Curl the peel and rest it on the rim; serve with the citrus aroma at the top."
       ],
-      "totalOz": 1.5
+      "totalOz": 1.5,
+      "technique": "Expressed orange-peel finish",
+      "upgrade": "A whisky-peach-cranberry shot finished with fresh orange oils.",
+      "techniqueTip": "The oils are in the colored skin. A thick piece of pith gives a woody finish instead of a neat curl.",
+      "sources": [
+        {
+          "title": "Crown Royal · Royal Flush",
+          "url": "https://www.crownroyal.com/whisky-cocktails/crown-royal-flush"
+        }
+      ],
+      "servings": 1,
+      "adaptation": "PourMind house version: portion size, whole/half-ounce measures and finishing steps may differ from the reference."
     },
     {
       "id": "red-snapper",
@@ -367,23 +572,36 @@
           "name": "Amaretto"
         },
         {
-          "oz": 0.5,
+          "oz": 1,
           "name": "Cranberry juice"
         }
       ],
       "taste": "Almond-like sweetness and tart cranberry.",
-      "garnish": "No garnish",
-      "note": "This is the whisky-amaretto shooter, distinct from the gin-based Red Snapper cocktail. Confirm amaretto ingredients for guest allergy questions.",
+      "garnish": "Expressed orange peel",
+      "note": "Whisky-amaretto shooter with a 1:1:2 cranberry-forward ratio. The orange peel is a house finish, separate from the reference recipe. Confirm amaretto ingredients for guest allergy questions.",
       "aliases": [
         "red snapper"
       ],
       "steps": [
-        "Chill a shooter glass large enough for the measured pour and a little ice dilution.",
-        "Add the measured ingredients to a shaker with ice.",
-        "Shake until chilled, about 10–15 seconds.",
-        "Strain into the chilled glass. Serve without a garnish."
+        "Chill the shooter glass while preparing the ingredients.",
+        "Wash an orange and cut a short peel strip, keeping thick white pith off the garnish.",
+        "Measure Canadian whisky, amaretto and cranberry juice into a shaker.",
+        "Add firm ice and shake for about 10–12 seconds.",
+        "Fine-strain into the chilled glass.",
+        "Express the orange peel over the surface and rest it on the rim."
       ],
-      "totalOz": 1.5
+      "totalOz": 2.0,
+      "technique": "Cranberry balance & citrus finish",
+      "upgrade": "A cranberry-forward ratio and a freshly expressed orange accent.",
+      "techniqueTip": "Use the cranberry juice your venue has specified; pure juice and sweetened juice cocktail give different sweetness.",
+      "sources": [
+        {
+          "title": "Occasional Cocktails · Red Snapper Shot",
+          "url": "https://occasionalcocktails.com/red-snapper-shot/"
+        }
+      ],
+      "servings": 1,
+      "adaptation": "PourMind house version: portion size, whole/half-ounce measures and finishing steps may differ from the reference."
     },
     {
       "id": "purple-hooter",
@@ -405,19 +623,32 @@
         }
       ],
       "taste": "Raspberry sweetness balanced by tart lime.",
-      "garnish": "No garnish",
-      "note": "A tart equal-parts house version. The shade varies with the raspberry liqueur.",
+      "garnish": "Raspberry and tiny lime half-wheel on a visible pick",
+      "note": "Retains the tart equal-parts house ratio. The raspberry-and-lime pick is a PourMind garnish variation; the reference uses a different vodka-forward ratio.",
       "aliases": [
         "purple hooter",
         "purple hooters"
       ],
       "steps": [
-        "Chill a shooter glass large enough for the measured pour and a little ice dilution.",
-        "Add the measured ingredients to a shaker with ice.",
-        "Shake until chilled, about 10–15 seconds.",
-        "Strain into the chilled glass. Serve without a garnish."
+        "Chill the shooter glass while preparing the ingredients.",
+        "Squeeze and strain fresh lime juice. Cut a tiny lime half-wheel and thread it onto a visible pick with one raspberry.",
+        "Measure vodka, raspberry liqueur and lime juice into a shaker with firm ice.",
+        "Shake for 10–12 seconds to chill without leaving it sitting on melting ice.",
+        "Fine-strain into the chilled glass.",
+        "Rest the berry pick across the rim with its pointed end visible and easy to remove."
       ],
-      "totalOz": 1.5
+      "totalOz": 1.5,
+      "technique": "Fine straining & berry pick",
+      "upgrade": "A fresh lime preparation with a neat raspberry-and-lime finish.",
+      "techniqueTip": "Fresh lime pulp and broken ice can make a small pour look cloudy; fine straining gives a cleaner finish.",
+      "sources": [
+        {
+          "title": "MyBartender · Purple Hooter",
+          "url": "https://mybartender.com/recipe/purple-hooter/"
+        }
+      ],
+      "servings": 1,
+      "adaptation": "PourMind house version: portion size, whole/half-ounce measures and finishing steps may differ from the reference."
     },
     {
       "id": "woo-woo",
@@ -439,19 +670,32 @@
         }
       ],
       "taste": "Soft peach and cranberry over vodka.",
-      "garnish": "No garnish",
-      "note": "Small equal-parts shooter; the long drink normally uses more cranberry juice.",
+      "garnish": "Small expressed orange-peel curl",
+      "note": "Equal-parts house shooter with an orange-peel presentation variation. The producer’s reference uses a different vodka-to-cranberry ratio.",
       "aliases": [
         "woo woo",
         "woowoo"
       ],
       "steps": [
-        "Chill a shooter glass large enough for the measured pour and a little ice dilution.",
-        "Add the measured ingredients to a shaker with ice.",
-        "Shake until chilled, about 10–15 seconds.",
-        "Strain into the chilled glass. Serve without a garnish."
+        "Chill the shooter glass while preparing the ingredients.",
+        "Wash an orange and cut a narrow peel strip without a thick white-pith backing.",
+        "Measure vodka, peach schnapps and cranberry juice into a shaker.",
+        "Add firm ice cubes and shake for 10–12 seconds.",
+        "Fine-strain into the chilled glass and gently express the peel over the surface.",
+        "Curl the peel and rest it on the rim."
       ],
-      "totalOz": 1.5
+      "totalOz": 1.5,
+      "technique": "Orange-zest finish",
+      "upgrade": "A peach-cranberry pour with fine straining and a curled orange peel.",
+      "techniqueTip": "A small curl gives aroma without adding more juice or taking up the whole rim.",
+      "sources": [
+        {
+          "title": "DeKuyper · Woo Woo",
+          "url": "https://www.dekuyperusa.com/recipe/woo-woo"
+        }
+      ],
+      "servings": 1,
+      "adaptation": "PourMind house version: portion size, whole/half-ounce measures and finishing steps may differ from the reference."
     },
     {
       "id": "melon-ball",
@@ -469,23 +713,36 @@
         },
         {
           "oz": 0.5,
-          "name": "Orange juice"
+          "name": "Fresh orange juice"
         }
       ],
       "taste": "Sweet melon and orange with a vodka base.",
-      "garnish": "No garnish",
-      "note": "This version uses orange juice; pineapple juice is another common venue variation.",
+      "garnish": "Small melon ball on a visible pick",
+      "note": "Equal-parts shooter adaptation of the vodka, melon and orange combination. The producer’s reference is a juice-forward long drink.",
       "aliases": [
         "melon ball",
         "midori shot"
       ],
       "steps": [
-        "Chill a shooter glass large enough for the measured pour and a little ice dilution.",
-        "Add the measured ingredients to a shaker with ice.",
-        "Shake until chilled, about 10–15 seconds.",
-        "Strain into the chilled glass. Serve without a garnish."
+        "Chill the shooter glass while preparing the ingredients.",
+        "Squeeze an orange and strain the juice. Use a melon baller to cut one small, even melon sphere.",
+        "Thread the melon ball onto a visible cocktail pick and keep it chilled.",
+        "Measure vodka, melon liqueur and the fresh orange juice into a shaker with firm ice.",
+        "Shake for 10–12 seconds and fine-strain into the chilled shooter glass.",
+        "Rest the melon pick on the rim without letting the fruit crowd the pour."
       ],
-      "totalOz": 1.5
+      "totalOz": 1.5,
+      "technique": "Fresh orange & melon garnish",
+      "upgrade": "Freshly squeezed orange juice and a small melon ball on a pick.",
+      "techniqueTip": "Choose firm melon for a clean sphere. The garnish is a house addition and should be a small bite-size piece.",
+      "sources": [
+        {
+          "title": "DeKuyper · Melonball",
+          "url": "https://www.dekuyperusa.com/recipe/melonball"
+        }
+      ],
+      "servings": 1,
+      "adaptation": "PourMind house version: portion size, whole/half-ounce measures and finishing steps may differ from the reference."
     },
     {
       "id": "mexican-candy",
@@ -494,28 +751,50 @@
       "method": "Shaken",
       "ingredients": [
         {
-          "oz": 1,
+          "oz": 0.5,
           "name": "Blanco tequila"
         },
         {
           "oz": 0.5,
           "name": "Watermelon schnapps"
+        },
+        {
+          "oz": 0.5,
+          "name": "Fresh lime juice"
+        },
+        {
+          "count": 1,
+          "unit": "dash",
+          "name": "Hot sauce"
         }
       ],
       "taste": "Watermelon and tequila with a chili-citrus rim.",
-      "garnish": "Chili-lime seasoning on half the rim",
-      "note": "This watermelon-schnapps version gets its heat from the rim. Juice and hot-sauce versions vary; ask the guest how much heat they want.",
+      "garnish": "Half chamoy and chili-lime rim; tiny watermelon wedge",
+      "note": "Lime-and-hot-sauce house version with a chamoy rim. Its smaller half-ounce pour differs from the reference. Heat varies greatly by sauce brand.",
       "aliases": [
         "mexican candy",
         "paleta"
       ],
       "steps": [
-        "Chill a shooter glass large enough for the measured pour and a little ice dilution.",
-        "Add the measured ingredients to a shaker with ice.",
-        "Shake until chilled, about 10–15 seconds.",
-        "Strain into the chilled glass. Finish with the stated garnish."
+        "Chill the shooter glass while preparing the ingredients.",
+        "Ask the guest about heat. Spread chamoy on one small plate and chili-lime seasoning on another.",
+        "Dip the outside of half the rim in a thin coat of chamoy, then press it lightly into the seasoning.",
+        "Measure tequila, watermelon schnapps and fresh lime juice into a shaker; add the listed hot-sauce dash.",
+        "Add firm ice and shake for about 10–12 seconds.",
+        "Fine-strain into the glass without rinsing the rim, then add a tiny watermelon wedge."
       ],
-      "totalOz": 1.5
+      "totalOz": 1.5,
+      "technique": "Chamoy rim & chili seasoning",
+      "upgrade": "Fresh lime, a measured hot-sauce accent and a two-stage chamoy-seasoning rim.",
+      "techniqueTip": "A thin chamoy coat holds seasoning better than a dripping rim. Keep the hot sauce separate from the garnish so the dose stays clear.",
+      "sources": [
+        {
+          "title": "Chili Pepper Madness · Mexican Candy Shot",
+          "url": "https://www.chilipeppermadness.com/recipes/mexican-candy-shot/"
+        }
+      ],
+      "servings": 1,
+      "adaptation": "PourMind house version: portion size, whole/half-ounce measures and finishing steps may differ from the reference."
     },
     {
       "id": "scooby-snack",
@@ -533,6 +812,10 @@
         },
         {
           "oz": 0.5,
+          "name": "Banana liqueur"
+        },
+        {
+          "oz": 0.5,
           "name": "Pineapple juice"
         },
         {
@@ -540,30 +823,43 @@
           "name": "Heavy cream"
         }
       ],
-      "taste": "Creamy melon, coconut and pineapple.",
-      "garnish": "No garnish",
-      "note": "A 2 oz measured pour before dilution. Use a larger shooter glass; cream versions vary by venue. Contains milk.",
+      "taste": "Creamy melon, banana, coconut and pineapple.",
+      "garnish": "Small whipped-cream cap on each serving",
+      "note": "Five-ingredient, two-serving adaptation with portions rounded to half ounces. The full batch is 2.5 oz before dilution; divide it between two glasses. Contains milk.",
       "aliases": [
         "scooby snack",
         "scooby snacks"
       ],
       "steps": [
-        "Chill a shooter glass large enough for the measured pour and a little ice dilution.",
-        "Add the measured ingredients to a shaker with ice.",
-        "Shake until chilled, about 10–15 seconds.",
-        "Strain into the chilled glass. Serve without a garnish."
+        "Chill two shooter glasses; this recipe is a two-serving batch.",
+        "Measure coconut rum, melon liqueur, banana liqueur, pineapple juice and heavy cream into a shaker.",
+        "Add firm ice cubes and seal the shaker.",
+        "Shake briskly for 10–12 seconds to combine the cream with the fruit ingredients.",
+        "Strain through a cocktail strainer into a small pouring jug, then divide evenly between the two glasses.",
+        "Pipe a small whipped-cream cap onto each just before service."
       ],
-      "totalOz": 2.0
+      "totalOz": 2.5,
+      "technique": "Five-part blend & cream finish",
+      "upgrade": "Banana liqueur adds a fifth flavor, followed by a small whipped-cream cap.",
+      "techniqueTip": "The combined measured pour belongs to two glasses. Keep the cream cap small and add it after straining.",
+      "sources": [
+        {
+          "title": "Wine Enthusiast · Scooby Snack Shot",
+          "url": "https://www.wineenthusiast.com/recipe/scooby-snack-shot/"
+        }
+      ],
+      "servings": 2,
+      "adaptation": "PourMind house version: portion size, whole/half-ounce measures and finishing steps may differ from the reference."
     },
     {
       "id": "bazooka-joe",
       "name": "Bazooka Joe Shot",
       "flavor": "Creamy",
-      "method": "Shaken",
+      "method": "Layered",
       "ingredients": [
         {
           "oz": 0.5,
-          "name": "Irish cream liqueur"
+          "name": "Blue curaçao"
         },
         {
           "oz": 0.5,
@@ -571,23 +867,36 @@
         },
         {
           "oz": 0.5,
-          "name": "Blue curaçao"
+          "name": "Irish cream liqueur"
         }
       ],
       "taste": "Sweet banana, cream and orange.",
       "garnish": "No garnish",
-      "note": "The bubblegum association is a flavor description; this version contains no chewing gum. Irish cream contains milk.",
+      "note": "Layered presentation based on the reference’s listed pouring order. Irish cream contains milk; bottle density determines the clarity of the layers.",
       "aliases": [
         "bazooka joe",
         "bubblegum shot"
       ],
       "steps": [
-        "Chill a shooter glass large enough for the measured pour and a little ice dilution.",
-        "Add the measured ingredients to a shaker with ice.",
-        "Shake until chilled, about 10–15 seconds.",
-        "Strain into the chilled glass. Serve without a garnish."
+        "Chill a clear shooter glass and all three liqueurs.",
+        "Measure the blue curaçao, banana liqueur and Irish cream into separate small pouring vessels.",
+        "Pour the blue curaçao into the glass to make the base.",
+        "Use a barspoon close to the surface to slowly float the banana liqueur.",
+        "Clean the spoon and gently float the Irish cream over the banana layer.",
+        "Serve upright without stirring, so the colored bands remain visible."
       ],
-      "totalOz": 1.5
+      "totalOz": 1.5,
+      "technique": "Three-layer presentation",
+      "upgrade": "Build distinct blue, banana and cream bands with three controlled spoon pours.",
+      "techniqueTip": "Liqueur sugar and alcohol levels vary by brand. Test this order with your bottles; some banana liqueurs sink through blue curaçao.",
+      "sources": [
+        {
+          "title": "Difford’s Guide · Bazooka Joe",
+          "url": "https://www.diffordsguide.com/cocktails/recipe/186/bazooka-joe"
+        }
+      ],
+      "servings": 1,
+      "adaptation": "PourMind house version: portion size, whole/half-ounce measures and finishing steps may differ from the reference."
     },
     {
       "id": "pbj",
@@ -602,23 +911,40 @@
         {
           "oz": 0.5,
           "name": "Raspberry liqueur"
+        },
+        {
+          "oz": 0.5,
+          "name": "Half-and-half"
         }
       ],
       "taste": "Peanut butter and raspberry-jam flavors.",
-      "garnish": "No garnish",
-      "note": "Confirm the actual product ingredients: peanut butter whiskey may contain peanuts. Never assume a nut-flavored spirit is allergy-safe.",
+      "garnish": "Fresh raspberry on a visible pick",
+      "note": "Creamy shooter adaptation of the producer’s Peanut Butter & Jealous cocktail. Contains milk; confirm peanut ingredients on the whiskey label.",
       "aliases": [
         "pbj",
         "pb and j",
         "peanut butter and jelly"
       ],
       "steps": [
-        "Chill a shooter glass large enough for the measured pour and a little ice dilution.",
-        "Add the measured ingredients to a shaker with ice.",
-        "Shake until chilled, about 10–15 seconds.",
-        "Strain into the chilled glass. Serve without a garnish."
+        "Chill the shooter glass while preparing the ingredients.",
+        "Wash and dry one raspberry, then place it on a visible cocktail pick.",
+        "Measure peanut butter whiskey, raspberry liqueur and half-and-half into a shaker.",
+        "Add firm ice cubes and shake briskly for 10–12 seconds to combine the cream.",
+        "Fine-strain into the chilled glass.",
+        "Rest the raspberry pick on the rim, keeping the point visible and easy to remove."
       ],
-      "totalOz": 1.5
+      "totalOz": 2.0,
+      "technique": "Creamy blend & raspberry finish",
+      "upgrade": "Half-and-half adds a third component to the peanut-and-raspberry combination.",
+      "techniqueTip": "The half-and-half should be fresh and cold. It rounds the texture; the garnish is separate from the measured liquid pour.",
+      "sources": [
+        {
+          "title": "Skrewball · Peanut Butter & Jealous",
+          "url": "https://www.skrewballwhiskey.com/en/recipes/peanut-butter-jealous/"
+        }
+      ],
+      "servings": 1,
+      "adaptation": "PourMind house version: portion size, whole/half-ounce measures and finishing steps may differ from the reference."
     },
     {
       "id": "peanut-butter-cup",
@@ -627,57 +953,90 @@
       "method": "Shaken",
       "ingredients": [
         {
-          "oz": 1,
+          "oz": 0.5,
           "name": "Peanut butter whiskey"
         },
         {
           "oz": 0.5,
           "name": "Chocolate liqueur"
+        },
+        {
+          "oz": 0.5,
+          "name": "Coffee liqueur"
+        },
+        {
+          "oz": 0.5,
+          "name": "Heavy cream"
         }
       ],
-      "taste": "Peanut butter and chocolate in a dessert-style shooter.",
-      "garnish": "No garnish",
-      "note": "Check both bottle labels for peanuts, milk and other ingredients before answering allergy questions.",
+      "taste": "Creamy peanut butter, chocolate and coffee.",
+      "garnish": "Half chocolate-syrup and peanut-butter-cup crumb rim",
+      "note": "Four-part dessert version. Check the whiskey, chocolate liqueur, cream and candy labels for peanut, milk and other guest ingredient questions.",
       "aliases": [
         "peanut butter cup",
         "chocolate peanut butter"
       ],
       "steps": [
-        "Chill a shooter glass large enough for the measured pour and a little ice dilution.",
-        "Add the measured ingredients to a shaker with ice.",
-        "Shake until chilled, about 10–15 seconds.",
-        "Strain into the chilled glass. Serve without a garnish."
+        "Chill the shooter glass while preparing the ingredients.",
+        "Crush a small piece of peanut butter cup into fine crumbs on a dry plate.",
+        "Spread a thin coat of chocolate syrup on the outside of half the rim and press that edge into the crumbs.",
+        "Measure peanut butter whiskey, chocolate liqueur, coffee liqueur and heavy cream into a shaker with firm ice.",
+        "Shake for 10–12 seconds to chill and emulsify the cream.",
+        "Strain carefully into the glass without washing off the candy rim."
       ],
-      "totalOz": 1.5
+      "totalOz": 2.0,
+      "technique": "Four-part dessert shot & candy rim",
+      "upgrade": "A coffee-and-cream dessert pour with a prepared chocolate-and-candy rim.",
+      "techniqueTip": "Fine crumbs adhere better than heavy chunks. Prepare the rim before shaking so the drink does not wait on melting ice.",
+      "sources": [
+        {
+          "title": "Occasional Cocktails · Peanut Butter Cup Shot",
+          "url": "https://occasionalcocktails.com/peanut-butter-cup-shot/"
+        }
+      ],
+      "servings": 1,
+      "adaptation": "PourMind house version: portion size, whole/half-ounce measures and finishing steps may differ from the reference."
     },
     {
       "id": "nutty-irishman",
       "name": "Nutty Irishman Shot",
       "flavor": "Nutty",
-      "method": "Shaken",
+      "method": "Layered",
       "ingredients": [
-        {
-          "oz": 1,
-          "name": "Irish cream liqueur"
-        },
         {
           "oz": 0.5,
           "name": "Hazelnut liqueur"
+        },
+        {
+          "oz": 0.5,
+          "name": "Irish cream liqueur"
         }
       ],
       "taste": "Creamy hazelnut with a rich, sweet finish.",
-      "garnish": "No garnish",
-      "note": "House-style cream-forward ratio. Irish cream contains milk; check hazelnut liqueur ingredients for nut questions.",
+      "garnish": "Small whipped-cream dab and cocoa dusting",
+      "note": "Equal-parts, smaller layered version with a dessert finish. Contains milk; check the hazelnut liqueur label for nut ingredients.",
       "aliases": [
         "nutty irishman"
       ],
       "steps": [
-        "Chill a shooter glass large enough for the measured pour and a little ice dilution.",
-        "Add the measured ingredients to a shaker with ice.",
-        "Shake until chilled, about 10–15 seconds.",
-        "Strain into the chilled glass. Serve without a garnish."
+        "Chill a clear shooter glass and both liqueurs.",
+        "Measure the hazelnut liqueur into the glass to form the base.",
+        "Hold a barspoon close to the surface and slowly float the Irish cream over its back.",
+        "Raise and withdraw the spoon gently to leave an even cream cap.",
+        "Add a small dab of whipped cream and lightly dust it with cocoa just before serving."
       ],
-      "totalOz": 1.5
+      "totalOz": 1.0,
+      "technique": "Hazelnut base & cream float",
+      "upgrade": "A two-layer version with a small cocoa-dusted cream finish.",
+      "techniqueTip": "Do not stir the layers. Use only a little whipped cream so the visible Irish-cream layer remains the main cap.",
+      "sources": [
+        {
+          "title": "The Littlest Crumb · Nutty Irishman Shot",
+          "url": "https://thelittlestcrumb.com/nutty-irishman-shot/"
+        }
+      ],
+      "servings": 1,
+      "adaptation": "PourMind house version: portion size, whole/half-ounce measures and finishing steps may differ from the reference."
     },
     {
       "id": "cinnamon-toast",
@@ -695,19 +1054,32 @@
         }
       ],
       "taste": "Creamy cinnamon with a warm spice finish.",
-      "garnish": "No garnish",
-      "note": "A rum-cream and cinnamon-whisky version. Rum cream contains milk; product strength and sweetness vary.",
+      "garnish": "Half cinnamon-sugar rim and small whipped-cream dab",
+      "note": "Cream-forward house ratio with a cinnamon-sugar finish. The producer’s reference uses equal measures. Rum cream and whipped cream contain milk.",
       "aliases": [
         "cinnamon toast",
         "cinnamon toast crunch"
       ],
       "steps": [
-        "Chill a shooter glass large enough for the measured pour and a little ice dilution.",
-        "Add the measured ingredients to a shaker with ice.",
-        "Shake until chilled, about 10–15 seconds.",
-        "Strain into the chilled glass. Serve without a garnish."
+        "Chill the glass. Mix 2 oz fine sugar with 0.5 oz ground cinnamon (volume measures) on a dry plate; this makes more rim mix than one serving needs.",
+        "Lightly moisten the outside of half the rim with a clean damp brush and press it into the cinnamon sugar.",
+        "Measure rum cream liqueur and cinnamon whisky into a shaker with firm ice.",
+        "Shake for 10–12 seconds to combine the cream and whisky.",
+        "Strain into the glass without wetting the rim.",
+        "Add a small whipped-cream dab and a light cinnamon-sugar dusting just before service."
       ],
-      "totalOz": 1.5
+      "totalOz": 1.5,
+      "technique": "Cinnamon-sugar rim & cream texture",
+      "upgrade": "A prepared cinnamon-sugar rim with a small cream finish.",
+      "techniqueTip": "A thin dry rim gives a cleaner sip than a thick cinnamon crust. The rim mixture is prep, not part of the liquid pour.",
+      "sources": [
+        {
+          "title": "RumChata · Cinnamon Toast Shot",
+          "url": "https://www.rumchata.com/?recipes=cinnamon-toast-shot"
+        }
+      ],
+      "servings": 1,
+      "adaptation": "PourMind house version: portion size, whole/half-ounce measures and finishing steps may differ from the reference."
     },
     {
       "id": "oatmeal-cookie",
@@ -716,31 +1088,48 @@
       "method": "Shaken",
       "ingredients": [
         {
-          "oz": 0.5,
-          "name": "Irish cream liqueur"
-        },
-        {
-          "oz": 0.5,
+          "oz": 1,
           "name": "Butterscotch schnapps"
         },
         {
           "oz": 0.5,
-          "name": "Cinnamon whisky"
+          "name": "Amaretto"
+        },
+        {
+          "oz": 0.5,
+          "name": "Cinnamon schnapps"
+        },
+        {
+          "oz": 1,
+          "name": "Irish cream liqueur"
         }
       ],
       "taste": "Butterscotch, cream and cinnamon with a cookie-like flavor.",
-      "garnish": "No garnish",
-      "note": "This version contains no oats. Irish cream contains milk; other venue recipes may add coffee or herbal liqueurs.",
+      "garnish": "Half cinnamon-sugar rim and light cinnamon dusting",
+      "note": "Four-liqueur version in a two-serving batch: 3 oz before dilution. For rim prep, mix 2 oz fine sugar with 0.5 oz ground cinnamon (volume measures) and use only enough to coat the rim. Contains milk; check amaretto ingredients.",
       "aliases": [
         "oatmeal cookie"
       ],
       "steps": [
-        "Chill a shooter glass large enough for the measured pour and a little ice dilution.",
-        "Add the measured ingredients to a shaker with ice.",
-        "Shake until chilled, about 10–15 seconds.",
-        "Strain into the chilled glass. Serve without a garnish."
+        "Chill two shooter glasses; this recipe is a two-serving batch.",
+        "Mix fine sugar and ground cinnamon as described in the prep note, then lightly coat the outside of half each rim.",
+        "Measure butterscotch schnapps, amaretto, cinnamon schnapps and Irish cream into a shaker.",
+        "Add firm ice and shake briskly for 10–12 seconds.",
+        "Strain into a small pouring jug and divide the measured batch evenly between the two glasses.",
+        "Serve with the rims intact and a light cinnamon dusting."
       ],
-      "totalOz": 1.5
+      "totalOz": 3.0,
+      "technique": "Four-liqueur blend & spiced rim",
+      "upgrade": "Amaretto and cinnamon schnapps create the fuller published flavor combination.",
+      "techniqueTip": "The 2:1:1:2 liqueur ratio is easier to measure in a two-shot batch while retaining whole and half ounces.",
+      "sources": [
+        {
+          "title": "The Cocktail Project · Oatmeal Cookie",
+          "url": "https://www.thecocktailproject.com/drink-recipes/oatmeal-cookie"
+        }
+      ],
+      "servings": 2,
+      "adaptation": "PourMind house version: portion size, whole/half-ounce measures and finishing steps may differ from the reference."
     },
     {
       "id": "espresso",
@@ -762,19 +1151,32 @@
         }
       ],
       "taste": "Coffee-forward, lightly sweet and frothy.",
-      "garnish": "No garnish",
-      "note": "A small Espresso Martini-inspired house shooter, distinct from the full cocktail. Let hot espresso cool before shaking. Contains caffeine.",
+      "garnish": "Three coffee beans on the foam",
+      "note": "Small equal-parts Espresso Martini-style shooter. Keep the coffee-bean garnish separate from the measured ingredients. Contains caffeine.",
       "aliases": [
         "espresso shot",
         "mini espresso martini"
       ],
       "steps": [
-        "Chill a shooter glass large enough for the measured pour and a little ice dilution.",
-        "Add the measured ingredients to a shaker with ice.",
-        "Shake until chilled, about 10–15 seconds.",
-        "Strain into the chilled glass. Serve without a garnish."
+        "Chill the shooter glass and brew fresh espresso. Let it cool before mixing.",
+        "Measure vodka, coffee liqueur and the cooled espresso into the shaker.",
+        "Add firm ice cubes and seal the shaker tightly.",
+        "Shake vigorously for about 15–20 seconds to build a fine foam.",
+        "Strain into the chilled glass in one steady pour and let the foam settle briefly.",
+        "Place three coffee beans gently on the foam without breaking its surface."
       ],
-      "totalOz": 1.5
+      "totalOz": 1.5,
+      "technique": "Fresh espresso & foam control",
+      "upgrade": "Freshly brewed espresso, a vigorous shake and a deliberate coffee-bean finish.",
+      "techniqueTip": "Fresh espresso makes a better foam than flat old coffee. Cool it first so it does not rapidly melt the ice.",
+      "sources": [
+        {
+          "title": "Kahlúa · Espresso Martini",
+          "url": "https://www.kahlua.com/en-us/drinks/espresso-martini/"
+        }
+      ],
+      "servings": 1,
+      "adaptation": "PourMind house version: portion size, whole/half-ounce measures and finishing steps may differ from the reference."
     },
     {
       "id": "fuzzy-navel",
@@ -788,22 +1190,35 @@
         },
         {
           "oz": 1,
-          "name": "Orange juice"
+          "name": "Fresh orange juice"
         }
       ],
       "taste": "Sweet peach and orange in a fruit-forward shooter.",
-      "garnish": "No garnish",
-      "note": "A small peach-schnapps and orange-juice version. Schnapps strength varies; confirm your product label.",
+      "garnish": "Small expressed orange-peel curl",
+      "note": "Small shooter adaptation with freshly squeezed juice and a house peel finish. The reference is a larger peach-and-orange cocktail.",
       "aliases": [
         "fuzzy navel"
       ],
       "steps": [
-        "Chill a shooter glass large enough for the measured pour and a little ice dilution.",
-        "Add the measured ingredients to a shaker with ice.",
-        "Shake until chilled, about 10–15 seconds.",
-        "Strain into the chilled glass. Serve without a garnish."
+        "Chill the shooter glass while preparing the ingredients.",
+        "Wash an orange and remove a narrow peel strip before cutting the fruit for juicing.",
+        "Squeeze the orange, then pass the juice through a fine sieve to remove seeds and coarse pulp.",
+        "Measure peach schnapps and fresh orange juice into a shaker with firm ice.",
+        "Shake briefly, about 8–10 seconds, then strain into the chilled glass.",
+        "Gently express the peel over the drink, curl it around a clean barspoon handle and set it on the rim."
       ],
-      "totalOz": 1.5
+      "totalOz": 1.5,
+      "technique": "Fresh orange juice & peel curl",
+      "upgrade": "Fresh juice, pulp control and a carefully cut orange-peel garnish.",
+      "techniqueTip": "Remove the peel before juicing so it is easier to cut a clean strip. Fine straining keeps thick pulp out of a small glass.",
+      "sources": [
+        {
+          "title": "CopyKat · Fuzzy Navel",
+          "url": "https://copykat.com/fuzzy-navel/"
+        }
+      ],
+      "servings": 1,
+      "adaptation": "PourMind house version: portion size, whole/half-ounce measures and finishing steps may differ from the reference."
     }
   ]
 }
