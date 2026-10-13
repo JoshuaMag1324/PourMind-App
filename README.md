@@ -126,3 +126,7 @@ Versioned application asset URLs and the inline release check repair older offli
 ## Launch review
 
 Release 2.5.3 separates Saved recipe filters from the main library and preserves sections on refresh with browser Back/Forward support. `node tests/navigation.test.cjs` verifies those journeys and pairing content in every cocktail detail. See `LAUNCH_REVIEW.md` for checked flows and device-testing limits.
+
+## Garnish cutting guide
+
+Learn → Garnish cutting guide contains eight illustrated techniques: citrus wheels, half-wheels, wedges, peels/twists, long spirals, cucumber ribbons, strawberry fans and pineapple wedges. Each includes tools, practical sizing, four steps, a troubleshooting tip and working cocktail examples. Optional decorative variations are identified. Inline diagrams work offline and are embedded in both downloads. `node tests/garnishes.test.cjs` covers all techniques, recipe links, keyboard jumps, route refresh, responsive fit and the standalone guide.
