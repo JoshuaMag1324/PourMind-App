@@ -7,7 +7,7 @@ globalThis.POURMIND_DISCOVERY_UI = (() => {
   const fold = value => String(value).normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
   const action = (kind,id,label,cls='button secondary') => `<button class="${cls}" data-discovery="${kind}" data-id="${e(id)}">${e(label)}</button>`;
   function libraryNav(active) {
-    return `<div class="academy-tabs discovery-nav" role="group" aria-label="Library sections">${[['recipes','Cocktails'],['spirits','Spirits'],['wines','Wines'],['beers','Beers']].map(([id,title])=>`<button class="filter" data-view="${id}" aria-pressed="${active===id}">${title}</button>`).join('')}</div>`;
+    return `<div class="academy-tabs discovery-nav" role="group" aria-label="Library sections">${[['recipes','Cocktails'],['spirits','Spirits'],['wines','Wines'],['beers','Beers'],['shots','Specialty shots']].map(([id,title])=>`<button class="filter" data-view="${id}" aria-pressed="${active===id}">${title}</button>`).join('')}</div>`;
   }
   function wineCard(w, reason='') {
     return `<article class="surface reference-card"><span class="demo-label">${e(w.category)} · ${e(w.type)}</span><h3>${e(w.name)}</h3><p>${e(w.taste)}</p><div class="wine-chips"><span>${e(w.body)} body</span><span>${e(w.sweetness)}</span></div>${reason ? `<p class="pairing-reason"><strong>Why it can work:</strong> ${e(reason)}</p>` : ''}${action('wine',w.id,'Explore '+w.name)}</article>`;

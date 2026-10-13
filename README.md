@@ -75,7 +75,7 @@ See [the app walkthrough](REVIEW.md). The education update was approved and publ
 
 ## Wine, spirits, families and food pairings
 
-The Library tab groups Cocktails, Spirits, Wines and Beers. Cocktail families and the food-first pairing tool are under Learn; drink details include food pairing ideas. My Bar contains only the user’s entered or confirmed inventory. The reference includes 118 white, 110 red, four rosé, five sparkling and seven fortified entries (grape varieties and named regional styles, not individual producers). Each has tasting notes, body, acidity, sweetness, tannin, serving temperature and food ideas. Six distilled-spirit categories include named styles and linked cocktail examples.
+The Library tab groups Cocktails, Spirits, Wines, Beers and Specialty shots. Cocktail families and the food-first pairing tool are under Learn; drink details include food pairing ideas. My Bar contains only the user’s entered or confirmed inventory. The reference includes 118 white, 110 red, four rosé, five sparkling and seven fortified entries (grape varieties and named regional styles, not individual producers). Each has tasting notes, body, acidity, sweetness, tannin, serving temperature and food ideas. Six distilled-spirit categories include named styles and linked cocktail examples.
 
 Wine search covers names, aliases, regions and flavors, including accent-insensitive matching and the common Riesling misspelling “resling.” Results are paginated. Wine and spirit detail panels can add bottles to the existing private inventory without duplicates.
 
@@ -103,7 +103,7 @@ Run `node tests/portable.test.cjs` after packaging. It extracts the actual ZIP a
 
 ## My Bar and private label scanning
 
-My Bar contains only private inventory, manual entry and Scan My Bar. It has no sample-bottle button, wine promotion or catalogue sections. Existing stored inventory remains intact. The Library primary tab owns Cocktails, Spirits, Wines and Beers. Cocktail Families and Food Pairings highlight Learn in the main navigation.
+My Bar contains only private inventory, manual entry and Scan My Bar. It has no sample-bottle button, wine promotion or catalogue sections. Existing stored inventory remains intact. The Library primary tab owns Cocktails, Spirits, Wines, Beers and Specialty shots. Cocktail Families and Food Pairings highlight Learn in the main navigation.
 
 Choose a photo or capture one on a phone. The scanner limits photos to 20 MB, accepts JPEG/PNG/WebP, scales large images and reads label text using the bundled Tesseract worker and English LSTM model. It matches familiar spirit/ingredient names and wine varieties, then shows editable, selectable suggestions. Nothing is saved until the user confirms. Duplicate inventory names are skipped. Unknown items can be typed into the review. Photos and OCR text are not uploaded or persisted. Closing the dialog cancels the result and terminates its worker.
 
@@ -130,3 +130,7 @@ Release 2.5.3 separates Saved recipe filters from the main library and preserves
 ## Garnish cutting guide
 
 Learn → Garnish cutting guide contains eight illustrated techniques: citrus wheels, half-wheels, wedges, peels/twists, long spirals, cucumber ribbons, strawberry fans and pineapple wedges. Each includes tools, practical sizing, four steps, a troubleshooting tip and working cocktail examples. Optional decorative variations are identified. Inline diagrams work offline and are embedded in both downloads. `node tests/garnishes.test.cjs` covers all techniques, recipe links, keyboard jumps, route refresh, responsive fit and the standalone guide.
+
+## Specialty shots
+
+Library → Specialty shots contains 25 unique measured house starting points. Search names, aliases or ingredients; filter flavor and shaken/layered methods; save the venue’s shot menu on this device. Cards and details show ingredients, four preparation steps, garnish, measured volume before dilution and venue-variation notes. Each makes one serving and uses whole/half ounces with a 0.5 oz minimum. Edit `shots/catalogue.json`, then run `python3 tools/build_shots.py`. `node tests/shots.test.cjs` checks content, search, menu persistence, responsive views and offline site/portable access.
