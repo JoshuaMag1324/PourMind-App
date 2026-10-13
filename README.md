@@ -1,6 +1,6 @@
 # PourMind
 
-A responsive cocktail learning app with 143 recipes, 15 cocktail teaching families, food pairings and a 244-entry wine reference. The redesigned app starts at `index.html`; the original upload remains unchanged in `PourMind_v6_Audited_Test.html`.
+A responsive cocktail learning app with 143 recipes, 232 beers across 26 styles, 15 cocktail teaching families, food pairings and a 244-entry wine reference. The redesigned app starts at `index.html`; the original upload remains unchanged in `PourMind_v6_Audited_Test.html`.
 
 ## Develop
 
@@ -75,7 +75,7 @@ See [the app walkthrough](REVIEW.md). The education update was approved and publ
 
 ## Wine, spirits, families and food pairings
 
-The Library tab groups Cocktails, Spirits, Wines, Cocktail families and Food pairings. My Bar contains only the user’s entered or confirmed inventory. The reference includes 118 white, 110 red, four rosé, five sparkling and seven fortified entries (grape varieties and named regional styles, not individual producers). Each has tasting notes, body, acidity, sweetness, tannin, serving temperature and food ideas. Six distilled-spirit categories include named styles and linked cocktail examples.
+The Library tab groups Cocktails, Spirits, Wines and Beers. Cocktail families and the food-first pairing tool are under Learn; drink details include food pairing ideas. My Bar contains only the user’s entered or confirmed inventory. The reference includes 118 white, 110 red, four rosé, five sparkling and seven fortified entries (grape varieties and named regional styles, not individual producers). Each has tasting notes, body, acidity, sweetness, tannin, serving temperature and food ideas. Six distilled-spirit categories include named styles and linked cocktail examples.
 
 Wine search covers names, aliases, regions and flavors, including accent-insensitive matching and the common Riesling misspelling “resling.” Results are paginated. Wine and spirit detail panels can add bottles to the existing private inventory without duplicates.
 
@@ -103,7 +103,7 @@ Run `node tests/portable.test.cjs` after packaging. It extracts the actual ZIP a
 
 ## My Bar and private label scanning
 
-My Bar contains only private inventory, manual entry and Scan My Bar. It has no sample-bottle button, wine promotion or catalogue sections. Existing stored inventory remains intact. The Library primary tab owns Cocktails, Spirits, Wines, Families and Pairings; all those sections highlight Library in the main navigation.
+My Bar contains only private inventory, manual entry and Scan My Bar. It has no sample-bottle button, wine promotion or catalogue sections. Existing stored inventory remains intact. The Library primary tab owns Cocktails, Spirits, Wines and Beers. Cocktail Families and Food Pairings highlight Learn in the main navigation.
 
 Choose a photo or capture one on a phone. The scanner limits photos to 20 MB, accepts JPEG/PNG/WebP, scales large images and reads label text using the bundled Tesseract worker and English LSTM model. It matches familiar spirit/ingredient names and wine varieties, then shows editable, selectable suggestions. Nothing is saved until the user confirms. Duplicate inventory names are skipped. Unknown items can be typed into the review. Photos and OCR text are not uploaded or persisted. Closing the dialog cancels the result and terminates its worker.
 
@@ -115,10 +115,14 @@ Run `node tests/scanner.test.cjs` (set `POURMIND_TEST_URL` for the local server)
 
 The six-page IBA listing is represented by 102 canonical recipes within the 143-recipe catalogue. The expansion adds 57 cocktails while keeping existing recipes and variations. `recipes/iba-coverage.json` maps IBA names to existing names, including Alexander → Brandy Alexander and Hemingway Special → Hemingway Daiquiri. Alternate names are searchable. The catalogue compiler rejects names that differ only in accents, punctuation, spacing or case.
 
-New recipes retain the IBA millilitre measures and use the same cards, detail panels, serving notes, source links and favorites as the original catalogue. All 102 IBA entries have unique original photorealistic illustrations generated for PourMind. They follow the cocktail serving specifications and are labelled as AI-generated artwork in recipe details. Base filters include pisco, cachaça, mezcal, grappa, wine and liqueur. All recipes are linked to one of the existing 15 teaching families.
+Recipes use whole and half ounce measures with a 0.5 oz minimum, as selected for this app, so their quantities differ from exact IBA specifications. New recipes use the same cards, detail panels, serving notes, source links and favorites as the original catalogue. All 102 IBA entries have unique original photorealistic illustrations generated for PourMind. They follow the cocktail serving specifications and are labelled as AI-generated artwork in recipe details. Base filters include pisco, cachaça, mezcal, grappa, wine and liqueur. All recipes are linked to one of the existing 15 teaching families.
 
 With the local server running, `node tests/iba.test.cjs` checks IBA coverage, name searches, artwork, filters, responsive detail panels and offline new recipes.
 
 ## Automatic update recovery
 
 Versioned application asset URLs and the inline release check repair older offline caches on an online refresh. The release check compares the fetched release with the actually loaded catalogue version. The recovery entry accepts both minor and patch releases, clears only PourMind application caches and service-worker registration, and leaves local storage untouched. If the online release check fails, downloaded files remain available. `tests/update-recovery.test.cjs` reproduces the 86-recipe cached app with cacheable HTTP assets and verifies automatic and direct-link recovery to 143 recipes and 102 original images.
+
+## Launch review
+
+Release 2.5.3 separates Saved recipe filters from the main library and preserves sections on refresh with browser Back/Forward support. `node tests/navigation.test.cjs` verifies those journeys and pairing content in every cocktail detail. See `LAUNCH_REVIEW.md` for checked flows and device-testing limits.

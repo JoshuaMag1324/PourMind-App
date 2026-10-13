@@ -67,11 +67,11 @@ The 30 questions remain available in their five topics and ten-question mixed pr
 - Offline access and persistence checked; layouts checked at 320, 390, 768 and 1440 pixels.
 - Existing 30-question practice, legacy progress and favorites retained.
 
-Approve this version to replace the live app, or request changes to the content or workflow.
+This version is published.
 
 ## Cocktail families
 
-Open Library → Cocktail families. Search by family or drink name, then explore structure, mixing method, variations and the measured recipes. Fifteen groups cover all 86 library recipes.
+Open Learn → Cocktail families. Search by family or drink name, then explore structure, mixing method, variations and the measured recipes. Fifteen groups cover all 143 library recipes.
 
 ![Cocktail families on iPhone](review/10-cocktail-families.png)
 ![Family detail on iPhone](review/11-family-detail.png)
@@ -85,7 +85,7 @@ Open Wine library on the home screen, or Library → Wines. [Open the latest win
 
 ## Food pairings
 
-Open Library → Food pairings, choose a food group and switch between Wines and Cocktails. Every suggestion explains the match and opens the corresponding wine profile or measured cocktail recipe. Expand the pairing principles for guidance on acidity, tannin, sweetness and preparation.
+Open Learn → Food pairings, choose a food group and switch between Wines and Cocktails. Every suggestion explains the match and opens the corresponding wine profile or measured cocktail recipe. Expand the pairing principles for guidance on acidity, tannin, sweetness and preparation.
 
 ![Food pairings on iPhone](review/14-food-pairings.png)
 

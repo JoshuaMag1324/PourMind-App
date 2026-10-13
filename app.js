@@ -37,6 +37,9 @@ const legacyLearned = readStore('training', false) === true ? ['stir-old-fashion
 const storedLearned = readStore('learned-questions', legacyLearned);
 const learned = new Set(Array.isArray(storedLearned) ? storedLearned.filter(id => learningQuestions.some(q => q.id === id)) : []);
 let view = 'home', category = 'All', query = '', toastTimer;
+const libraryState = {recipes:{category:'All',query:''},saved:{category:'All',query:''}};
+const routes = {home:'home',library:'recipes',saved:'saved',bar:'bar',learn:'learn',share:'community',wines:'wines',beers:'beers',spirits:'spirits',reference:'reference',families:'families',pairings:'pairings'};
+const routeForView = Object.fromEntries(Object.entries(routes).map(([route, screen]) => [screen, route]));
 function toast(message) {
   const el = document.querySelector('#toast');
   el.textContent = message;
@@ -97,8 +100,17 @@ function knowledgePracticeMarkup() {
   }).join('')}</div></section>`;
 }
 function renderLearn() { POURMIND_ACADEMY_UI.renderLearn(); }
-function renderView(next, focus = true) {
+function renderView(next, focus = true, syncRoute = true) {
+  next = routeForView[next] ? next : 'home';
+  if (next !== view) {
+    if (libraryState[view]) libraryState[view] = {category,query};
+    if (libraryState[next]) ({category,query} = libraryState[next]);
+  }
   view = next;
+  if (syncRoute && ['http:','https:','file:'].includes(location.protocol)) {
+    const hash = '#' + routeForView[view];
+    if (location.hash !== hash) history.pushState(null, '', hash);
+  }
   document.querySelectorAll('[data-view]').forEach(button => {
     if (button.dataset.view === view || (button.closest('.desktop-nav,.mobile-nav') && button.dataset.view === ({beers:'recipes',wines:'recipes',spirits:'recipes',reference:'recipes',families:'learn',pairings:'learn',saved:'recipes'}[view] || view))) button.setAttribute('aria-current', 'page'); else button.removeAttribute('aria-current');
   });
@@ -271,6 +283,13 @@ POURMIND_SCANNER.init({main,dialog,escapeHTML,openDialog,renderView,toast,addInv
 POURMIND_BEER_UI.init({main, dialog, escapeHTML, icon, heading, openDialog, toast, readStore, writeStore});
 POURMIND_DISCOVERY_UI.init({main, dialog, escapeHTML, icon, heading, openDialog, openRecipe, toast, renderView, photos, addInventory});
 POURMIND_ACADEMY_UI.init({main, dialog, escapeHTML, icon, heading, openDialog, toast, readStore, writeStore, renderView, knowledgePracticeMarkup, drinks, photos, recipeDetails, storageReady:() => storageAvailable});
-const linkedView = {library:'recipes',bar:'bar',wines:'wines',beers:'beers',spirits:'spirits',families:'families',pairings:'pairings'}[location.hash.slice(1)] || 'home';
-renderView(linkedView, false);
+function restoreRoute() {
+  const next = routes[location.hash.slice(1)] || 'home';
+  if (next === view) return;
+  if (dialog.open) dialog.close();
+  renderView(next, true, false);
+}
+window.addEventListener('popstate', restoreRoute);
+window.addEventListener('hashchange', restoreRoute);
+renderView(routes[location.hash.slice(1)] || 'home', false, false);
 })();

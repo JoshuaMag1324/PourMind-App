@@ -4,7 +4,7 @@ for(const f of ['discovery-data.js','scanner.js'])vm.runInNewContext(fs.readFile
 assert.deepEqual(Array.from(sandbox.POURMIND_SCANNER.suggest('KENTUCKY BOURBON WHISKEY\nDRY GIN\nRIESLING\nCHARDONNAY')).sort(),['Bourbon','Gin','Riesling','Chardonnay'].sort());
 assert.ok(!Array.from(sandbox.POURMIND_SCANNER.suggest('GINGER BEER ORIGIN ORIGINAL')).includes('Gin'));
 assert.deepEqual(Array.from(sandbox.POURMIND_SCANNER.suggest('Nothing readable here')),[]);
-const base=process.env.POURMIND_TEST_URL||'http://127.0.0.1:8012/';
+const base=process.env.POURMIND_TEST_URL||'http://127.0.0.1:8000/';
 (async()=>{const options={executablePath:'/usr/bin/chromium',args:['--no-sandbox']};if(base.startsWith('https:')&&process.env.HTTPS_PROXY){const u=new URL(process.env.HTTPS_PROXY);options.proxy={server:`${u.protocol}//${u.hostname}${u.port?':'+u.port:''}`};if(u.username)options.proxy.username=decodeURIComponent(u.username);if(u.password)options.proxy.password=decodeURIComponent(u.password);}const browser=await chromium.launch(options);try{
  const context=await browser.newContext({viewport:{width:390,height:844},hasTouch:true,isMobile:true});const p=await context.newPage(),errors=[],requests=[];p.on('pageerror',e=>errors.push(e.message));context.on('request',r=>requests.push({url:r.url(),method:r.method()}));
  await p.goto(base);await p.waitForFunction(()=>navigator.serviceWorker.controller!==null,null,{timeout:90000});await p.getByText('Ready for offline use',{exact:true}).waitFor();
