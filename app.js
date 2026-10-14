@@ -38,7 +38,7 @@ const storedLearned = readStore('learned-questions', legacyLearned);
 const learned = new Set(Array.isArray(storedLearned) ? storedLearned.filter(id => learningQuestions.some(q => q.id === id)) : []);
 let view = 'home', category = 'All', query = '', toastTimer;
 const libraryState = {recipes:{category:'All',query:''},saved:{category:'All',query:''}};
-const routes = {home:'home',library:'recipes',saved:'saved',bar:'bar',learn:'learn',share:'community',wines:'wines',beers:'beers',spirits:'spirits',reference:'reference',families:'families',pairings:'pairings',garnishes:'garnishes',shots:'shots'};
+const routes = {home:'home',library:'recipes',saved:'saved',bar:'bar',learn:'learn',share:'private-recipes',community:'community','private-recipes':'private-recipes',wines:'wines',beers:'beers',spirits:'spirits',reference:'reference',families:'families',pairings:'pairings',garnishes:'garnishes',shots:'shots'};
 const routeForView = Object.fromEntries(Object.entries(routes).map(([route, screen]) => [screen, route]));
 function toast(message) {
   const el = document.querySelector('#toast');
@@ -112,10 +112,10 @@ function renderView(next, focus = true, syncRoute = true) {
     if (location.hash !== hash) history.pushState(null, '', hash);
   }
   document.querySelectorAll('[data-view]').forEach(button => {
-    if (button.dataset.view === view || (button.closest('.desktop-nav,.mobile-nav') && button.dataset.view === ({shots:'recipes',beers:'recipes',wines:'recipes',spirits:'recipes',reference:'recipes',families:'learn',pairings:'learn',garnishes:'learn',saved:'recipes'}[view] || view))) button.setAttribute('aria-current', 'page'); else button.removeAttribute('aria-current');
+    if (button.dataset.view === view || (button.closest('.desktop-nav,.mobile-nav') && button.dataset.view === ({shots:'recipes',beers:'recipes',wines:'recipes',spirits:'recipes',reference:'recipes',families:'learn',pairings:'learn',garnishes:'learn',saved:'recipes','private-recipes':'community'}[view] || view))) button.setAttribute('aria-current', 'page'); else button.removeAttribute('aria-current');
   });
-  ({home:renderHome, recipes:renderLibrary, saved:renderLibrary, bar:renderBar, learn:renderLearn, community:() => POURMIND_ACADEMY_UI.renderCommunity(), spirits:POURMIND_DISCOVERY_UI.renderSpirits, wines:POURMIND_DISCOVERY_UI.renderWines, shots:POURMIND_SHOTS_UI.render, beers:POURMIND_BEER_UI.render, reference:POURMIND_DISCOVERY_UI.renderReference, garnishes:POURMIND_GARNISH_UI.render, families:POURMIND_DISCOVERY_UI.renderFamilies, pairings:POURMIND_DISCOVERY_UI.renderPairings}[view] || renderHome)();
-  document.title = `PourMind — ${ {home:'Discover',recipes:'Library · Cocktails',saved:'Saved recipes',bar:'My bar',learn:'Learn the craft',community:'Recipe sharing',spirits:'Library · Spirits',wines:'Library · Wines',shots:'Library · Specialty shots',beers:'Library · Beers',reference:'Spirits & wines',families:'Cocktail families',pairings:'Food pairings',garnishes:'Garnish cutting guide'}[view] }`;
+  ({home:renderHome, recipes:renderLibrary, saved:renderLibrary, bar:renderBar, learn:renderLearn, community:() => POURMIND_FORUM_UI.render(), 'private-recipes':() => POURMIND_ACADEMY_UI.renderCommunity(), spirits:POURMIND_DISCOVERY_UI.renderSpirits, wines:POURMIND_DISCOVERY_UI.renderWines, shots:POURMIND_SHOTS_UI.render, beers:POURMIND_BEER_UI.render, reference:POURMIND_DISCOVERY_UI.renderReference, garnishes:POURMIND_GARNISH_UI.render, families:POURMIND_DISCOVERY_UI.renderFamilies, pairings:POURMIND_DISCOVERY_UI.renderPairings}[view] || renderHome)();
+  document.title = `PourMind — ${ {home:'Discover',recipes:'Library · Cocktails',saved:'Saved recipes',bar:'My bar',learn:'Learn the craft',community:'Community recipes','private-recipes':'Private recipes',spirits:'Library · Spirits',wines:'Library · Wines',shots:'Library · Specialty shots',beers:'Library · Beers',reference:'Spirits & wines',families:'Cocktail families',pairings:'Food pairings',garnishes:'Garnish cutting guide'}[view] }`;
   updateSavedButtons();
   if (focus) { window.scrollTo({top:0,behavior:'instant'}); main.focus({preventScroll:true}); }
 }
@@ -284,6 +284,7 @@ POURMIND_GARNISH_UI.init({main,escapeHTML,heading,icon,openRecipe});
 POURMIND_SCANNER.init({main,dialog,escapeHTML,openDialog,renderView,toast,addInventoryBatch});
 POURMIND_BEER_UI.init({main, dialog, escapeHTML, icon, heading, openDialog, toast, readStore, writeStore});
 POURMIND_DISCOVERY_UI.init({main, dialog, escapeHTML, icon, heading, openDialog, openRecipe, toast, renderView, photos, addInventory});
+POURMIND_FORUM_UI.init({main,dialog,escapeHTML,openDialog,toast});
 POURMIND_ACADEMY_UI.init({main, dialog, escapeHTML, icon, heading, openDialog, toast, readStore, writeStore, renderView, knowledgePracticeMarkup, drinks, photos, recipeDetails, storageReady:() => storageAvailable});
 function restoreRoute() {
   const next = routes[location.hash.slice(1)] || 'home';

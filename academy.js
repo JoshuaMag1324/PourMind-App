@@ -103,7 +103,7 @@ globalThis.POURMIND_ACADEMY_UI = (() => {
         if (notes.length > 50) throw new Error('This recipe has reached its 50-feedback-note limit.');
         existing.feedback = notes.map(id => existing.feedback.find(f => f.id === id) || imported.feedback.find(f => f.id === id));
       } else {if (collection.length >= 40) throw new Error('Your collection holds 40 recipes. Export and remove an older recipe before adding another.');collection.push({...imported,origin:'imported',saved:false});}
-      const persisted = saveCollection(); shareFilter = 'all'; a.renderView('community'); openSharedRecipe(imported.id);
+      const persisted = saveCollection(); shareFilter = 'all'; a.renderView('private-recipes'); openSharedRecipe(imported.id);
       a.toast(persisted ? 'Recipe imported. Matching returned files add feedback without overwriting your recipe.' : 'Imported for this visit. Download the file to keep it.');
     } catch (error) {a.toast(error instanceof SyntaxError ? 'This file is not valid recipe JSON.' : error.message);}
   }
@@ -160,7 +160,7 @@ globalThis.POURMIND_ACADEMY_UI = (() => {
       case 'delete-recipe': if (confirm('Remove this recipe from your device? Download a copy first if you want to keep it.')) {collection = collection.filter(x => x.id !== id);saveCollection();a.dialog.close();renderCommunity();}break;
       case 'example-recipe': {
         if (!recipeById('example-honey-lime')) {const source = a.drinks.find(d => d[0] === 'Daiquiri');collection.push({id:'example-honey-lime',title:'Honey Lime Rehearsal',author:'PourMind example',family:'Sour rehearsal',ingredients:['2 oz chilled water','1 oz fresh lime juice','1 oz honey syrup'],steps:['Shake water, lime and honey syrup with ice.','Fine-strain into a chilled coupe.','Compare the tartness and sweetness, then record your observation.'],glass:source[5],garnish:'Lime wheel',why:'This alcohol-free rehearsal keeps the spirit–citrus–sweetness proportions visible while practicing measuring and shaking. Honey syrup adds sweetness and a different aroma from plain simple syrup.',inspiration:'A learning exercise based on the Daiquiri structure.',substitutions:'Try simple syrup instead of honey syrup and compare the aroma. This is a rehearsal, not a classic Daiquiri recipe.',photo:'',feedback:[],origin:'imported',example:true,saved:false});saveCollection();}
-        a.renderView('community');openSharedRecipe('example-honey-lime');break;
+        a.renderView('private-recipes');openSharedRecipe('example-honey-lime');break;
       }
     }
   }
@@ -183,7 +183,7 @@ globalThis.POURMIND_ACADEMY_UI = (() => {
         const previous = recipeById(editingId);
         const x = checkedRecipe({id:editingId || newId(),title:data.get('draft-title'),author:data.get('draft-author'),family:data.get('draft-family'),ingredients:String(data.get('draft-ingredients')).split('\n').map(x=>x.trim()).filter(Boolean),steps:String(data.get('draft-steps')).split('\n').map(x=>x.trim()).filter(Boolean),glass:data.get('draft-glass'),garnish:data.get('draft-garnish'),inspiration:data.get('draft-inspiration'),why:data.get('draft-why'),substitutions:data.get('draft-substitutions'),photo:draftPhoto,feedback:previous?.feedback || []});
         const entry = {...x,origin:'draft',saved:previous?.saved || false};if (previous) collection = collection.map(y=>y.id===entry.id ? entry : y);else {if (collection.length>=40) throw new Error('Your collection holds 40 recipes. Export and remove an older one first.');collection.push(entry);}
-        const persisted = saveCollection();shareFilter = 'all';a.renderView('community');openSharedRecipe(entry.id);a.toast(persisted ? 'Private draft saved on this device.' : 'Draft kept for this visit. Download a recipe file to retain it.');
+        const persisted = saveCollection();shareFilter = 'all';a.renderView('private-recipes');openSharedRecipe(entry.id);a.toast(persisted ? 'Private draft saved on this device.' : 'Draft kept for this visit. Download a recipe file to retain it.');
       } catch (error) {document.querySelector('#draft-error').textContent = error.message;}
     }
     if (form.id === 'recipe-feedback') {
