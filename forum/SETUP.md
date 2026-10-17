@@ -31,4 +31,6 @@ FORUM_TEST_DATABASE=postgres://postgres@127.0.0.1:54329/fresh_test_database node
 
 The browser test expects the static app at `http://127.0.0.1:8000` and opens a loopback-only API fixture at port 8024. Its fixed accounts are test fixtures; production uses Supabase Auth. It verifies two-account posting/reviewing, server ownership, safe text, separate private drafts, and widths 320, 390, 768 and 1440. Screenshots are written to `/workspace/work/` for inspection. Never deploy the test fixture.
 
-Live release is deliberately pending project connection. Before releasing, increment the app version and service-worker cache identifier, rebuild downloadable packages and replace their shipped copies so existing installations receive Community consistently.
+Shared-service activation is pending project connection. Version 2.8.0 includes an explicitly labeled, browser-local demo at `?community-demo=1#community`, also available using Community → Try community demo. It uses a separate storage key, never sends demo content to Supabase, and never imports private drafts. Use Switch test user to post as one pretend person and review as another. Reset demo clears only demo changes.
+
+Before activating the shared service, increment the app version and service-worker cache identifier, rebuild downloadable packages and replace their shipped copies so existing installations receive the configuration consistently.
