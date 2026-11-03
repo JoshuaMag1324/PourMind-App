@@ -163,3 +163,8 @@ select:focus-visible,summary:focus-visible {outline:2px solid var(--gold);outlin
 #forum-feed { display: grid; grid-template-columns: repeat(auto-fit,minmax(min(100%,280px),1fr)); gap: 20px; }
 #forum-feed .forum-card { margin: 0; border-color: var(--line); }
 @media(max-width:640px) { #forum-search { display: grid; grid-template-columns: minmax(0,1fr); gap: 10px; } #forum-search .input { width: 100%; } }
+.forum-status { border-left: 3px solid var(--gold); padding: .6rem .8rem; background: var(--surface); }
+.forum-moderation { margin-top: 3rem; border-top: 1px solid var(--line); padding-top: 2rem; }
+.forum-moderation .forum-card { max-width: 100%; }
+.forum-moderation .preserve-lines { max-height: 22rem; overflow: auto; }
+#forum-delete-account .danger { margin-top: 1rem; }

@@ -1,0 +1,12 @@
+import assert from 'node:assert/strict';
+import {createDeleteAccountHandler} from '../supabase/functions/delete-account/handler.mjs';
+const vars={SUPABASE_URL:'https://project.example',SUPABASE_ANON_KEY:'public-test-key',SUPABASE_SERVICE_ROLE_KEY:'server-test-key'};
+let calls=[],badPassword=false,expired=false,failedDelete=false,mfa=false;
+const createClient=(_url,key)=>{calls.push(['client',key]);return {auth:{getUser:async token=>{calls.push(['token',token]);return {data:{user:{id:'owner-from-token',email:'owner@example.test'}},error:expired?Error('expired'):null};},signInWithPassword:async input=>{calls.push(['verify',input.email]);return {data:{user:{id:'owner-from-token'},session:{access_token:'verified'}},error:badPassword?Error('wrong'):null};},mfa:{getAuthenticatorAssuranceLevel:async()=>({data:{nextLevel:mfa?'aal2':'aal1'},error:null})},admin:{deleteUser:async(id,soft)=>{calls.push(['delete',id,soft]);return {error:failedDelete?Error('failure'):null};}}}};};
+const handler=createDeleteAccountHandler({createClient,env:name=>vars[name]});
+const req=(body={confirmation:'DELETE',password:'correct',user_id:'someone-else'},headers={})=>new Request('https://project.example/functions/v1/delete-account',{method:'POST',headers:{origin:'https://joshuamag1324.github.io',authorization:'Bearer validated-token','Content-Type':'application/json',...headers},body:JSON.stringify(body)});
+assert.equal((await handler(req({}, {origin:'https://attacker.example'}))).status,403);assert.equal((await handler(req({}, {authorization:''}))).status,401);assert.equal((await handler(req({confirmation:'yes',password:'correct'}))).status,400);assert.equal(calls.length,0);
+expired=true;assert.equal((await handler(req())).status,401);expired=false;badPassword=true;assert.equal((await handler(req())).status,401);badPassword=false;mfa=true;assert.equal((await handler(req())).status,403);mfa=false;assert.ok(!calls.some(c=>c[0]==='delete'));
+failedDelete=true;assert.equal((await handler(req())).status,503);failedDelete=false;calls=[];const result=await handler(req());assert.equal(result.status,200);assert.deepEqual(await result.json(),{deleted:true});assert.deepEqual(calls.find(c=>c[0]==='delete'),['delete','owner-from-token',false]);assert.equal(result.headers.get('cache-control'),'no-store');
+delete vars.SUPABASE_SERVICE_ROLE_KEY;assert.equal((await handler(req())).status,503);
+console.log('PASS: account deletion verifies origin, token, password, MFA and confirmation; ignores forged target; reports server failures honestly; server key never returned.');

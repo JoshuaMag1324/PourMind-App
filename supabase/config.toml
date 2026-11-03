@@ -1,0 +1,5 @@
+project_id = "pourmind"
+
+[functions.delete-account]
+# The handler validates the user bearer token with Auth.getUser itself.
+verify_jwt = false

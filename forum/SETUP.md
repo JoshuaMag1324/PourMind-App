@@ -34,3 +34,49 @@ The browser test expects the static app at `http://127.0.0.1:8000` and opens a l
 Shared-service activation is pending project connection. Version 2.8.0 includes an explicitly labeled, browser-local demo at `?community-demo=1#community`, also available using Community → Try community demo. It uses a separate storage key, never sends demo content to Supabase, and never imports private drafts. Use Switch test user to post as one pretend person and review as another. Reset demo clears only demo changes.
 
 Before activating the shared service, increment the app version and service-worker cache identifier, rebuild downloadable packages and replace their shipped copies so existing installations receive the configuration consistently.
+
+## Account and moderation upgrade (2.9.0)
+
+For a new project, run the current `forum/schema.sql`. For an existing 2.8.0 project, run `forum/migrations/002-account-moderation.sql` instead. Both run in a transaction; the upgrade preserves recipes, accounts and existing reports and can be rerun. Take an owner-managed backup before a production migration. Install the SQL upgrade before publishing the matching frontend.
+
+The upgrade adds:
+
+- Account & safety: blocked members, unblock, current-password verification before password changes, deletion initiation, support history and appeals.
+- Reports for both recipes and reviews. Reporting is private; 20 reports/hour per member, five support requests/day.
+- Moderator-only content inspection, remove/restore, suspend/reinstate, decisions with explanations, and private support replies. Moderators must be assigned explicitly by the owner. Users cannot grant themselves this role.
+- Server-side filtering of new/edited recipes, reviews and display names. Flagged content is visible only to its author and moderators and excluded from ratings. The built-in phrase/link rules are a starting filter, not an exhaustive abuse classifier. Moderators must monitor the queue and update `forum_private.content_rules` through the SQL editor as needed. No third-party content scanner is configured.
+- Removing content survives author edits. Suspensions hide authored content and prevent new contributions; appeals and account deletion remain available. Blocking hides an author's content for the blocker, removes their reviews from that viewer's rating, and prevents reviewing across a block in either direction. Public content is still readable when signed out.
+
+### Secure account deletion
+
+Deploy `supabase/functions/delete-account/` to the same Supabase project. With the owner authenticated to the Supabase CLI, from the repository root:
+
+```sh
+supabase link --project-ref YOUR_PROJECT_REF
+supabase functions deploy delete-account
+```
+
+The committed `supabase/config.toml` disables only the gateway JWT check for this function. The function itself validates the bearer token through Supabase Auth, rechecks the current password, requires the exact confirmation `DELETE`, and derives the target user exclusively from the authenticated identity. It then calls Auth Admin hard deletion. It never accepts a caller-specified deletion target.
+
+Hosted functions supply the project URL and server-side keys. The handler prefers `SUPABASE_PUBLISHABLE_KEYS.default` and `SUPABASE_SECRET_KEYS.default`, falling back to the legacy `SUPABASE_ANON_KEY`/`SUPABASE_SERVICE_ROLE_KEY` where provided. These secret values belong only in Supabase's function environment; never put a privileged key in `forum-config.js`, GitHub Pages, a downloadable build, or chat. Custom `ALLOWED_ORIGINS` is a comma-separated list of exact browser origins; the default is `https://joshuamag1324.github.io`. Add `http://127.0.0.1:8000` only for local development. The future native app's origin must also be configured when packaging iOS.
+
+This release supports email/password accounts. MFA-enabled or non-password accounts deliberately fail closed rather than bypass additional identity verification; add their verified deletion flow before enabling those account types. Test real confirmation, password-reset email delivery and account deletion against the deployed project before opening registrations.
+
+Hard deletion cascades through recipes, reviews, blocks, suspensions, moderator membership and the user's support requests/reports. Content-linked reports and moderation logs are removed with the deleted content. It leaves private device data intact. Expired/deleted-user sessions cannot create new contributions even if an old JWT has not yet expired. Database backups and provider operational logs follow the owner's/provider's retention policy; this action does not erase those backups instantly.
+
+### Operating the community
+
+Fill `supportEmail` in `forum-config.js` with a real, monitored public contact before App Store submission. Signed-in users can already send private support requests and receive replies in Account & safety. Keep someone responsible for checking reports/support promptly and handling appeals. Set public privacy/retention policies before launching real accounts. The demo's Moderator (demo) is a local test identity and never grants production privileges.
+
+Additional checks:
+
+```sh
+# After the baseline database test, against that same disposable database:
+node tests/forum-safety-database.test.cjs
+node tests/account-deletion.test.mjs
+node tests/forum-safety.test.cjs
+# Against another fresh disposable database:
+node tests/forum-upgrade.test.cjs
+```
+
+Database tests exercise block isolation, report/support privacy, review removal/restore, filtering, suspensions and reinstatement, migration reruns and deletion cascades. The browser test exercises the same controls through the demo, including private-data preservation. `tests/forum.test.cjs` also runs the production deletion handler with a local Auth fixture against real Postgres; it does not replace a final hosted Supabase verification.
